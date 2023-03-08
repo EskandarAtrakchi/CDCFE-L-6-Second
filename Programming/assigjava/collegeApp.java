@@ -1,7 +1,4 @@
-// This code defines a package named "sac" which contains a class named "CollegeApp".
-
-package sac;
-//These lines import necessary classes from the "java.nio.file" and "java.util" packages.
+package sad;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -41,16 +38,16 @@ class CollegeApp {
 			
 		// A while loop is started here with a condition that the variable "toInt" does not match a regular expression pattern that matches one to three digits.
 	    
-        while (!toInt.matches("\\d{1,3}")) {
-        	
-        	// A message is printed on the console asking the user to enter a valid ID.
-            
-            System.out.println("Enter a valid ID (up to 3 digits): ");
-            // The method takes input from the user as a String and assigns it to the variable "toInt".
-            toInt = input.next();
-            
-        }//end loop
-    }//end method 
+     while (!toInt.matches("\\d{1,3}")) {
+     	
+     	// A message is printed on the console asking the user to enter a valid ID.
+         
+         System.out.println("Enter a valid ID (up to 3 digits): ");
+         // The method takes input from the user as a String and assigns it to the variable "toInt".
+         toInt = input.next();
+         
+     }//end loop
+ }//end method 
 	
 	// This method named "inputValidationString" is defined here.
 	
@@ -58,18 +55,18 @@ class CollegeApp {
 		
 		// A while loop is started here with a condition that the variable "toInt" does not match a regular expression pattern that matches one to seven letters.
 	    
-        while (!toInt.matches("[a-zA-Z]{1,7}")) {
-        	
-        	// A message is printed on the console asking the user to enter a valid name.
-            
-            System.out.println("Enter a valid name (up to 7 letters): ");
-            
-            // The method takes input from the user as a String and assigns it to the variable "toInt".
-            
-            toInt = input.next();
-            
-        }//end loop
-    }//end method 
+     while (!toInt.matches("[a-zA-Z]{1,7}")) {
+     	
+     	// A message is printed on the console asking the user to enter a valid name.
+         
+         System.out.println("Enter a valid name (up to 7 letters): ");
+         
+         // The method takes input from the user as a String and assigns it to the variable "toInt".
+         
+         toInt = input.next();
+         
+     }//end loop
+ }//end method 
 	
 	// This method prints a table of student information to a file
 	// The table includes student names, IDs, class status, age, and whether they are full-time or not
@@ -131,200 +128,202 @@ class CollegeApp {
 
 	//start the main method 
 
-    public static void main(String[] args) {
+ public static void main(String[] args) throws InterruptedException {
+	 
+	 FulltimeStudent.Slow();
+	 
+ 	//declare arraylist here 
+     ArrayList < Student > students = new ArrayList < Student > ( );
+     
 
-    	//declare arraylist here 
-        ArrayList < Student > students = new ArrayList < Student > ( );
-        
+     //start while loop 
+     while (true) {
 
-        //start while loop 
-        while (true) {
+     	//show the options for the user 
+         System.out.println("1. Quit");
+         System.out.println("2. Show all full time students");
+         System.out.println("3. Show all mature students");
+         System.out.println("4. Add a new full time student");
+         System.out.println("5. Add a new mature student");
+         System.out.println("6. Remove an existing contact");
+         System.out.println("7. Sort all students alphabetically");
+         System.out.println("8. Print out student list to a text file");
+         System.out.println("====================================================");
 
-        	//show the options for the user 
-            System.out.println("Select an option:");
-            System.out.println("1. Quit");
-            System.out.println("2. Show all full time students");
-            System.out.println("3. Show all mature students");
-            System.out.println("4. Add a new full time student");
-            System.out.println("5. Add a new mature student");
-            System.out.println("6. Remove an existing contact");
-            System.out.println("7. Sort all students alphabetically");
-            System.out.println("8. Print out student list to a text file");
+         //declare a variable called choice to hold the user input and keeps comparing in the if statements 
+         String choice = input.next();
 
-            //declare a variable called choice to hold the user input and keeps comparing in the if statements 
-            String choice = input.next();
+         	//start first if statement 
+             if (choice.equalsIgnoreCase("1")) {
 
-            	//start first if statement 
-                if (choice.equalsIgnoreCase("1")) {
+                 // show Quit
+             	System.out.println("Good-Bye");
+             	//close the scanner input 
+             	input.close();
+             	//exit 
+                 System.exit(0);
 
-                    // show Quit
-                	System.out.println("Good-Bye");
-                	//close the scanner input 
-                	input.close();
-                	//exit 
-                    System.exit(0);
+             }//end if 
+             
+             //start second if statement 
+             else if (choice.equalsIgnoreCase("2")) {
 
-                }//end if 
-                
-                //start second if statement 
-                else if (choice.equalsIgnoreCase("2")) {
+                 // Show all full time students
+             	System.out.println("\t\tShow all full time students\n");
+             	System.out.println("Name\t\tID");
 
-                    // Show all full time students
-                	System.out.println("\t\tShow all full time students\n");
-                	System.out.println("Name\t\tID");
+             	//running a for loop to show all the students 
+                 for (Student student : students) {
 
-                	//running a for loop to show all the students 
-                    for (Student student : students) {
+                 	//start if statement when the student is instanceof FullStudent class 
+                 	//this will come back with true/false statement 
+                     if (student instanceof FulltimeStudent) {
+                     	
+                     	//if true then print 
+                         System.out.println(student.getName() +"\t\t"+ student.getId()+"\n");
+                         
+                     }//end if 
+                 }//end for loop 
+             }//end else if 
+             
+             //start third if statement 
+             else if (choice.equalsIgnoreCase("3")) {
+             	
+             	System.out.println("\t\tShow all mature students\n");
+             	
+             	System.out.println("Name\t\tID");
 
-                    	//start if statement when the student is instanceof FullStudent class 
-                    	//this will come back with true/false statement 
-                        if (student instanceof FulltimeStudent) {
-                        	
-                        	//if true then print 
-                            System.out.println(student.getName() +"\t\t"+ student.getId()+"\n");
-                            
-                        }//end if 
-                    }//end for loop 
-                }//end else if 
-                
-                //start third if statement 
-                else if (choice.equalsIgnoreCase("3")) {
-                	
-                	System.out.println("\t\tShow all mature students\n");
-                	
-                	System.out.println("Name\t\tID");
+                 // Show all mature students
 
-                    // Show all mature students
+             	//start for loop 
+                 for (Student student : students) {
 
-                	//start for loop 
-                    for (Student student : students) {
+                 	//same as the above 
+                     if (student instanceof MatureStudent) {
+                     	
+                     	//printing the results if the student come with result (true) that instanceof MatureStudent 
+                         System.out.println(student.getName() + "\t\t" + student.getId());
+                         
+                     }//end if 
+                 }//end for loop 
+             }//end else if 
 
-                    	//same as the above 
-                        if (student instanceof MatureStudent) {
-                        	
-                        	//printing the results if the student come with result (true) that instanceof MatureStudent 
-                            System.out.println(student.getName() + "\t\t" + student.getId());
-                            
-                        }//end if 
-                    }//end for loop 
-                }//end else if 
+             //start fourth if statement 
+             else if (choice.equalsIgnoreCase("4")) {
 
-                //start fourth if statement 
-                else if (choice.equalsIgnoreCase("4")) {
+             	// Add a new full time student
+                 System.out.print("Enter student name: ");
+                 toInt = input.next();//assign the global variable to the user input 
+                 inputValidationString();//calling the method 
+                 String name = toInt;//declare a string variable and assign it to the global variable
+                 System.out.print("Enter student id: ");
+                 toInt = input.next();//assign the globale variable to the user input 
+                 inputValidationFotTheID();//calling the method 
+                 int tostring = Integer.parseInt(toInt);//parsing the user input 
+                 int id = tostring;//declaring an int variable and assigning it to the global variable 
+                 System.out.print("Is the student full-time? (true/false): ");
+                 toInt = input.next();//assigning global variable to the user input 
+                 String fullTime = "N/A";//declaring a String variable and giving it a temporary value 
+                 
+                 //start wile loop 
+                 while(true) {
+                 	
+                 	//start if statement 
+                 	if (toInt.equalsIgnoreCase("true")) {
+                 		
+                 		//assign the value of the global variable to fullTime variable 
+                 		fullTime = toInt;
+                 		//break the loop 
+                 		break;
+                 		
+                 	}//end if 
+                     
+                 	//start second if statement 
+                     else if (toInt.equalsIgnoreCase("false")) {
+                     	
+                     	//assign the value of the global variable to fullTime variable 
+                     	fullTime = toInt;
+                     	//break the loop 
+                     	break;
+                     	
+                     }//end else if 
+                 	
+                 	//start else 
+                     else {
+                     	
+                     	//print the following for the user 
+                     	System.out.println("Please enter either ((true)) or ((false))");
+                         //assigning global variable to the user input 
+                     	toInt = input.next();
+                     	
+                     	//start a while loopn 
+                     	while(true) {
+                     		
+                     		//start if statement 
+                     		if (toInt.equalsIgnoreCase("true") || toInt.equalsIgnoreCase("false")) {
+                     	
+                     			//break the loop 
+                     			break;
+                     			
+                     		}//end if 
+                     		
+                     		//start esle 
+                     		else {
+                     			
+                     			//print the following for the user 
+                     			System.out.println("You are entering wrong data.");
+                     			//assigning the users input to the golbal variable 
+                     			toInt = input.next();
+                     			
+                     		}//end else 
+                     	}//end while loop
+                     }//end else
+                 }//end while loop 
+                 
+                 //declare a boolean variable and set it to false 
+                 boolean idExists = false;
 
-                	// Add a new full time student
-                    System.out.print("Enter student name: ");
-                    toInt = input.next();//assign the global variable to the user input 
-                    inputValidationString();//calling the method 
-                    String name = toInt;//declare a string variable and assign it to the global variable
-                    System.out.print("Enter student id: ");
-                    toInt = input.next();//assign the globale variable to the user input 
-                    inputValidationFotTheID();//calling the method 
-                    int tostring = Integer.parseInt(toInt);//parsing the user input 
-                    int id = tostring;//declaring an int variable and assigning it to the global variable 
-                    System.out.print("Is the student full-time? (true/false): ");
-                    toInt = input.next();//assigning global variable to the user input 
-                    String fullTime = "N/A";//declaring a String variable and giving it a temporary value 
-                    
-                    //start wile loop 
-                    while(true) {
-                    	
-                    	//start if statement 
-                    	if (toInt.equalsIgnoreCase("true")) {
-                    		
-                    		//assign the value of the global variable to fullTime variable 
-                    		fullTime = toInt;
-                    		//break the loop 
-                    		break;
-                    		
-                    	}//end if 
-                        
-                    	//start second if statement 
-                        else if (toInt.equalsIgnoreCase("false")) {
-                        	
-                        	//assign the value of the global variable to fullTime variable 
-                        	fullTime = toInt;
-                        	//break the loop 
-                        	break;
-                        	
-                        }//end else if 
-                    	
-                    	//start else 
-                        else {
-                        	
-                        	//print the following for the user 
-                        	System.out.println("Please enter either ((true)) or ((false))");
-                            //assigning global variable to the user input 
-                        	toInt = input.next();
-                        	
-                        	//start a while loopn 
-                        	while(true) {
-                        		
-                        		//start if statement 
-                        		if (toInt.equalsIgnoreCase("true") || toInt.equalsIgnoreCase("false")) {
-                        	
-                        			//break the loop 
-                        			break;
-                        			
-                        		}//end if 
-                        		
-                        		//start esle 
-                        		else {
-                        			
-                        			//print the following for the user 
-                        			System.out.println("You are entering wrong data.");
-                        			//assigning the users input to the golbal variable 
-                        			toInt = input.next();
-                        			
-                        		}//end else 
-                        	}//end while loop
-                        }//end else
-                    }//end while loop 
-                    
-                    //declare a boolean variable and set it to false 
-                    boolean idExists = false;
+                 //start for loop 
+                 for (Student student : students) {
 
-                    //start for loop 
-                    for (Student student : students) {
+                 	//start if statement 
+                     if (student.getId() == id) {
 
-                    	//start if statement 
-                        if (student.getId() == id) {
+                     	//changing the value of the boolean variable 
+                         idExists = true;
+                         //break the loop 
+                         break;
 
-                        	//changing the value of the boolean variable 
-                            idExists = true;
-                            //break the loop 
-                            break;
+                     }//end if statement 
+                 }//end the for loop 
 
-                        }//end if statement 
-                    }//end the for loop 
+                 //start if statement 
+                 if (!idExists) {
 
-                    //start if statement 
-                    if (!idExists) {
+                 	//create object 
+                     FulltimeStudent newStudent = new FulltimeStudent(name, id, fullTime);
+                     //adding the parameters through the constructor 
+                     students.add(newStudent);
+                     //printing
+                     System.out.println("Student added successfully.");
+                     
+                 }//end if 
+                 
+                 //start esle 
+                 else {
 
-                    	//create object 
-                        FulltimeStudent newStudent = new FulltimeStudent(name, id, fullTime);
-                        //adding the parameters through the constructor 
-                        students.add(newStudent);
-                        //printing
-                        System.out.println("Student added successfully.");
-                        
-                    }//end if 
-                    
-                    //start esle 
-                    else {
+                 	//print
+                     System.out.println("Error: student with ID " + id + " already exists.");
 
-                    	//print
-                        System.out.println("Error: student with ID " + id + " already exists.");
+                 }//end else 
+             }//end else if 
 
-                    }//end else 
-                }//end else if 
+             //start fifth if statement 
+             else if (choice.equalsIgnoreCase("5")) {
 
-                //start fifth if statement 
-                else if (choice.equalsIgnoreCase("5")) {
-
-                	//start while loop 
-                	while(true) {
-                		
+             	//start while loop 
+             	while(true) {
+             		
 	                    // Add a new mature student
 	                	System.out.print("Enter student age: ");
 	                	toInt = input.next();//assigning the user's input to the global variable 
@@ -403,85 +402,85 @@ class CollegeApp {
 	                	//stop the loop here 
 	                	break;
 
-                	}//end the while loop here 
-                }//end else if here 
+             	}//end the while loop here 
+             }//end else if here 
 
-                //start else if 
-                else if (choice.equalsIgnoreCase("6")) {
+             //start else if 
+             else if (choice.equalsIgnoreCase("6")) {
 
-                    // Remove an existing contact
-                    System.out.print("Enter student id: ");
-                    int id = input.nextInt();//taking user input and assign it to an int variable 
-                    input.nextLine();//input 
-                    //boolean variable assigned to false 
-                    boolean found = false;
+                 // Remove an existing contact
+                 System.out.print("Enter student id: ");
+                 int id = input.nextInt();//taking user input and assign it to an int variable 
+                 input.nextLine();//input 
+                 //boolean variable assigned to false 
+                 boolean found = false;
 
-                    //start for loop
-                    for (Student student : students) {
+                 //start for loop
+                 for (Student student : students) {
 
-                    	//start if statement 
-                        if (student.getId() == id) {
+                 	//start if statement 
+                     if (student.getId() == id) {
 
-                        	//removing from the arraylist 
-                            students.remove(student);
-                            //change the value of the variable to true 
-                            found = true;
-                            //stop the loop 
-                            break;
+                     	//removing from the arraylist 
+                         students.remove(student);
+                         //change the value of the variable to true 
+                         found = true;
+                         //stop the loop 
+                         break;
 
-                        }//end if 
-                    }//end for loop
+                     }//end if 
+                 }//end for loop
 
-                    //start if 
-                    if (!found) {
+                 //start if 
+                 if (!found) {
 
-                    	//print
-                        System.out.println("Student not found.");
+                 	//print
+                     System.out.println("Student not found.");
 
-                    }//end if 
-                    
-                    //start else 
-                    else {
+                 }//end if 
+                 
+                 //start else 
+                 else {
 
-                        System.out.println("Student removed successfully.");
+                     System.out.println("Student removed successfully.");
 
-                    }//end else 
-                }//end else if  
-                
-                //start else if 
-                else if (choice.equalsIgnoreCase("7")) {
+                 }//end else 
+             }//end else if  
+             
+             //start else if 
+             else if (choice.equalsIgnoreCase("7")) {
 
-                    // Sort all students alphabetically
-                    /**
-                     * students.sort((student1, student2) -> 
-                     * student1.getName().compareTo(student2.getName()));
-                     */
+                 // Sort all students alphabetically
+                 /**
+                  * students.sort((student1, student2) -> 
+                  * student1.getName().compareTo(student2.getName()));
+                  */
 
-                     //Lambda expression to compare 
-                	 students.sort((o1, o2) -> o1.getName().compareTo(o2.getName()));
+                  //Lambda expression to compare 
+             	 students.sort((o1, o2) -> o1.getName().compareTo(o2.getName()));
 
-                	 //start for loop 
-                	 for (Student student : students) {
+             	 //start for loop 
+             	 for (Student student : students) {
 
-                		    System.out.println(student.getName());
+             		    System.out.println(student.getName());
 
-            		}//end for loop 
-                }//end else if 
+         		}//end for loop 
+             }//end else if 
 
-                //start else if 
-                else if (choice.equalsIgnoreCase("8")) {
-                	
-                	//calling a method 
-                	printStudentsTableToFile(students, "C:\\Users\\escan\\Desktop\\gonote.txt");
+             //start else if 
+             else if (choice.equalsIgnoreCase("8")) {
+             	
+             	//calling a method 
+             	printStudentsTableToFile(students, "C:\\Users\\escan\\Desktop\\gonote.txt");
 
-                }//end else if 
-                
-                //start else 
-                else {
+             }//end else if 
+             
+             //start else 
+             else {
 
-                    System.out.println("Invalid choice. Please select a valid option.");
+                 System.out.println("Invalid choice. Please select a valid option.");
 
-                }//end else 
-            }//end while loop 
-        }//end main method 
-    }//end class 
+             }//end else 
+         }//end while loop 
+     }//end main method 
+ }//end class 
