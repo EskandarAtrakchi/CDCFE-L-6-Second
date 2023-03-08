@@ -23,4 +23,27 @@ class MatureStudent extends Student {//start class
         this.age = age;//set age 
 
     }//end set 
+    
+    static boolean delayedText = true;
+
+    public static void Slow1() throws InterruptedException {
+
+        delayedOutput("""
+            The program is shutting down now\nGood-Bye
+            """);
+
+    }
+
+    public static void delayedOutput(String mes) throws InterruptedException {
+        if (delayedText) {
+            for (int i = 0; i < mes.length(); i++) {
+                System.out.print(mes.charAt(i));
+                Thread.sleep(50);
+            }
+            System.out.println();
+        } else {
+            System.out.println(mes);
+        }
+    }
+    
 }//end class 
