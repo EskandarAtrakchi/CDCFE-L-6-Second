@@ -1,4 +1,4 @@
-package sac;//package location 
+package sad;
 
 class Student {//start class 
 
