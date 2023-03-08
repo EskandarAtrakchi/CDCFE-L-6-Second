@@ -1,4 +1,4 @@
-package sac;//package location 
+package sad;
 
 class MatureStudent extends Student {//start class 
 

@@ -140,6 +140,7 @@ class CollegeApp {
      while (true) {
 
      	//show the options for the user 
+    	 System.out.println("====================================================");
          System.out.println("1. Quit");
          System.out.println("2. Show all full time students");
          System.out.println("3. Show all mature students");
@@ -157,7 +158,7 @@ class CollegeApp {
              if (choice.equalsIgnoreCase("1")) {
 
                  // show Quit
-             	System.out.println("Good-Bye");
+             	MatureStudent.Slow1();
              	//close the scanner input 
              	input.close();
              	//exit 
