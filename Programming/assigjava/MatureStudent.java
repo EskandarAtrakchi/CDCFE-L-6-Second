@@ -1,4 +1,4 @@
-package sad;
+package sac;
 
 class MatureStudent extends Student {//start class 
 
@@ -29,20 +29,30 @@ class MatureStudent extends Student {//start class
     public static void Slow1() throws InterruptedException {
 
         delayedOutput("""
-            The program is shutting down now\nGood-Bye
+            Thank you for using College App that developed by Eskandar Atrakchi\nThe program is shutting down now\nGood-Bye
             """);
 
     }
 
     public static void delayedOutput(String mes) throws InterruptedException {
+    	
         if (delayedText) {
+        	
             for (int i = 0; i < mes.length(); i++) {
+            	
                 System.out.print(mes.charAt(i));
                 Thread.sleep(50);
+                
             }
+            
             System.out.println();
-        } else {
+            
+        } 
+        
+        else {
+        	
             System.out.println(mes);
+            
         }
     }
     
