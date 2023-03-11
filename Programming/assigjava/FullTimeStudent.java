@@ -1,4 +1,4 @@
-package sad;
+package sac;
 
 class FulltimeStudent extends Student {//start class 
 
@@ -7,6 +7,7 @@ class FulltimeStudent extends Student {//start class
 
     //start a constructor 
     public FulltimeStudent(String name, int id, String fullTime) {
+    	
         super(name, id); // super that takes two parameters 
         //this variable equals this parameter 
         this.fullTime = fullTime;
@@ -30,20 +31,30 @@ class FulltimeStudent extends Student {//start class
     public static void Slow() throws InterruptedException {
 
         delayedOutput("""
-            Welcome to College App \nDeveloped by Eskandar Atrakchi\nPlease select one of the following options below:
+            Please select one of the following options:
             """);
 
     }
 
     public static void delayedOutput(String mes) throws InterruptedException {
+    	
         if (delayedText) {
+        	
             for (int i = 0; i < mes.length(); i++) {
+            	
                 System.out.print(mes.charAt(i));
                 Thread.sleep(50);
+                
             }
+            
             System.out.println();
-        } else {
+            
+        } 
+        
+        else {
+        	
             System.out.println(mes);
+            
         }
     }
 
