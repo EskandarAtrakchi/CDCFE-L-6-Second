@@ -1,4 +1,4 @@
-package sad;
+package sac;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -34,6 +34,7 @@ class CollegeApp {
 	}//end method 
 	
 	// This method named "inputValidationFotTheID" is defined here.
+	
 	public static void inputValidationFotTheID() {
 			
 		// A while loop is started here with a condition that the variable "toInt" does not match a regular expression pattern that matches one to three digits.
@@ -59,7 +60,7 @@ class CollegeApp {
      	
      	// A message is printed on the console asking the user to enter a valid name.
          
-         System.out.println("Enter a valid name (up to 7 letters): ");
+         System.out.println("Enter valid Strings (up to 7 letters): ");
          
          // The method takes input from the user as a String and assigns it to the variable "toInt".
          
@@ -149,6 +150,7 @@ class CollegeApp {
          System.out.println("6. Remove an existing contact");
          System.out.println("7. Sort all students alphabetically");
          System.out.println("8. Print out student list to a text file");
+         System.out.println("9. Edit details of an existing student");
          System.out.println("====================================================");
 
          //declare a variable called choice to hold the user input and keeps comparing in the if statements 
@@ -273,7 +275,7 @@ class CollegeApp {
                      			
                      			//print the following for the user 
                      			System.out.println("You are entering wrong data.");
-                     			//assigning the users input to the golbal variable 
+                     			//assigning the users input to the global variable 
                      			toInt = input.next();
                      			
                      		}//end else 
@@ -368,7 +370,7 @@ class CollegeApp {
 	
 	                            //start if statement 
 	                            if (!idExists) {
-	
+	                            	
 	                            	//create object 
 	                                MatureStudent newStudent = new MatureStudent(name, id, age);
 	                                //adding the parameters through the constructor 
@@ -411,7 +413,10 @@ class CollegeApp {
 
                  // Remove an existing contact
                  System.out.print("Enter student id: ");
-                 int id = input.nextInt();//taking user input and assign it to an int variable 
+                 toInt = input.next();
+                 inputValidationFotTheID();
+                 toString = Integer.parseInt(toInt);
+                 int id = toString;//taking user input and assign it to an int variable 
                  input.nextLine();//input 
                  //boolean variable assigned to false 
                  boolean found = false;
@@ -474,6 +479,144 @@ class CollegeApp {
              	//calling a method 
              	printStudentsTableToFile(students, "C:\\Users\\escan\\Desktop\\gonote.txt");
 
+             }//end else if 
+             
+             else if (choice.equalsIgnoreCase("9")) {
+        	    // If the user input is "9", enter this block of code
+
+        	    // Prompt the user to enter the ID of the student they want to edit
+        	    System.out.print("Enter student ID to edit: ");
+
+        	    // Read the user's input as a string and store it in "toInt"
+        	    toInt = input.next();
+
+        	    // Call the "inputValidationFotTheID" method (assuming it checks for valid input)
+        	    inputValidationFotTheID();
+
+        	    // Convert the user's input to an integer and store it in "toString"
+        	    toString = Integer.parseInt(toInt);
+
+        	    // Store the integer value in a variable called "id"
+        	    int id = toString;
+
+        	    // Create a variable to keep track of whether the student was found
+        	    boolean studentFound = false;
+
+        	    // Loop through each student in the "students" list
+        	    for (Student student : students) {
+
+        	        // If the student ID matches the ID entered by the user...
+        	        if (student.getId() == id) {
+        	            // Prompt the user to enter the new name for the student
+        	            System.out.println("Enter new name: ");
+        	            toInt = input.next();
+        	            inputValidationString();
+        	            String newName = toInt;
+        	            student.setName(newName);
+
+        	            // Prompt the user to enter the new ID for the student
+        	            System.out.println("Enter new ID: ");
+        	            toInt = input.next();
+
+        	            // Call the "inputValidationFotTheID" method (assuming it checks for valid input)
+        	            inputValidationFotTheID();
+
+        	            // Convert the user's input to an integer and store it in "toString"
+        	            toString = Integer.parseInt(toInt);
+
+        	            // Check if the new ID already exists in the list of students
+        	            boolean idExists = false;
+        	            
+        	            for (Student s : students) {
+        	            	
+        	                if (s.getId() == toString) {
+        	                	
+        	                    idExists = true;
+        	                    break;
+        	                    
+        	                }
+        	            }
+
+        	            // If the new ID does not exist, set the student's ID to the new ID entered by the user
+        	            if (!idExists) {
+        	            	
+        	                student.setId(toString);
+        	                System.out.println("Student ID updated successfully.");
+        	                
+        	            } 
+        	            
+        	            else {
+        	            	
+        	                System.out.println("The ID failed to be updated because simmilar ID already exists in the system");
+        	                
+        	            }
+
+        	            // If the student is a FulltimeStudent...
+        	            if (student instanceof FulltimeStudent) {
+        	                // Prompt the user to enter whether the student is still full-time
+        	                System.out.println("Is the student still full-time? (true/false): ");
+
+        	                // Read the user's input as a string and store it in "toInt"
+        	                toInt = input.next();
+
+        	                // Start a while loop to ensure the user enters valid input
+        	                while (true) {
+        	                    // If the user entered "true" or "false"...
+        	                    if (toInt.equalsIgnoreCase("true") || toInt.equalsIgnoreCase("false")) {
+        	                        // Store the user's input as a string called "isFullTime"
+        	                        String isFullTime = toInt;
+        	                        // Set the student's full-time status to the user's input
+        	                        ((FulltimeStudent) student).setFullTime(isFullTime);
+        	                        // Exit the while loop
+        	                        break;
+        	                    } else {
+        	                        // If the user didn't enter "true" or "false", prompt them to enter valid input
+        	                        System.out.println("Please enter 'true' or 'false'.");
+        	                        // Read the user's input as a string and store it in "toInt"
+        	                        toInt = input.next();
+        	                    }
+        	                }
+        	            }
+        	            
+        	            // If the student is a MatureStudent...
+        	            else if (student instanceof MatureStudent) {//start else if 
+        	            	
+        	            	int age;//declare a variable to set it later as student age 
+        	                System.out.println("Enter new student age: ");
+        	                 
+        	                while(true) {
+        	                	
+        	                	toInt = input.next();//taking use input 
+        	                	inputValidation();//calling method 
+            	                int settoString = Integer.parseInt(toInt);//parsing user input
+	        	                if ((settoString >= 23 && settoString <= 99)) {
+	        	                	
+	        	                	age = settoString;
+		        	                //int age = toString;//assigning user input to the variable 
+		        	                ((MatureStudent) student).setAge(age);//setting the data 
+		        	                break;
+		        	                
+	        	                }
+	        	                
+	        	                else {
+	        	                	
+	        	                	System.out.println("The age should be bigger or equal 23 and less or equal 99");
+	        	                	
+	        	                }
+        	                }
+        	            }
+        	            
+        	            System.out.println("Student data updated successfully.");
+        	            studentFound = true;//set studentFound to true 
+        	            break;//stop the loop 
+        	        }//end if statement 
+        	    }//end for loop 
+        	    
+        	    if (!studentFound) {//start if statement 
+        	    	
+        	        System.out.println("Student with ID " + id + " not found.");
+        	        
+        	    }//end if statement 
              }//end else if 
              
              //start else 
