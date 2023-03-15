@@ -1,4 +1,4 @@
-package sql;
+package sql;//This is a package was used as defaul 
 
 import com.ibatis.common.jdbc.ScriptRunner;
 import java.io.BufferedReader;
