@@ -11,7 +11,6 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 import javax.swing.JOptionPane;
 import javax.swing.Timer;
-import static sql.CustomerFirstFrame.UserFFIDF;
 /**
  *
  * @author escan
@@ -74,8 +73,7 @@ public class Customers extends javax.swing.JFrame {
         jPanel6 = new javax.swing.JPanel();
         jLabel21 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
+        jLabel44 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jPanel7 = new javax.swing.JPanel();
@@ -110,41 +108,39 @@ public class Customers extends javax.swing.JFrame {
         jLabel15 = new javax.swing.JLabel();
         UCCVBankCardF = new javax.swing.JTextField();
         UserNameF = new javax.swing.JTextField();
-        jToggleButton2 = new javax.swing.JToggleButton();
         jLabel16 = new javax.swing.JLabel();
-        jLabel26 = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
-        jLabel8 = new javax.swing.JLabel();
-        LiveViewCBTN = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jPanel4 = new javax.swing.JPanel();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        jTextArea2 = new javax.swing.JTextArea();
-        jButton5 = new javax.swing.JButton();
-        jLabel20 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        jButton13 = new javax.swing.JButton();
+        jButton16 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        jLabel45 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
-        VSID = new javax.swing.JTextField();
-        jLabel10 = new javax.swing.JLabel();
-        jButton6 = new javax.swing.JButton();
+        jPanel9 = new javax.swing.JPanel();
+        jLabel11 = new javax.swing.JLabel();
+        jButton9 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
         jScrollPane3 = new javax.swing.JScrollPane();
         jTextArea3 = new javax.swing.JTextArea();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jLabel11 = new javax.swing.JLabel();
+        jButton6 = new javax.swing.JButton();
+        jLabel10 = new javax.swing.JLabel();
+        VSID = new javax.swing.JTextField();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel46 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
+        jPanel4 = new javax.swing.JPanel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        LiveViewCBTN1 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jLabel47 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         date = new javax.swing.JMenu();
         time = new javax.swing.JMenu();
+        LightMode = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Customer frame");
 
         jPanel6.setLayout(null);
 
@@ -152,9 +148,9 @@ public class Customers extends javax.swing.JFrame {
         jPanel6.add(jLabel21);
         jLabel21.setBounds(120, 150, 500, 350);
 
-        jButton1.setBackground(new java.awt.Color(51, 51, 51));
+        jButton1.setBackground(new java.awt.Color(204, 204, 204));
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setForeground(new java.awt.Color(0, 0, 0));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/newImages/logout.png"))); // NOI18N
         jButton1.setText("Logout ");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -163,33 +159,12 @@ public class Customers extends javax.swing.JFrame {
             }
         });
         jPanel6.add(jButton1);
-        jButton1.setBounds(300, 560, 110, 50);
+        jButton1.setBounds(600, 640, 110, 50);
 
-        jButton12.setBackground(new java.awt.Color(51, 51, 51));
-        jButton12.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton12.setForeground(new java.awt.Color(255, 255, 255));
-        jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/exit.png"))); // NOI18N
-        jButton12.setText("Un-register me ");
-        jButton12.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton12ActionPerformed(evt);
-            }
-        });
-        jPanel6.add(jButton12);
-        jButton12.setBounds(420, 559, 180, 50);
-
-        jButton10.setBackground(new java.awt.Color(51, 51, 51));
-        jButton10.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton10.setForeground(new java.awt.Color(255, 255, 255));
-        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/folder.png"))); // NOI18N
-        jButton10.setText("Important info");
-        jButton10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
-            }
-        });
-        jPanel6.add(jButton10);
-        jButton10.setBounds(130, 559, 160, 50);
+        jLabel44.setIcon(new javax.swing.ImageIcon(getClass().getResource("/testingpackage/logo.gif"))); // NOI18N
+        jLabel44.setToolTipText("Logo");
+        jPanel6.add(jLabel44);
+        jLabel44.setBounds(650, 10, 70, 80);
 
         jLabel24.setBackground(new java.awt.Color(51, 51, 51));
         jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/testingpackage/2910857.jpg"))); // NOI18N
@@ -204,13 +179,16 @@ public class Customers extends javax.swing.JFrame {
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, 719, Short.MAX_VALUE)
+            .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, 698, Short.MAX_VALUE)
         );
 
         jTabbedPane3.addTab("LOG-OUT", jPanel1);
 
         jPanel7.setLayout(null);
 
+        UPasswordF.setBackground(new java.awt.Color(204, 204, 204));
+        UPasswordF.setForeground(new java.awt.Color(0, 0, 0));
+        UPasswordF.setToolTipText("your data here.");
         UPasswordF.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 UPasswordFKeyPressed(evt);
@@ -221,47 +199,50 @@ public class Customers extends javax.swing.JFrame {
 
         jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel12.setText("YOUR-PASSWORD");
+        jLabel12.setText("Your password");
         jPanel7.add(jLabel12);
-        jLabel12.setBounds(50, 100, 105, 30);
+        jLabel12.setBounds(70, 100, 105, 30);
 
-        jButton11.setBackground(new java.awt.Color(51, 51, 51));
+        jButton11.setBackground(new java.awt.Color(204, 204, 204));
         jButton11.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton11.setForeground(new java.awt.Color(255, 255, 255));
-        jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/exit.png"))); // NOI18N
-        jButton11.setText("CLEAR");
+        jButton11.setForeground(new java.awt.Color(0, 0, 0));
+        jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/newImages/erase-128.png"))); // NOI18N
+        jButton11.setText("Clear");
+        jButton11.setToolTipText("Button action to clear");
         jButton11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton11ActionPerformed(evt);
             }
         });
         jPanel7.add(jButton11);
-        jButton11.setBounds(460, 640, 110, 39);
+        jButton11.setBounds(470, 580, 110, 40);
 
-        UViewBTNInM.setBackground(new java.awt.Color(51, 51, 51));
+        UViewBTNInM.setBackground(new java.awt.Color(204, 204, 204));
         UViewBTNInM.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        UViewBTNInM.setForeground(new java.awt.Color(255, 255, 255));
+        UViewBTNInM.setForeground(new java.awt.Color(0, 0, 0));
         UViewBTNInM.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/job.png"))); // NOI18N
-        UViewBTNInM.setText("VIEW");
+        UViewBTNInM.setText("View");
+        UViewBTNInM.setToolTipText("Button action to view");
         UViewBTNInM.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 UViewBTNInMActionPerformed(evt);
             }
         });
         jPanel7.add(UViewBTNInM);
-        UViewBTNInM.setBounds(340, 640, 110, 39);
+        UViewBTNInM.setBounds(350, 580, 110, 40);
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel9.setText("PHONE-NUMBER");
+        jLabel9.setText("Phone No.");
         jPanel7.add(jLabel9);
-        jLabel9.setBounds(60, 250, 96, 30);
+        jLabel9.setBounds(90, 250, 96, 30);
 
-        jButton2.setBackground(new java.awt.Color(51, 51, 51));
+        jButton2.setBackground(new java.awt.Color(204, 204, 204));
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/add.png"))); // NOI18N
-        jButton2.setText("UP-DATE");
+        jButton2.setForeground(new java.awt.Color(0, 0, 0));
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/newImages/update icon.png"))); // NOI18N
+        jButton2.setText("Update");
+        jButton2.setToolTipText("Button action to update");
         jButton2.setEnabled(false);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -269,20 +250,23 @@ public class Customers extends javax.swing.JFrame {
             }
         });
         jPanel7.add(jButton2);
-        jButton2.setBounds(577, 640, 130, 39);
+        jButton2.setBounds(590, 580, 120, 40);
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel6.setText("ERI-CODE");
+        jLabel6.setText("ERI-Code");
         jPanel7.add(jLabel6);
-        jLabel6.setBounds(430, 250, 54, 30);
+        jLabel6.setBounds(430, 250, 51, 30);
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel4.setText("YOUR-ADDRESS");
+        jLabel4.setText("Your-address");
         jPanel7.add(jLabel4);
-        jLabel4.setBounds(390, 180, 92, 30);
+        jLabel4.setBounds(400, 180, 92, 30);
 
+        UAddressF.setBackground(new java.awt.Color(204, 204, 204));
+        UAddressF.setForeground(new java.awt.Color(0, 0, 0));
+        UAddressF.setToolTipText("your data here.");
         UAddressF.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 UAddressFKeyPressed(evt);
@@ -293,8 +277,9 @@ public class Customers extends javax.swing.JFrame {
 
         UIDF.setEditable(false);
         UIDF.setBackground(new java.awt.Color(204, 204, 204));
+        UIDF.setForeground(new java.awt.Color(0, 0, 0));
         UIDF.setText("CLICK ME TO VIEW YOOUR ID");
-        UIDF.setToolTipText("Click me to view your ID");
+        UIDF.setToolTipText("Your ID is here and it is not edit-able");
         UIDF.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 UIDFMouseClicked(evt);
@@ -305,21 +290,22 @@ public class Customers extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel2.setText("YOUR-ID");
+        jLabel2.setText("Your-ID");
         jPanel7.add(jLabel2);
-        jLabel2.setBounds(430, 100, 51, 30);
+        jLabel2.setBounds(430, 100, 44, 30);
 
-        jToggleButton1.setBackground(new java.awt.Color(51, 51, 51));
+        jToggleButton1.setBackground(new java.awt.Color(204, 204, 204));
         jToggleButton1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jToggleButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jToggleButton1.setText("SHOW-PASSWORD?");
+        jToggleButton1.setForeground(new java.awt.Color(0, 0, 0));
+        jToggleButton1.setText("Show password");
+        jToggleButton1.setToolTipText("BTN action to hide your password for security reasons");
         jToggleButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jToggleButton1ActionPerformed(evt);
             }
         });
         jPanel7.add(jToggleButton1);
-        jToggleButton1.setBounds(10, 60, 144, 30);
+        jToggleButton1.setBounds(10, 60, 116, 30);
 
         jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(153, 153, 153));
@@ -327,6 +313,9 @@ public class Customers extends javax.swing.JFrame {
         jPanel7.add(jLabel13);
         jLabel13.setBounds(160, 60, 216, 30);
 
+        UPhoneNoF.setBackground(new java.awt.Color(204, 204, 204));
+        UPhoneNoF.setForeground(new java.awt.Color(0, 0, 0));
+        UPhoneNoF.setToolTipText("your data here.");
         UPhoneNoF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 UPhoneNoFActionPerformed(evt);
@@ -343,6 +332,9 @@ public class Customers extends javax.swing.JFrame {
         jPanel7.add(UPhoneNoF);
         UPhoneNoF.setBounds(160, 250, 210, 30);
 
+        UERICodeF.setBackground(new java.awt.Color(204, 204, 204));
+        UERICodeF.setForeground(new java.awt.Color(0, 0, 0));
+        UERICodeF.setToolTipText("your data here.");
         UERICodeF.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 UERICodeFKeyPressed(evt);
@@ -353,10 +345,13 @@ public class Customers extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel3.setText("YOUR-DOB");
+        jLabel3.setText("Your-DOB");
         jPanel7.add(jLabel3);
-        jLabel3.setBounds(410, 370, 64, 30);
+        jLabel3.setBounds(410, 370, 57, 30);
 
+        UDOBLYear.setBackground(new java.awt.Color(204, 204, 204));
+        UDOBLYear.setForeground(new java.awt.Color(0, 0, 0));
+        UDOBLYear.setToolTipText("your data here.");
         UDOBLYear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 UDOBLYearActionPerformed(evt);
@@ -373,6 +368,9 @@ public class Customers extends javax.swing.JFrame {
         jPanel7.add(UDOBLYear);
         UDOBLYear.setBounds(480, 370, 64, 30);
 
+        UMonthDOBF.setBackground(new java.awt.Color(204, 204, 204));
+        UMonthDOBF.setForeground(new java.awt.Color(0, 0, 0));
+        UMonthDOBF.setToolTipText("your data here.");
         UMonthDOBF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 UMonthDOBFActionPerformed(evt);
@@ -389,6 +387,9 @@ public class Customers extends javax.swing.JFrame {
         jPanel7.add(UMonthDOBF);
         UMonthDOBF.setBounds(550, 370, 64, 30);
 
+        UDayDOBF.setBackground(new java.awt.Color(204, 204, 204));
+        UDayDOBF.setForeground(new java.awt.Color(0, 0, 0));
+        UDayDOBF.setToolTipText("your data here.");
         UDayDOBF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 UDayDOBFActionPerformed(evt);
@@ -407,10 +408,13 @@ public class Customers extends javax.swing.JFrame {
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel5.setText("CARD EXP DATE");
+        jLabel5.setText("Card EXP Date");
         jPanel7.add(jLabel5);
-        jLabel5.setBounds(380, 520, 89, 30);
+        jLabel5.setBounds(390, 520, 89, 30);
 
+        YearEXPDate.setBackground(new java.awt.Color(204, 204, 204));
+        YearEXPDate.setForeground(new java.awt.Color(0, 0, 0));
+        YearEXPDate.setToolTipText("your data here.");
         YearEXPDate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 YearEXPDateActionPerformed(evt);
@@ -427,6 +431,9 @@ public class Customers extends javax.swing.JFrame {
         jPanel7.add(YearEXPDate);
         YearEXPDate.setBounds(480, 520, 64, 30);
 
+        MonthUserEXPDateF.setBackground(new java.awt.Color(204, 204, 204));
+        MonthUserEXPDateF.setForeground(new java.awt.Color(0, 0, 0));
+        MonthUserEXPDateF.setToolTipText("your data here.");
         MonthUserEXPDateF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 MonthUserEXPDateFActionPerformed(evt);
@@ -443,6 +450,9 @@ public class Customers extends javax.swing.JFrame {
         jPanel7.add(MonthUserEXPDateF);
         MonthUserEXPDateF.setBounds(550, 520, 64, 30);
 
+        DayEXPDateUserF.setBackground(new java.awt.Color(204, 204, 204));
+        DayEXPDateUserF.setForeground(new java.awt.Color(0, 0, 0));
+        DayEXPDateUserF.setToolTipText("your data here.");
         DayEXPDateUserF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 DayEXPDateUserFActionPerformed(evt);
@@ -461,10 +471,13 @@ public class Customers extends javax.swing.JFrame {
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel7.setText("BANK CARD NUMBER");
+        jLabel7.setText("Bank card No.");
         jPanel7.add(jLabel7);
-        jLabel7.setBounds(30, 440, 122, 30);
+        jLabel7.setBounds(70, 440, 90, 30);
 
+        UCardNOF.setBackground(new java.awt.Color(204, 204, 204));
+        UCardNOF.setForeground(new java.awt.Color(0, 0, 0));
+        UCardNOF.setToolTipText("your data here.");
         UCardNOF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 UCardNOFActionPerformed(evt);
@@ -484,27 +497,32 @@ public class Customers extends javax.swing.JFrame {
         UDOFL.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         UDOFL.setForeground(new java.awt.Color(153, 153, 153));
         UDOFL.setText("YYYY-MM-DD");
+        UDOFL.setToolTipText("your data here.");
         jPanel7.add(UDOFL);
-        UDOFL.setBounds(480, 480, 78, 30);
+        UDOFL.setBounds(480, 340, 78, 30);
 
         UCardEXPDateL.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         UCardEXPDateL.setForeground(new java.awt.Color(153, 153, 153));
         UCardEXPDateL.setText("YYYY-MM-DD");
+        UCardEXPDateL.setToolTipText("your data here.");
         jPanel7.add(UCardEXPDateL);
-        UCardEXPDateL.setBounds(480, 340, 78, 30);
+        UCardEXPDateL.setBounds(480, 490, 78, 30);
 
         jLabel14.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel14.setText("YOUR-NAME");
+        jLabel14.setText("Your name");
         jPanel7.add(jLabel14);
-        jLabel14.setBounds(80, 180, 72, 30);
+        jLabel14.setBounds(90, 180, 72, 30);
 
         jLabel15.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel15.setText("BANK CARD CCV NUMBER");
+        jLabel15.setText("Bank card CCV No.");
         jPanel7.add(jLabel15);
-        jLabel15.setBounds(10, 520, 147, 30);
+        jLabel15.setBounds(40, 520, 120, 30);
 
+        UCCVBankCardF.setBackground(new java.awt.Color(204, 204, 204));
+        UCCVBankCardF.setForeground(new java.awt.Color(0, 0, 0));
+        UCCVBankCardF.setToolTipText("your data here.");
         UCCVBankCardF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 UCCVBankCardFActionPerformed(evt);
@@ -521,6 +539,9 @@ public class Customers extends javax.swing.JFrame {
         jPanel7.add(UCCVBankCardF);
         UCCVBankCardF.setBounds(160, 520, 210, 30);
 
+        UserNameF.setBackground(new java.awt.Color(204, 204, 204));
+        UserNameF.setForeground(new java.awt.Color(0, 0, 0));
+        UserNameF.setToolTipText("your data here.");
         UserNameF.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 UserNameFKeyPressed(evt);
@@ -532,27 +553,51 @@ public class Customers extends javax.swing.JFrame {
         jPanel7.add(UserNameF);
         UserNameF.setBounds(160, 180, 210, 30);
 
-        jToggleButton2.setBackground(new java.awt.Color(51, 51, 51));
-        jToggleButton2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jToggleButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jToggleButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/testingpackage/DOT.gif"))); // NOI18N
-        jToggleButton2.setText("Dark-Mode");
-        jToggleButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jToggleButton2ActionPerformed(evt);
-            }
-        });
-        jPanel7.add(jToggleButton2);
-        jToggleButton2.setBounds(560, 20, 130, 40);
-
+        jLabel16.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel16.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(255, 255, 204));
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/testingpackage/DOT.gif"))); // NOI18N
         jLabel16.setText("Attention: Numbers only!");
         jPanel7.add(jLabel16);
-        jLabel16.setBounds(20, 10, 150, 30);
+        jLabel16.setBounds(20, 10, 180, 30);
         jLabel16.setVisible(false);
 
-        jLabel26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/testingpackage/wp9021900.jpg"))); // NOI18N
+        jButton16.setBackground(new java.awt.Color(204, 204, 204));
+        jButton16.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton16.setForeground(new java.awt.Color(0, 0, 0));
+        jButton16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/exit.png"))); // NOI18N
+        jButton16.setText("Un-register me ");
+        jButton16.setToolTipText("Button action to delete your data");
+        jButton16.setEnabled(false);
+        jButton16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton16ActionPerformed(evt);
+            }
+        });
+        jPanel7.add(jButton16);
+        jButton16.setBounds(180, 580, 160, 40);
+
+        jButton3.setBackground(new java.awt.Color(204, 204, 204));
+        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(0, 0, 0));
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/newImages/Payment.png"))); // NOI18N
+        jButton3.setText("Add Card");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        jPanel7.add(jButton3);
+        jButton3.setBounds(25, 580, 140, 40);
+
+        jLabel45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/testingpackage/logo.gif"))); // NOI18N
+        jLabel45.setToolTipText("Logo");
+        jPanel7.add(jLabel45);
+        jLabel45.setBounds(650, 0, 70, 80);
+
+        jLabel26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/testingpackage/wallpaper.jpg"))); // NOI18N
         jPanel7.add(jLabel26);
-        jLabel26.setBounds(0, 0, 750, 730);
+        jLabel26.setBounds(0, 0, 730, 730);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -562,180 +607,65 @@ public class Customers extends javax.swing.JFrame {
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 719, Short.MAX_VALUE)
+            .addComponent(jPanel7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 698, Short.MAX_VALUE)
         );
 
         jTabbedPane3.addTab("MANAGE", jPanel2);
 
-        jTextArea1.setEditable(false);
-        jTextArea1.setColumns(20);
-        jTextArea1.setLineWrap(true);
-        jTextArea1.setRows(5);
-        jTextArea1.setWrapStyleWord(true);
-        jTextArea1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jTextArea1MouseClicked(evt);
-            }
-        });
-        jScrollPane1.setViewportView(jTextArea1);
+        jPanel9.setLayout(null);
 
-        jLabel8.setText("ALL THE VEHICLES IN STORE ARE DISPLAYED HERE.");
+        jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 204));
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/testingpackage/DOT.gif"))); // NOI18N
+        jLabel11.setText("Digits only!");
+        jPanel9.add(jLabel11);
+        jLabel11.setBounds(210, 40, 90, 30);
+        jLabel11.setVisible(false);
 
-        LiveViewCBTN.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/edit.png"))); // NOI18N
-        LiveViewCBTN.setText("LIVE-VIEW");
-        LiveViewCBTN.addActionListener(new java.awt.event.ActionListener() {
+        jButton9.setBackground(new java.awt.Color(204, 204, 204));
+        jButton9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton9.setForeground(new java.awt.Color(0, 0, 0));
+        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/newImages/logout.png"))); // NOI18N
+        jButton9.setText("Exit");
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                LiveViewCBTNActionPerformed(evt);
+                jButton9ActionPerformed(evt);
             }
         });
+        jPanel9.add(jButton9);
+        jButton9.setBounds(630, 280, 90, 40);
 
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/w.png"))); // NOI18N
-        jButton4.setText("CLEAR");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        jButton8.setBackground(new java.awt.Color(204, 204, 204));
+        jButton8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton8.setForeground(new java.awt.Color(0, 0, 0));
+        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/newImages/erase-128.png"))); // NOI18N
+        jButton8.setText("Clear");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                jButton8ActionPerformed(evt);
             }
         });
+        jPanel9.add(jButton8);
+        jButton8.setBounds(520, 280, 100, 40);
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                        .addComponent(jLabel8)
-                        .addGap(0, 445, Short.MAX_VALUE))
-                    .addComponent(jScrollPane1)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                        .addComponent(jButton4)
-                        .addGap(18, 18, 18)
-                        .addComponent(LiveViewCBTN)))
-                .addContainerGap())
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(19, 19, 19)
-                .addComponent(jLabel8)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 469, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(LiveViewCBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(152, Short.MAX_VALUE))
-        );
-
-        jTabbedPane3.addTab("VIEW", jPanel3);
-
-        jTextArea2.setColumns(20);
-        jTextArea2.setLineWrap(true);
-        jTextArea2.setRows(5);
-        jTextArea2.setWrapStyleWord(true);
-        jScrollPane2.setViewportView(jTextArea2);
-
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/job.png"))); // NOI18N
-        jButton5.setText("SEND");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        jButton7.setBackground(new java.awt.Color(204, 204, 204));
+        jButton7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton7.setForeground(new java.awt.Color(0, 0, 0));
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/job.png"))); // NOI18N
+        jButton7.setText("Purchase");
+        jButton7.setEnabled(false);
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                jButton7ActionPerformed(evt);
             }
         });
-
-        jLabel20.setText("If you are having difficulties in the APP, our team will contact you to to put you back on the track!");
-
-        jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/edit.png"))); // NOI18N
-        jButton13.setText("Read FAQ");
-        jButton13.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton13ActionPerformed(evt);
-            }
-        });
-
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/exit.png"))); // NOI18N
-        jButton3.setText("Exit");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Fixed3.gif"))); // NOI18N
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jButton3)
-                        .addGap(19, 19, 19))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(0, 7, Short.MAX_VALUE)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel20)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                                .addComponent(jButton13)
-                                .addGap(18, 18, 18)
-                                .addComponent(jButton5))
-                            .addComponent(jScrollPane2)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addComponent(jLabel19, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(37, 37, 37)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton5, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton13, javax.swing.GroupLayout.Alignment.TRAILING))
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(170, 170, 170)
-                        .addComponent(jLabel19, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel20)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton3)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
-        );
-
-        jTabbedPane3.addTab("HELP", jPanel4);
-
-        VSID.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                VSIDKeyPressed(evt);
-            }
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                VSIDKeyTyped(evt);
-            }
-        });
-
-        jLabel10.setText("Vehicle-ID");
-
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/save.png"))); // NOI18N
-        jButton6.setText("Search-Vehicle");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
-            }
-        });
+        jPanel9.add(jButton7);
+        jButton7.setBounds(390, 280, 116, 39);
 
         jTextArea3.setEditable(false);
+        jTextArea3.setBackground(new java.awt.Color(204, 204, 204));
         jTextArea3.setColumns(20);
+        jTextArea3.setForeground(new java.awt.Color(0, 0, 0));
         jTextArea3.setRows(5);
         jTextArea3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -744,107 +674,176 @@ public class Customers extends javax.swing.JFrame {
         });
         jScrollPane3.setViewportView(jTextArea3);
 
-        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/job.png"))); // NOI18N
-        jButton7.setText("Purchase");
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
+        jPanel9.add(jScrollPane3);
+        jScrollPane3.setBounds(0, 90, 730, 160);
+
+        jButton6.setBackground(new java.awt.Color(204, 204, 204));
+        jButton6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton6.setForeground(new java.awt.Color(0, 0, 0));
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/newImages/Search.png"))); // NOI18N
+        jButton6.setText("Search-Vehicle");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
+                jButton6ActionPerformed(evt);
             }
         });
+        jPanel9.add(jButton6);
+        jButton6.setBounds(210, 280, 170, 40);
 
-        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/exit.png"))); // NOI18N
-        jButton8.setText("Clear");
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
+        jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel10.setText("Vehicle-ID");
+        jPanel9.add(jLabel10);
+        jLabel10.setBounds(20, 20, 59, 16);
+
+        VSID.setBackground(new java.awt.Color(204, 204, 204));
+        VSID.setForeground(new java.awt.Color(0, 0, 0));
+        VSID.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                VSIDKeyPressed(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                VSIDKeyTyped(evt);
             }
         });
+        jPanel9.add(VSID);
+        VSID.setBounds(20, 40, 190, 30);
 
-        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/folder.png"))); // NOI18N
-        jButton9.setText("Logout");
-        jButton9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton9ActionPerformed(evt);
-            }
-        });
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/testingpackage/car-shipping-image-1166.jpg"))); // NOI18N
+        jPanel9.add(jLabel17);
+        jLabel17.setBounds(-10, 360, 750, 370);
 
-        jLabel11.setText("Digits only!");
+        jLabel46.setIcon(new javax.swing.ImageIcon(getClass().getResource("/testingpackage/logo.gif"))); // NOI18N
+        jLabel46.setToolTipText("Logo");
+        jPanel9.add(jLabel46);
+        jLabel46.setBounds(650, 0, 70, 80);
 
-        jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMGAESRESOURCES/explode-truck.gif"))); // NOI18N
-
-        jLabel23.setText("Purchase your dream vehicle!");
+        jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/testingpackage/blackBG.jpg"))); // NOI18N
+        jPanel9.add(jLabel22);
+        jLabel22.setBounds(0, 0, 740, 660);
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane3)
-                            .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(VSID, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(jPanel5Layout.createSequentialGroup()
-                                        .addComponent(jLabel10)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jLabel11)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addContainerGap())
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGap(88, 88, 88)
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addComponent(jLabel22)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
-                                .addComponent(jButton9)
-                                .addGap(18, 18, 18)
-                                .addComponent(jButton8)
-                                .addGap(18, 18, 18)
-                                .addComponent(jButton7)
-                                .addContainerGap())))))
+            .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, 727, Short.MAX_VALUE)
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(43, 43, 43)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton6)
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel10)
-                            .addComponent(jLabel11))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(VSID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel23)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel22)
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGap(88, 88, 88)
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton7)
-                            .addComponent(jButton8)
-                            .addComponent(jButton9))))
-                .addContainerGap(117, Short.MAX_VALUE))
+            .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, 698, Short.MAX_VALUE)
         );
 
         jTabbedPane3.addTab("PURCHASE", jPanel5);
+
+        jTable1.setForeground(new java.awt.Color(0, 0, 0));
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "ID", "Name", "Capacity", "Color", "Price", "Condition", "Size", "Model"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Object.class, java.lang.String.class, java.lang.Object.class, java.lang.Object.class, java.lang.String.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane2.setViewportView(jTable1);
+
+        LiveViewCBTN1.setBackground(new java.awt.Color(204, 204, 204));
+        LiveViewCBTN1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        LiveViewCBTN1.setForeground(new java.awt.Color(0, 0, 0));
+        LiveViewCBTN1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/job.png"))); // NOI18N
+        LiveViewCBTN1.setText("Live-view");
+        LiveViewCBTN1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LiveViewCBTN1ActionPerformed(evt);
+            }
+        });
+
+        jButton5.setBackground(new java.awt.Color(204, 204, 204));
+        jButton5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton5.setForeground(new java.awt.Color(0, 0, 0));
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/newImages/erase-128.png"))); // NOI18N
+        jButton5.setText("Clear");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+
+        jLabel47.setIcon(new javax.swing.ImageIcon(getClass().getResource("/testingpackage/logo.gif"))); // NOI18N
+        jLabel47.setToolTipText("Logo");
+
+        jLabel18.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel18.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel18.setText("All the vehicles in the store will be displayed in here.");
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 330, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addComponent(jButton5)
+                                .addGap(18, 18, 18)
+                                .addComponent(LiveViewCBTN1)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel47, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 717, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(LiveViewCBTN1)
+                            .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel47))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 585, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        jTabbedPane3.addTab("VIEW", jPanel4);
+
+        jMenuBar1.setToolTipText("Menu to view data ");
 
         date.setText("DATE");
         jMenuBar1.add(date);
 
         time.setText("TIME");
         jMenuBar1.add(time);
+
+        LightMode.setText("Light-mode");
+        LightMode.setToolTipText("Clcik me to switch the mode");
+        LightMode.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                LightModeMouseClicked(evt);
+            }
+        });
+        jMenuBar1.add(LightMode);
 
         setJMenuBar(jMenuBar1);
 
@@ -854,13 +853,13 @@ public class Customers extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jTabbedPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 727, Short.MAX_VALUE))
+                .addComponent(jTabbedPane3))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jTabbedPane3)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jTabbedPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 729, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0))
         );
 
@@ -880,31 +879,11 @@ public class Customers extends javax.swing.JFrame {
         
     }                                        
 
-    private void LiveViewCBTNActionPerformed(java.awt.event.ActionEvent evt) {                                             
-
-        LiveViewCBTN.setText("Refresh");
-       
-        SQL.view ();
-        
-    }                                            
-
     private void UIDFMouseClicked(java.awt.event.MouseEvent evt) {                                  
        
         Customers.UIDF.setText(CustomerFirstFrame.UserFFIDF.getText());
         
     }                                 
-
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-       
-        SQL.HelpBTNForCustomers ();
-        
-    }                                        
-
-    private void jTextArea1MouseClicked(java.awt.event.MouseEvent evt) {                                        
-       
-        jTextArea1.setEditable(false);
-        
-    }                                       
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {                                         
        
@@ -913,7 +892,9 @@ public class Customers extends javax.swing.JFrame {
     }                                        
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        
+
+        VSID.setText(null);
+        jButton7.setEnabled(false);
         jTextArea3.setText(null);
         
     }                                        
@@ -936,26 +917,6 @@ public class Customers extends javax.swing.JFrame {
         
     }                                         
 
-    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-
-        this.dispose();
-        
-        int X = JOptionPane.showConfirmDialog(null, "Attention! You are going to delete your data from our DB\n"
-                + "Click you to confirm","DB-Response", JOptionPane.YES_NO_OPTION);
-        
-        if (X == 0) {
-            
-            SQL.deleteUser();
-            this.dispose();
-            
-        }
-        
-        else {
-            
-            Customers.main(null);
-        }
-    }                                         
-
     private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                               
 
         SQL.ToggleBTNForPassWord();
@@ -970,7 +931,9 @@ public class Customers extends javax.swing.JFrame {
     }                                        
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        
+
+        jButton7.setEnabled(false);
+        VSID.setEditable(false);
         CustomerPurchaseConfirmation.main(null);
         
     }                                        
@@ -1208,19 +1171,6 @@ public class Customers extends javax.swing.JFrame {
             
     }                                        
 
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        
-        VehicleSafety.main(null);
-        
-    }                                         
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        
-        jTextArea1.setText(null);
-        LiveViewCBTN.setText("Live-View");
-        
-    }                                        
-
     private void VSIDKeyPressed(java.awt.event.KeyEvent evt) {                                
         
         int lengthPIN = VSID.getText().length();
@@ -1241,17 +1191,18 @@ public class Customers extends javax.swing.JFrame {
         
             if (!Character.isDigit(c)) {
 
+                jLabel11.setVisible(true);
                 evt.consume();
 
             }
             
+            else {
+                
+                jLabel11.setVisible(false);
+                
+            }
+            
     }                             
-
-    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        
-        FQAForCustomers.main(null);
-        
-    }                                         
 
     private void UPhoneNoFActionPerformed(java.awt.event.ActionEvent evt) {                                          
       
@@ -1263,11 +1214,11 @@ public class Customers extends javax.swing.JFrame {
         
         int lengthPIN = UPhoneNoF.getText().length();
         
-        if (lengthPIN == 14 ) {
+        if (lengthPIN == 10 ) {
             
             UPhoneNoF.setText("");
            
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 14 digits");
+            JOptionPane.showMessageDialog(null,"You cannot enter more than 10 digits");
             
         }
         
@@ -1310,11 +1261,11 @@ public class Customers extends javax.swing.JFrame {
         
         int lengthPIN = UAddressF.getText().length();
         
-        if (lengthPIN == 30 ) {
+        if (lengthPIN == 10 ) {
             
             UAddressF.setText("");
            
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 30 digits");
+            JOptionPane.showMessageDialog(null,"You cannot enter more than 10 digits");
             
         }
     }                                    
@@ -1336,11 +1287,11 @@ public class Customers extends javax.swing.JFrame {
         
         int lengthPIN = UserNameF.getText().length();
         
-        if (lengthPIN == 14 ) {
+        if (lengthPIN == 10 ) {
             
             UserNameF.setText("");
            
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 14 Char");
+            JOptionPane.showMessageDialog(null,"You cannot enter more than 10 Char");
             
         }
         
@@ -1376,11 +1327,11 @@ public class Customers extends javax.swing.JFrame {
         
         int lengthPIN = UCardNOF.getText().length();
         
-        if (lengthPIN == 14 ) {
+        if (lengthPIN == 10 ) {
             
             UCardNOF.setText("");
            
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 14 digits");
+            JOptionPane.showMessageDialog(null,"You cannot enter more than 10 digits");
             
         }
         
@@ -1436,28 +1387,50 @@ public class Customers extends javax.swing.JFrame {
             
     }                                  
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    private boolean isLightMode = true;
+    
+    private void LightModeMouseClicked(java.awt.event.MouseEvent evt) {                                       
+
+        jLabel22.setVisible(!isLightMode);  
+        jLabel26.setVisible(!isLightMode);
+        //jLabel23.setVisible(!isLightMode);
         
+        //CustomerPurchaseConfirmation.jLabel11.setVisible(!isLightMode); 
+        
+        // note: will have to create an object to be able to toggle other labels in other frames 
+        
+        LightMode.setText(isLightMode ? "Dark-mode" : "Light-mode"); 
+        isLightMode = !isLightMode; 
+        
+    }                                      
+
+    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        
+        SQL.deleteUser();
+        JOptionPane.showMessageDialog(null, "Attention, you have been out of the system.");
         System.exit(0);
+        
+    }                                         
+
+    private void LiveViewCBTN1ActionPerformed(java.awt.event.ActionEvent evt) {                                              
+
+        LiveViewCBTN1.setText("Refresh?");
+        SQL.viewpanelVehicles();
+        
+    }                                             
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+
+        LiveViewCBTN1.setText("Live-view");
+        SQL.cleartable();
         
     }                                        
 
-    private void jToggleButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                               
-
-        if (jToggleButton2.isSelected() == true){
-
-            jLabel26.setVisible(false);
-            jToggleButton2.setText("DarkMode");
-
-        }
-
-        else if (jToggleButton2.isSelected() == false) {
-
-            jLabel26.setVisible(true);
-            jToggleButton2.setText("LightMode");
-
-        }
-    }                                              
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        
+        SQL.addCreditCard();
+        
+    }                                        
 
     /**
      * @param args the command line arguments
@@ -1496,7 +1469,8 @@ public class Customers extends javax.swing.JFrame {
 
     // Variables declaration - do not modify                     
     public static javax.swing.JTextField DayEXPDateUserF;
-    private javax.swing.JButton LiveViewCBTN;
+    private javax.swing.JMenu LightMode;
+    private javax.swing.JButton LiveViewCBTN1;
     public static javax.swing.JTextField MonthUserEXPDateF;
     public static javax.swing.JTextField UAddressF;
     public static javax.swing.JTextField UCCVBankCardF;
@@ -1516,19 +1490,15 @@ public class Customers extends javax.swing.JFrame {
     public static javax.swing.JTextField YearEXPDate;
     private javax.swing.JMenu date;
     private javax.swing.JButton jButton1;
-    public static javax.swing.JButton jButton10;
     public static javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
+    public static javax.swing.JButton jButton16;
     public static javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private static javax.swing.JButton jButton6;
-    private static javax.swing.JButton jButton7;
+    public static javax.swing.JButton jButton7;
     private static javax.swing.JButton jButton8;
     private static javax.swing.JButton jButton9;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
@@ -1536,38 +1506,37 @@ public class Customers extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
     public static javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
+    public static javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
-    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTabbedPane jTabbedPane3;
-    public static javax.swing.JTextArea jTextArea1;
-    public static javax.swing.JTextArea jTextArea2;
+    public static javax.swing.JTable jTable1;
     public static javax.swing.JTextArea jTextArea3;
     public static javax.swing.JToggleButton jToggleButton1;
-    private javax.swing.JToggleButton jToggleButton2;
     private javax.swing.JMenu time;
     // End of variables declaration                   
 }
