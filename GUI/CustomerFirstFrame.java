@@ -78,34 +78,41 @@ public class CustomerFirstFrame extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jButton2 = new javax.swing.JButton();
         UserFFIDF = new javax.swing.JTextField();
-        UPassWordFFF = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
+        jButton4 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
+        UPassWordFFF = new javax.swing.JPasswordField();
+        jLabel47 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
-        PasswordForget = new javax.swing.JMenu();
         date = new javax.swing.JMenu();
         time = new javax.swing.JMenu();
+        jMenu1 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Log-in");
 
         jPanel1.setLayout(null);
 
-        jButton2.setBackground(new java.awt.Color(51, 51, 51));
+        jButton2.setBackground(new java.awt.Color(204, 204, 204));
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
+        jButton2.setForeground(new java.awt.Color(0, 0, 0));
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/addemployee.png"))); // NOI18N
         jButton2.setText("Login");
+        jButton2.setToolTipText("Make sure to write the right info to login");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
         jPanel1.add(jButton2);
-        jButton2.setBounds(290, 440, 96, 50);
+        jButton2.setBounds(260, 440, 110, 40);
 
+        UserFFIDF.setBackground(new java.awt.Color(204, 204, 204));
+        UserFFIDF.setForeground(new java.awt.Color(0, 0, 0));
+        UserFFIDF.setToolTipText("your data here.");
         UserFFIDF.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 UserFFIDFMouseClicked(evt);
@@ -127,6 +134,63 @@ public class CustomerFirstFrame extends javax.swing.JFrame {
         jPanel1.add(UserFFIDF);
         UserFFIDF.setBounds(160, 302, 190, 30);
 
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("Enter User-ID");
+        jPanel1.add(jLabel1);
+        jLabel1.setBounds(60, 300, 100, 30);
+
+        jButton4.setBackground(new java.awt.Color(204, 204, 204));
+        jButton4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton4.setForeground(new java.awt.Color(0, 0, 0));
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/add.png"))); // NOI18N
+        jButton4.setText("Register");
+        jButton4.setToolTipText("Click me to register");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton4);
+        jButton4.setBounds(380, 440, 120, 39);
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("Enter PassWord");
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(40, 360, 120, 30);
+
+        jButton1.setBackground(new java.awt.Color(204, 204, 204));
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(0, 0, 0));
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/newImages/logout.png"))); // NOI18N
+        jButton1.setText("Exit");
+        jButton1.setToolTipText("Shut down ");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1);
+        jButton1.setBounds(30, 440, 100, 40);
+
+        jButton3.setBackground(new java.awt.Color(204, 204, 204));
+        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(0, 0, 0));
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/newImages/erase-128.png"))); // NOI18N
+        jButton3.setText("Clear");
+        jButton3.setToolTipText("Clear the fields above ");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton3);
+        jButton3.setBounds(140, 440, 110, 40);
+
+        UPassWordFFF.setBackground(new java.awt.Color(204, 204, 204));
+        UPassWordFFF.setForeground(new java.awt.Color(0, 0, 0));
+        UPassWordFFF.setToolTipText("your data here.");
         UPassWordFFF.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 UPassWordFFFKeyPressed(evt);
@@ -135,61 +199,30 @@ public class CustomerFirstFrame extends javax.swing.JFrame {
         jPanel1.add(UPassWordFFF);
         UPassWordFFF.setBounds(160, 360, 190, 30);
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Enter User-ID");
-        jPanel1.add(jLabel1);
-        jLabel1.setBounds(50, 300, 88, 30);
-
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Enter PassWord");
-        jPanel1.add(jLabel2);
-        jLabel2.setBounds(40, 360, 105, 30);
-
-        jButton1.setBackground(new java.awt.Color(51, 51, 51));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/exit.png"))); // NOI18N
-        jButton1.setText("Exit");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton1);
-        jButton1.setBounds(30, 440, 100, 50);
-
-        jButton3.setBackground(new java.awt.Color(51, 51, 51));
-        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/edit.png"))); // NOI18N
-        jButton3.setText("Clear");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton3);
-        jButton3.setBounds(140, 440, 140, 50);
+        jLabel47.setIcon(new javax.swing.ImageIcon(getClass().getResource("/testingpackage/logo.gif"))); // NOI18N
+        jLabel47.setToolTipText("Logo");
+        jPanel1.add(jLabel47);
+        jLabel47.setBounds(670, 10, 70, 80);
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/newImages/test.png"))); // NOI18N
         jPanel1.add(jLabel4);
         jLabel4.setBounds(0, 0, 760, 510);
 
-        PasswordForget.setText("FORGET-PASSWORD?");
-        PasswordForget.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PasswordForgetMouseClicked(evt);
-            }
-        });
-        jMenuBar1.add(PasswordForget);
+        jMenuBar1.setToolTipText("Menu to view data ");
 
         date.setText("DATE");
         jMenuBar1.add(date);
 
         time.setText("TIME");
         jMenuBar1.add(time);
+
+        jMenu1.setText("Can't login?");
+        jMenu1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jMenu1MouseClicked(evt);
+            }
+        });
+        jMenuBar1.add(jMenu1);
 
         setJMenuBar(jMenuBar1);
 
@@ -209,7 +242,19 @@ public class CustomerFirstFrame extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         
-        SQL.loginVerificationforCustomer();
+        if (CustomerFirstFrame.UserFFIDF.getText().isEmpty() == true || CustomerFirstFrame.UPassWordFFF.getText().isEmpty() == true) {
+            
+            JOptionPane.showMessageDialog(null, "Try to fill out all the fields please!"); 
+        }
+        
+        else {
+            
+            SQL.loginVerificationforCustomer();
+            this.setSize(0, 0);
+            this.setLocation(10000, 10000);
+            
+        }
+        
         
         /*
         String username = "admin";
@@ -227,11 +272,15 @@ public class CustomerFirstFrame extends javax.swing.JFrame {
     }                                        
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-       System.exit(0);
+       
+        System.exit(0);
+        
     }                                        
 
     private void UserFFIDFActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        
         JOptionPane.showMessageDialog(null, "Please, type numbers only!");
+        
     }                                         
 
     private void UserFFIDFKeyPressed(java.awt.event.KeyEvent evt) {                                     
@@ -266,20 +315,6 @@ public class CustomerFirstFrame extends javax.swing.JFrame {
         
     }                                      
 
-    private void UPassWordFFFKeyPressed(java.awt.event.KeyEvent evt) {                                        
-        
-        int lengthPIN = UPassWordFFF.getText().length();
-        
-        if (lengthPIN == 15 ) {
-            
-            UPassWordFFF.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 15 digits");
-            
-        }
-        
-    }                                       
-
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         
         UserFFIDF.setText(null);
@@ -287,28 +322,40 @@ public class CustomerFirstFrame extends javax.swing.JFrame {
         
     }                                        
 
-    private void PasswordForgetMouseClicked(java.awt.event.MouseEvent evt) {                                            
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+
+        this.dispose();
+        RegisterationForm.main(null);
+        
+    }                                        
+
+    private void UPassWordFFFKeyPressed(java.awt.event.KeyEvent evt) {                                        
+        
+        int lengthPIN = UPassWordFFF.getText().length();
+        
+        if (lengthPIN == 10 ) {
+            
+            UPassWordFFF.setText("");
+           
+            JOptionPane.showMessageDialog(null,"You cannot enter more than 10 digits");
+            
+        }
+        
+    }                                       
+
+    private void jMenu1MouseClicked(java.awt.event.MouseEvent evt) {                                    
         
         this.dispose();
+        NewJFrame.main(null);
         
-        int X = JOptionPane.showConfirmDialog(null, "If you do not remember your password contact us and we will solve the issue"
-                + "\nDo you want to contact us?","Open contact form", JOptionPane.YES_NO_OPTION);
-        
-        if (X == 0) {
-            
-            this.dispose();
-            NewJFrameHelp.main(null);
-            
-        }
-        
-        else {
-            
-            CustomerFirstFrame.main(null);
-            
-        }
-        
-    }                                           
+    }                                   
 
+    public void actionPerformed(ActionEvent e) {
+       
+        this.dispose();
+        
+    }
+    
     /**
      * @param args the command line arguments
      */
@@ -345,18 +392,20 @@ public class CustomerFirstFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify                     
-    public static javax.swing.JMenu PasswordForget;
-    public static javax.swing.JTextField UPassWordFFF;
+    public static javax.swing.JPasswordField UPassWordFFF;
     public static javax.swing.JTextField UserFFIDF;
-    private javax.swing.JMenu date;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JMenu time;
+    public static javax.swing.JMenu date;
+    public static javax.swing.JButton jButton1;
+    public static javax.swing.JButton jButton2;
+    public static javax.swing.JButton jButton3;
+    public static javax.swing.JButton jButton4;
+    public static javax.swing.JLabel jLabel1;
+    public static javax.swing.JLabel jLabel2;
+    public static javax.swing.JLabel jLabel4;
+    public static javax.swing.JLabel jLabel47;
+    public static javax.swing.JMenu jMenu1;
+    public static javax.swing.JMenuBar jMenuBar1;
+    public static javax.swing.JPanel jPanel1;
+    public static javax.swing.JMenu time;
     // End of variables declaration                   
 }
