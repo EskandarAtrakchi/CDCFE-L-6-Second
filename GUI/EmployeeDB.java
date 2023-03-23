@@ -79,77 +79,108 @@ public class EmployeeDB extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jLabel47 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         date = new javax.swing.JMenu();
         time = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Data creation frame ");
 
         jPanel1.setLayout(null);
 
+        jTextField1.setEditable(false);
+        jTextField1.setBackground(new java.awt.Color(204, 204, 204));
         jTextField1.setForeground(new java.awt.Color(0, 0, 0));
         jTextField1.setText("db.db");
+        jTextField1.setToolTipText("This is the name of the DB ");
+        jTextField1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTextField1MouseClicked(evt);
+            }
+        });
         jPanel1.add(jTextField1);
-        jTextField1.setBounds(30, 270, 460, 30);
+        jTextField1.setBounds(30, 270, 460, 40);
 
+        jTextField2.setEditable(false);
+        jTextField2.setBackground(new java.awt.Color(204, 204, 204));
         jTextField2.setForeground(new java.awt.Color(0, 0, 0));
         jTextField2.setText("C:/DB/");
+        jTextField2.setToolTipText("This is the location of the DB");
+        jTextField2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTextField2MouseClicked(evt);
+            }
+        });
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField2ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jTextField2);
-        jTextField2.setBounds(30, 160, 460, 30);
+        jTextField2.setBounds(30, 160, 460, 40);
 
         jLabel1.setBackground(new java.awt.Color(0, 0, 0));
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Please trpe down the location of the DB");
+        jLabel1.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel1.setText("Please type down the location of the DB");
         jPanel1.add(jLabel1);
         jLabel1.setBounds(30, 60, 470, 32);
 
         jLabel2.setBackground(new java.awt.Color(0, 0, 0));
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setForeground(new java.awt.Color(153, 153, 153));
         jLabel2.setText("Enter DB name ");
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(30, 220, 140, 25);
+        jLabel2.setBounds(30, 240, 140, 25);
 
         jLabel3.setBackground(new java.awt.Color(0, 0, 0));
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setForeground(new java.awt.Color(153, 153, 153));
         jLabel3.setText("Enter DB location");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(30, 110, 170, 25);
+        jLabel3.setBounds(30, 130, 170, 25);
 
-        jButton1.setBackground(new java.awt.Color(51, 51, 51));
+        jButton1.setBackground(new java.awt.Color(204, 204, 204));
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setForeground(new java.awt.Color(0, 0, 0));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/add.png"))); // NOI18N
-        jButton1.setText("Click me to create the DB and populat the tables");
+        jButton1.setText("Create the DB and populat the tables");
+        jButton1.setToolTipText("This is action BTN to start the program with the new DB");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
         jPanel1.add(jButton1);
-        jButton1.setBounds(10, 410, 400, 50);
+        jButton1.setBounds(420, 390, 340, 50);
 
-        jButton2.setBackground(new java.awt.Color(51, 51, 51));
+        jButton2.setBackground(new java.awt.Color(204, 204, 204));
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
+        jButton2.setForeground(new java.awt.Color(0, 0, 0));
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/folder.png"))); // NOI18N
-        jButton2.setText("Click me to start the program with the old DB");
+        jButton2.setText("Start the program with the old DB");
+        jButton2.setToolTipText("This is action BTN to start the program with the old DB");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
         jPanel1.add(jButton2);
-        jButton2.setBounds(420, 410, 400, 50);
+        jButton2.setBounds(30, 390, 340, 50);
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/testingpackage/Whats-in-a-database-1.jpg"))); // NOI18N
+        jLabel47.setIcon(new javax.swing.ImageIcon(getClass().getResource("/testingpackage/logo.gif"))); // NOI18N
+        jLabel47.setToolTipText("Logo");
+        jPanel1.add(jLabel47);
+        jLabel47.setBounds(710, 10, 70, 80);
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vparts/Future of Metadata - Blog.jpg"))); // NOI18N
+        jLabel5.setName(""); // NOI18N
         jPanel1.add(jLabel5);
-        jLabel5.setBounds(-10, 0, 840, 501);
+        jLabel5.setBounds(0, 0, 800, 500);
 
-        jMenuBar1.setBackground(new java.awt.Color(153, 153, 153));
+        jMenuBar1.setToolTipText("Menu to view data ");
 
         date.setText("DATE");
         jMenuBar1.add(date);
@@ -165,7 +196,7 @@ public class EmployeeDB extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 827, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 795, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0))
         );
         layout.setVerticalGroup(
@@ -222,6 +253,22 @@ public class EmployeeDB extends javax.swing.JFrame {
         
     }                                        
 
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {                                            
+        // TODO add your handling code here:
+    }                                           
+
+    private void jTextField2MouseClicked(java.awt.event.MouseEvent evt) {                                         
+        
+        JOptionPane.showMessageDialog(null, "We have chosen a location for you already just to reduced the possible errors!"); 
+        
+    }                                        
+
+    private void jTextField1MouseClicked(java.awt.event.MouseEvent evt) {                                         
+        
+        JOptionPane.showMessageDialog(null, "We have chosen a location for you already just to reduced the possible errors!"); 
+        
+    }                                        
+
     /**
      * @param args the command line arguments
      */
@@ -264,6 +311,7 @@ public class EmployeeDB extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
