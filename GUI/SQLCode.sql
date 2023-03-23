@@ -70,7 +70,7 @@ VALUES
 ('124162790', 888, '2025-08-08', '308'),
 ('987087655', 999, '2025-09-09', '309'),
 ('235375978', 100, '2025-10-10', '310');
- 
+
 CREATE TABLE INVOICE (
     WorkerID int NOT NULL,
     WorkerName  Varchar NOT NULL,
