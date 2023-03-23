@@ -4,7 +4,6 @@
  */
 package sql;
 
-import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
@@ -73,10 +72,11 @@ public class Employees extends javax.swing.JFrame {
     private void initComponents() {
 
         jTabbedPane1 = new javax.swing.JTabbedPane();
-        jPanel1 = new javax.swing.JPanel();
-        jButton10 = new javax.swing.JButton();
+        jPanel9 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         jLabel21 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel39 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         EUPassWordL = new javax.swing.JLabel();
         EUToggleBTNPassWord = new javax.swing.JToggleButton();
@@ -87,11 +87,8 @@ public class Employees extends javax.swing.JFrame {
         jLabel14 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
@@ -117,6 +114,8 @@ public class Employees extends javax.swing.JFrame {
         ECVIDAWCF = new javax.swing.JTextField();
         ECVL = new javax.swing.JLabel();
         jLabel36 = new javax.swing.JLabel();
+        jLabel38 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         PVIDFC = new javax.swing.JTextField();
@@ -134,31 +133,29 @@ public class Employees extends javax.swing.JFrame {
         jLabel22 = new javax.swing.JLabel();
         VCOLOR = new javax.swing.JTextField();
         jLabel23 = new javax.swing.JLabel();
-        jButton7 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
         jButton11 = new javax.swing.JButton();
         jButton12 = new javax.swing.JButton();
         jLabel37 = new javax.swing.JLabel();
+        jLabel40 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jLabel24 = new javax.swing.JLabel();
         VLiveViewCBTN = new javax.swing.JButton();
         jButton13 = new javax.swing.JButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        ECVTestArea = new javax.swing.JTextArea();
-        jPanel5 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        jButton20 = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
-        ECVTextAreaSQLE = new javax.swing.JTextArea();
+        VehiclesPanel = new javax.swing.JTable();
+        jLabel41 = new javax.swing.JLabel();
+        jPanel5 = new javax.swing.JPanel();
+        jLabel42 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         CLiveViewCBTN = new javax.swing.JButton();
         CLiveViewCBTN1212 = new javax.swing.JButton();
-        jPanel6 = new javax.swing.JPanel();
-        ESendBTN = new javax.swing.JButton();
+        jButton22 = new javax.swing.JButton();
         jScrollPane3 = new javax.swing.JScrollPane();
-        EHELPTextArea = new javax.swing.JTextArea();
-        jLabel25 = new javax.swing.JLabel();
-        EExitBTN = new javax.swing.JButton();
-        jLabel26 = new javax.swing.JLabel();
+        CustomerPanel = new javax.swing.JTable();
         jPanel7 = new javax.swing.JPanel();
         invoiceWorkerNameF = new javax.swing.JTextField();
         cardnumberInvoiceF = new javax.swing.JTextField();
@@ -176,150 +173,234 @@ public class Employees extends javax.swing.JFrame {
         month = new javax.swing.JTextField();
         day = new javax.swing.JTextField();
         jLabel33 = new javax.swing.JLabel();
-        createInvoice = new javax.swing.JButton();
-        jButton15 = new javax.swing.JButton();
-        jButton16 = new javax.swing.JButton();
         jButton17 = new javax.swing.JButton();
         jButton18 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
         jLabel35 = new javax.swing.JLabel();
+        jLabel43 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
-        jScrollPane4 = new javax.swing.JScrollPane();
-        INVOICESTextArea = new javax.swing.JTextArea();
+        jButton23 = new javax.swing.JButton();
         jLabel34 = new javax.swing.JLabel();
         jButton14 = new javax.swing.JButton();
         jButton19 = new javax.swing.JButton();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        InvoicesPanel = new javax.swing.JTable();
+        jLabel44 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        VehiclesPanel1 = new javax.swing.JTable();
+        VLiveViewCBTN1 = new javax.swing.JButton();
+        jButton15 = new javax.swing.JButton();
+        jButton21 = new javax.swing.JButton();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel45 = new javax.swing.JLabel();
+        jPanel6 = new javax.swing.JPanel();
+        TotalVehicles = new javax.swing.JTextField();
+        AverageVehiclesColor = new javax.swing.JTextField();
+        ViewStat = new javax.swing.JButton();
+        jLabel47 = new javax.swing.JLabel();
+        jLabel48 = new javax.swing.JLabel();
+        AverageVehiclesPrice = new javax.swing.JTextField();
+        SumVehiclesPrices = new javax.swing.JTextField();
+        jLabel49 = new javax.swing.JLabel();
+        jLabel50 = new javax.swing.JLabel();
+        jLabel46 = new javax.swing.JLabel();
+        jLabel52 = new javax.swing.JLabel();
+        jLabel51 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         date = new javax.swing.JMenu();
         time = new javax.swing.JMenu();
+        LightMode = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Employees frame ");
 
-        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/folder.png"))); // NOI18N
-        jButton10.setText("Important info");
-        jButton10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
-            }
-        });
+        jTabbedPane1.setToolTipText("Where you can edit, delete, search, and update the data fields");
 
+        jPanel9.setLayout(null);
+
+        jButton1.setBackground(new java.awt.Color(204, 204, 204));
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(0, 0, 0));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/newImages/logout.png"))); // NOI18N
-        jButton1.setText("Logout");
+        jButton1.setText("Exit");
+        jButton1.setToolTipText("Click me to Logout");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
+        jPanel9.add(jButton1);
+        jButton1.setBounds(620, 640, 90, 40);
 
         jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/men.png"))); // NOI18N
+        jPanel9.add(jLabel21);
+        jLabel21.setBounds(120, 110, 500, 342);
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(449, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addGap(18, 18, 18)
-                .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel1Layout.createSequentialGroup()
-                    .addGap(143, 143, 143)
-                    .addComponent(jLabel21)
-                    .addContainerGap(70, Short.MAX_VALUE)))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(528, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton10)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(27, 27, 27))
-            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel1Layout.createSequentialGroup()
-                    .addGap(86, 86, 86)
-                    .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 368, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(148, Short.MAX_VALUE)))
-        );
+        jLabel26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/testingpackage/logo.gif"))); // NOI18N
+        jLabel26.setToolTipText("Logo");
+        jPanel9.add(jLabel26);
+        jLabel26.setBounds(650, 0, 70, 80);
 
-        jTabbedPane1.addTab("LOG-OUT", jPanel1);
+        jLabel39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/testingpackage/world-map-lights-5i-2932x2932.jpg"))); // NOI18N
+        jPanel9.add(jLabel39);
+        jLabel39.setBounds(-50, 0, 780, 740);
 
+        jTabbedPane1.addTab("LOG-OUT", jPanel9);
+
+        jPanel2.setLayout(null);
+
+        EUPassWordL.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        EUPassWordL.setForeground(new java.awt.Color(153, 153, 153));
         EUPassWordL.setText("Password is hidden for security reasons");
+        EUPassWordL.setToolTipText("Password is hidden here ");
+        jPanel2.add(EUPassWordL);
+        EUPassWordL.setBounds(160, 30, 240, 30);
 
+        EUToggleBTNPassWord.setBackground(new java.awt.Color(204, 204, 204));
+        EUToggleBTNPassWord.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        EUToggleBTNPassWord.setForeground(new java.awt.Color(0, 0, 0));
         EUToggleBTNPassWord.setText("Show password?");
+        EUToggleBTNPassWord.setToolTipText("BTN to hide the password for security reasons ");
         EUToggleBTNPassWord.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 EUToggleBTNPassWordActionPerformed(evt);
             }
         });
+        jPanel2.add(EUToggleBTNPassWord);
+        EUToggleBTNPassWord.setBounds(20, 30, 130, 30);
 
+        jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(153, 153, 153));
         jLabel12.setText("Customer password");
+        jPanel2.add(jLabel12);
+        jLabel12.setBounds(40, 80, 120, 30);
 
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(153, 153, 153));
         jLabel2.setText("Customer-ID");
+        jPanel2.add(jLabel2);
+        jLabel2.setBounds(420, 80, 80, 30);
 
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(153, 153, 153));
         jLabel4.setText("Customer address");
+        jPanel2.add(jLabel4);
+        jLabel4.setBounds(50, 140, 110, 30);
 
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(153, 153, 153));
         jLabel6.setText("ERI-Code");
+        jPanel2.add(jLabel6);
+        jLabel6.setBounds(440, 210, 60, 30);
 
+        jLabel14.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(153, 153, 153));
         jLabel14.setText("Customer name");
+        jPanel2.add(jLabel14);
+        jLabel14.setBounds(410, 140, 100, 30);
 
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(153, 153, 153));
         jLabel3.setText("Customer-DOB");
+        jPanel2.add(jLabel3);
+        jLabel3.setBounds(410, 320, 90, 30);
 
+        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(153, 153, 153));
         jLabel9.setText("Customer phone number ");
+        jPanel2.add(jLabel9);
+        jLabel9.setBounds(10, 210, 150, 30);
 
-        jLabel17.setText("Digits in this format:");
-
-        jLabel16.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel16.setText("DETAILS");
-        jLabel16.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED), "CARD ", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(0, 0, 0))); // NOI18N
-
+        jLabel15.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(153, 153, 153));
         jLabel15.setText("Customer CCV number");
+        jPanel2.add(jLabel15);
+        jLabel15.setBounds(20, 410, 140, 30);
 
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(153, 153, 153));
         jLabel5.setText("Card EXP date");
+        jPanel2.add(jLabel5);
+        jLabel5.setBounds(420, 410, 90, 30);
 
-        jLabel18.setText("Digits in this format:");
-
+        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(153, 153, 153));
         jLabel7.setText("Customer card number");
+        jPanel2.add(jLabel7);
+        jLabel7.setBounds(20, 320, 140, 30);
 
+        jButton3.setBackground(new java.awt.Color(204, 204, 204));
+        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(0, 0, 0));
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/newImages/update icon.png"))); // NOI18N
         jButton3.setText("Up-date");
+        jButton3.setToolTipText("Button action to update");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
+        jPanel2.add(jButton3);
+        jButton3.setBounds(360, 540, 100, 50);
 
+        jButton4.setBackground(new java.awt.Color(204, 204, 204));
+        jButton4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton4.setForeground(new java.awt.Color(0, 0, 0));
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/exit.png"))); // NOI18N
         jButton4.setText("Delete");
+        jButton4.setToolTipText("Button action to delete");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
             }
         });
+        jPanel2.add(jButton4);
+        jButton4.setBounds(470, 540, 110, 50);
 
+        jButton5.setBackground(new java.awt.Color(204, 204, 204));
+        jButton5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton5.setForeground(new java.awt.Color(0, 0, 0));
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/newImages/Search.png"))); // NOI18N
         jButton5.setText("Search");
+        jButton5.setToolTipText("Button action to view");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
             }
         });
+        jPanel2.add(jButton5);
+        jButton5.setBounds(590, 540, 122, 50);
 
+        jButton6.setBackground(new java.awt.Color(204, 204, 204));
+        jButton6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton6.setForeground(new java.awt.Color(0, 0, 0));
         jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/edit.png"))); // NOI18N
         jButton6.setText("Clear");
+        jButton6.setToolTipText("Button action to clear");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton6ActionPerformed(evt);
             }
         });
+        jPanel2.add(jButton6);
+        jButton6.setBounds(120, 540, 100, 50);
 
+        EPassWordF.setBackground(new java.awt.Color(204, 204, 204));
+        EPassWordF.setForeground(new java.awt.Color(0, 0, 0));
+        EPassWordF.setToolTipText("your data here.");
         EPassWordF.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 EPassWordFKeyPressed(evt);
             }
         });
+        jPanel2.add(EPassWordF);
+        EPassWordF.setBounds(160, 80, 200, 30);
 
+        ECIDF.setBackground(new java.awt.Color(204, 204, 204));
+        ECIDF.setForeground(new java.awt.Color(0, 0, 0));
+        ECIDF.setToolTipText("your data here.");
         ECIDF.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 ECIDFKeyPressed(evt);
@@ -328,13 +409,23 @@ public class Employees extends javax.swing.JFrame {
                 ECIDFKeyTyped(evt);
             }
         });
+        jPanel2.add(ECIDF);
+        ECIDF.setBounds(510, 80, 200, 30);
 
+        ECAddressF.setBackground(new java.awt.Color(204, 204, 204));
+        ECAddressF.setForeground(new java.awt.Color(0, 0, 0));
+        ECAddressF.setToolTipText("your data here.");
         ECAddressF.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 ECAddressFKeyPressed(evt);
             }
         });
+        jPanel2.add(ECAddressF);
+        ECAddressF.setBounds(160, 140, 200, 30);
 
+        ECPhoneNOF.setBackground(new java.awt.Color(204, 204, 204));
+        ECPhoneNOF.setForeground(new java.awt.Color(0, 0, 0));
+        ECPhoneNOF.setToolTipText("your data here.");
         ECPhoneNOF.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 ECPhoneNOFKeyPressed(evt);
@@ -343,13 +434,23 @@ public class Employees extends javax.swing.JFrame {
                 ECPhoneNOFKeyTyped(evt);
             }
         });
+        jPanel2.add(ECPhoneNOF);
+        ECPhoneNOF.setBounds(160, 210, 200, 30);
 
+        ECERICodeF.setBackground(new java.awt.Color(204, 204, 204));
+        ECERICodeF.setForeground(new java.awt.Color(0, 0, 0));
+        ECERICodeF.setToolTipText("your data here.");
         ECERICodeF.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 ECERICodeFKeyPressed(evt);
             }
         });
+        jPanel2.add(ECERICodeF);
+        ECERICodeF.setBounds(510, 210, 200, 30);
 
+        ECYearDOB.setBackground(new java.awt.Color(204, 204, 204));
+        ECYearDOB.setForeground(new java.awt.Color(0, 0, 0));
+        ECYearDOB.setToolTipText("your data here.");
         ECYearDOB.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 ECYearDOBKeyPressed(evt);
@@ -358,7 +459,12 @@ public class Employees extends javax.swing.JFrame {
                 ECYearDOBKeyTyped(evt);
             }
         });
+        jPanel2.add(ECYearDOB);
+        ECYearDOB.setBounds(510, 320, 64, 30);
 
+        ECMonthDOB.setBackground(new java.awt.Color(204, 204, 204));
+        ECMonthDOB.setForeground(new java.awt.Color(0, 0, 0));
+        ECMonthDOB.setToolTipText("your data here.");
         ECMonthDOB.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 ECMonthDOBKeyPressed(evt);
@@ -367,7 +473,12 @@ public class Employees extends javax.swing.JFrame {
                 ECMonthDOBKeyTyped(evt);
             }
         });
+        jPanel2.add(ECMonthDOB);
+        ECMonthDOB.setBounds(580, 320, 64, 30);
 
+        ECDayDOB.setBackground(new java.awt.Color(204, 204, 204));
+        ECDayDOB.setForeground(new java.awt.Color(0, 0, 0));
+        ECDayDOB.setToolTipText("your data here.");
         ECDayDOB.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 ECDayDOBKeyPressed(evt);
@@ -376,7 +487,12 @@ public class Employees extends javax.swing.JFrame {
                 ECDayDOBKeyTyped(evt);
             }
         });
+        jPanel2.add(ECDayDOB);
+        ECDayDOB.setBounds(650, 320, 60, 30);
 
+        ECNameF.setBackground(new java.awt.Color(204, 204, 204));
+        ECNameF.setForeground(new java.awt.Color(0, 0, 0));
+        ECNameF.setToolTipText("your data here.");
         ECNameF.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 ECNameFKeyPressed(evt);
@@ -385,7 +501,12 @@ public class Employees extends javax.swing.JFrame {
                 ECNameFKeyTyped(evt);
             }
         });
+        jPanel2.add(ECNameF);
+        ECNameF.setBounds(510, 140, 200, 30);
 
+        EXPYearECF.setBackground(new java.awt.Color(204, 204, 204));
+        EXPYearECF.setForeground(new java.awt.Color(0, 0, 0));
+        EXPYearECF.setToolTipText("your data here.");
         EXPYearECF.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 EXPYearECFKeyPressed(evt);
@@ -394,7 +515,12 @@ public class Employees extends javax.swing.JFrame {
                 EXPYearECFKeyTyped(evt);
             }
         });
+        jPanel2.add(EXPYearECF);
+        EXPYearECF.setBounds(510, 410, 64, 30);
 
+        EXPMonthECF.setBackground(new java.awt.Color(204, 204, 204));
+        EXPMonthECF.setForeground(new java.awt.Color(0, 0, 0));
+        EXPMonthECF.setToolTipText("your data here.");
         EXPMonthECF.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 EXPMonthECFKeyPressed(evt);
@@ -403,7 +529,12 @@ public class Employees extends javax.swing.JFrame {
                 EXPMonthECFKeyTyped(evt);
             }
         });
+        jPanel2.add(EXPMonthECF);
+        EXPMonthECF.setBounds(580, 410, 64, 30);
 
+        EXPDayECF.setBackground(new java.awt.Color(204, 204, 204));
+        EXPDayECF.setForeground(new java.awt.Color(0, 0, 0));
+        EXPDayECF.setToolTipText("your data here.");
         EXPDayECF.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 EXPDayECFKeyPressed(evt);
@@ -412,7 +543,12 @@ public class Employees extends javax.swing.JFrame {
                 EXPDayECFKeyTyped(evt);
             }
         });
+        jPanel2.add(EXPDayECF);
+        EXPDayECF.setBounds(650, 410, 60, 30);
 
+        ECCCVNOF.setBackground(new java.awt.Color(204, 204, 204));
+        ECCCVNOF.setForeground(new java.awt.Color(0, 0, 0));
+        ECCCVNOF.setToolTipText("your data here.");
         ECCCVNOF.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 ECCCVNOFKeyPressed(evt);
@@ -421,7 +557,12 @@ public class Employees extends javax.swing.JFrame {
                 ECCCVNOFKeyTyped(evt);
             }
         });
+        jPanel2.add(ECCCVNOF);
+        ECCCVNOF.setBounds(160, 410, 210, 30);
 
+        ECCardNOF.setBackground(new java.awt.Color(204, 204, 204));
+        ECCardNOF.setForeground(new java.awt.Color(0, 0, 0));
+        ECCardNOF.setToolTipText("your data here.");
         ECCardNOF.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 ECCardNOFKeyPressed(evt);
@@ -430,19 +571,40 @@ public class Employees extends javax.swing.JFrame {
                 ECCardNOFKeyTyped(evt);
             }
         });
+        jPanel2.add(ECCardNOF);
+        ECCardNOF.setBounds(160, 320, 210, 30);
 
+        jButton2.setBackground(new java.awt.Color(204, 204, 204));
+        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(0, 0, 0));
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/addemployee.png"))); // NOI18N
         jButton2.setText("Register");
+        jButton2.setToolTipText("Button action to register");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
+        jPanel2.add(jButton2);
+        jButton2.setBounds(230, 540, 120, 50);
 
+        EUDOBFORMATL.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        EUDOBFORMATL.setForeground(new java.awt.Color(153, 153, 153));
         EUDOBFORMATL.setText("YYYY-MM-DD");
+        EUDOBFORMATL.setToolTipText("your data here.");
+        jPanel2.add(EUDOBFORMATL);
+        EUDOBFORMATL.setBounds(510, 290, 100, 30);
 
+        EUEXPFORMATL.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        EUEXPFORMATL.setForeground(new java.awt.Color(153, 153, 153));
         EUEXPFORMATL.setText("YYYY-MM-DD");
+        EUEXPFORMATL.setToolTipText("your data here.");
+        jPanel2.add(EUEXPFORMATL);
+        EUEXPFORMATL.setBounds(510, 380, 90, 30);
 
+        ECVIDAWCF.setBackground(new java.awt.Color(204, 204, 204));
+        ECVIDAWCF.setForeground(new java.awt.Color(0, 0, 0));
+        ECVIDAWCF.setToolTipText("your data here.");
         ECVIDAWCF.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 ECVIDAWCFKeyPressed(evt);
@@ -451,182 +613,45 @@ public class Employees extends javax.swing.JFrame {
                 ECVIDAWCFKeyTyped(evt);
             }
         });
+        jPanel2.add(ECVIDAWCF);
+        ECVIDAWCF.setBounds(510, 480, 200, 30);
 
+        ECVL.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        ECVL.setForeground(new java.awt.Color(153, 153, 153));
         ECVL.setText("Vehicle-ID associated with the customer");
+        jPanel2.add(ECVL);
+        ECVL.setBounds(270, 480, 240, 30);
 
+        jLabel36.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel36.setForeground(new java.awt.Color(255, 255, 204));
+        jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/testingpackage/DOT.gif"))); // NOI18N
         jLabel36.setText("Numbers only!");
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel15)
-                        .addGap(572, 584, Short.MAX_VALUE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(ECAddressF)
-                                    .addComponent(ECERICodeF)
-                                    .addComponent(ECNameF)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                                        .addComponent(jLabel36)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(EUToggleBTNPassWord, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jPanel2Layout.createSequentialGroup()
-                                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                                .addGap(154, 154, 154)
-                                                .addComponent(jLabel12))
-                                            .addComponent(jLabel14)
-                                            .addComponent(jLabel6)
-                                            .addComponent(jLabel4))
-                                        .addGap(0, 0, Short.MAX_VALUE)))
-                                .addGap(31, 31, 31)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(ECIDF)
-                                    .addComponent(EPassWordF)
-                                    .addComponent(ECPhoneNOF)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                                        .addGap(0, 0, Short.MAX_VALUE)
-                                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                                                .addComponent(jLabel3)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(jLabel17)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(EUDOBFORMATL))
-                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                                                .addComponent(ECYearDOB, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(18, 18, 18)
-                                                .addComponent(ECMonthDOB, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(18, 18, 18)
-                                                .addComponent(ECDayDOB, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                                                .addComponent(jLabel5)
-                                                .addGap(18, 18, 18)
-                                                .addComponent(jLabel18)
-                                                .addGap(22, 22, 22)
-                                                .addComponent(EUEXPFORMATL))
-                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(ECVIDAWCF, javax.swing.GroupLayout.PREFERRED_SIZE, 261, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGroup(jPanel2Layout.createSequentialGroup()
-                                                    .addComponent(EXPYearECF, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(EXPMonthECF, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(EXPDayECF, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                .addComponent(ECVL))))
-                                    .addGroup(jPanel2Layout.createSequentialGroup()
-                                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(EUPassWordL)
-                                            .addComponent(jLabel2)
-                                            .addComponent(jLabel9))
-                                        .addGap(0, 0, Short.MAX_VALUE))))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(ECCCVNOF, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 305, Short.MAX_VALUE)
-                                    .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel16, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(ECCardNOF, javax.swing.GroupLayout.Alignment.LEADING))
-                                .addGap(0, 396, Short.MAX_VALUE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(jButton6)
-                                .addGap(18, 18, 18)
-                                .addComponent(jButton2)
-                                .addGap(18, 18, 18)
-                                .addComponent(jButton5)
-                                .addGap(18, 18, 18)
-                                .addComponent(jButton4)
-                                .addGap(18, 18, 18)
-                                .addComponent(jButton3)))
-                        .addContainerGap())))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(EUPassWordL)
-                        .addComponent(EUToggleBTNPassWord))
-                    .addComponent(jLabel36, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel12)
-                    .addComponent(EPassWordF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(31, 31, 31)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel4))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ECIDF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ECAddressF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel6)
-                    .addComponent(jLabel9, javax.swing.GroupLayout.Alignment.TRAILING))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(ECPhoneNOF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel14)
-                            .addComponent(jLabel17)
-                            .addComponent(EUDOBFORMATL))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(ECYearDOB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ECMonthDOB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ECNameF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ECDayDOB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(ECERICodeF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(41, 41, 41)
-                .addComponent(jLabel16)
-                .addGap(31, 31, 31)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel15)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel18)
-                    .addComponent(EUEXPFORMATL))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(EXPYearECF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(EXPMonthECF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(EXPDayECF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ECCCVNOF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel7)
-                    .addComponent(ECVL))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ECCardNOF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ECVIDAWCF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(41, 41, 41))
-        );
-
+        jPanel2.add(jLabel36);
+        jLabel36.setBounds(100, 480, 120, 30);
         jLabel36.setVisible(false);
+
+        jLabel38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/testingpackage/logo.gif"))); // NOI18N
+        jLabel38.setToolTipText("Logo");
+        jPanel2.add(jLabel38);
+        jLabel38.setBounds(650, 0, 70, 80);
+
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/testingpackage/blackBG.jpg"))); // NOI18N
+        jPanel2.add(jLabel16);
+        jLabel16.setBounds(0, 0, 730, 730);
 
         jTabbedPane1.addTab("MANAGE-CUSTOMERS", jPanel2);
 
-        jLabel8.setText("VEHICLE-ID");
+        jPanel3.setLayout(null);
 
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel8.setText("VEHICLE-ID");
+        jPanel3.add(jLabel8);
+        jLabel8.setBounds(438, 52, 236, 30);
+
+        PVIDFC.setBackground(new java.awt.Color(204, 204, 204));
+        PVIDFC.setForeground(new java.awt.Color(0, 0, 0));
+        PVIDFC.setToolTipText("Vehicle data here.");
         PVIDFC.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 PVIDFCKeyPressed(evt);
@@ -635,9 +660,18 @@ public class Employees extends javax.swing.JFrame {
                 PVIDFCKeyTyped(evt);
             }
         });
+        jPanel3.add(PVIDFC);
+        PVIDFC.setBounds(438, 86, 236, 30);
 
+        jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(153, 153, 153));
         jLabel10.setText("VEHICLE-NAME");
+        jPanel3.add(jLabel10);
+        jLabel10.setBounds(438, 140, 236, 30);
 
+        VName.setBackground(new java.awt.Color(204, 204, 204));
+        VName.setForeground(new java.awt.Color(0, 0, 0));
+        VName.setToolTipText("Vehicle data here.");
         VName.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 VNameKeyPressed(evt);
@@ -646,9 +680,18 @@ public class Employees extends javax.swing.JFrame {
                 VNameKeyTyped(evt);
             }
         });
+        jPanel3.add(VName);
+        VName.setBounds(438, 174, 236, 30);
 
+        jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(153, 153, 153));
         jLabel11.setText("VEHICLE-PRICE");
+        jPanel3.add(jLabel11);
+        jLabel11.setBounds(438, 241, 236, 30);
 
+        VPrice.setBackground(new java.awt.Color(204, 204, 204));
+        VPrice.setForeground(new java.awt.Color(0, 0, 0));
+        VPrice.setToolTipText("Vehicle data here.");
         VPrice.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 VPriceKeyPressed(evt);
@@ -657,9 +700,18 @@ public class Employees extends javax.swing.JFrame {
                 VPriceKeyTyped(evt);
             }
         });
+        jPanel3.add(VPrice);
+        VPrice.setBounds(438, 275, 236, 30);
 
+        jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(153, 153, 153));
         jLabel13.setText("VEHICLE-SIZE");
+        jPanel3.add(jLabel13);
+        jLabel13.setBounds(438, 338, 236, 30);
 
+        VSize.setBackground(new java.awt.Color(204, 204, 204));
+        VSize.setForeground(new java.awt.Color(0, 0, 0));
+        VSize.setToolTipText("Vehicle data here.");
         VSize.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 VSizeKeyPressed(evt);
@@ -668,7 +720,12 @@ public class Employees extends javax.swing.JFrame {
                 VSizeKeyTyped(evt);
             }
         });
+        jPanel3.add(VSize);
+        VSize.setBounds(438, 372, 236, 30);
 
+        VYearModel.setBackground(new java.awt.Color(204, 204, 204));
+        VYearModel.setForeground(new java.awt.Color(0, 0, 0));
+        VYearModel.setToolTipText("Vehicle data here.");
         VYearModel.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 VYearModelKeyPressed(evt);
@@ -677,9 +734,18 @@ public class Employees extends javax.swing.JFrame {
                 VYearModelKeyTyped(evt);
             }
         });
+        jPanel3.add(VYearModel);
+        VYearModel.setBounds(49, 372, 225, 30);
 
+        jLabel19.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel19.setForeground(new java.awt.Color(153, 153, 153));
         jLabel19.setText("VEHICLE-YEARMODEL");
+        jPanel3.add(jLabel19);
+        jLabel19.setBounds(49, 338, 225, 30);
 
+        VCondition.setBackground(new java.awt.Color(204, 204, 204));
+        VCondition.setForeground(new java.awt.Color(0, 0, 0));
+        VCondition.setToolTipText("Vehicle data here.");
         VCondition.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 VConditionKeyPressed(evt);
@@ -688,9 +754,18 @@ public class Employees extends javax.swing.JFrame {
                 VConditionKeyTyped(evt);
             }
         });
+        jPanel3.add(VCondition);
+        VCondition.setBounds(49, 275, 225, 30);
 
+        jLabel20.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel20.setForeground(new java.awt.Color(153, 153, 153));
         jLabel20.setText("VEHICLE-CONDITION");
+        jPanel3.add(jLabel20);
+        jLabel20.setBounds(49, 241, 225, 30);
 
+        VCapacity.setBackground(new java.awt.Color(204, 204, 204));
+        VCapacity.setForeground(new java.awt.Color(0, 0, 0));
+        VCapacity.setToolTipText("Vehicle data here.");
         VCapacity.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 VCapacityKeyPressed(evt);
@@ -699,157 +774,114 @@ public class Employees extends javax.swing.JFrame {
                 VCapacityKeyTyped(evt);
             }
         });
+        jPanel3.add(VCapacity);
+        VCapacity.setBounds(49, 174, 225, 30);
 
+        jLabel22.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel22.setForeground(new java.awt.Color(153, 153, 153));
         jLabel22.setText("VEHICLE-CAPACITY");
+        jPanel3.add(jLabel22);
+        jLabel22.setBounds(49, 140, 225, 30);
 
+        VCOLOR.setBackground(new java.awt.Color(204, 204, 204));
+        VCOLOR.setForeground(new java.awt.Color(0, 0, 0));
+        VCOLOR.setToolTipText("Vehicle data here.");
         VCOLOR.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 VCOLORKeyPressed(evt);
             }
         });
+        jPanel3.add(VCOLOR);
+        VCOLOR.setBounds(49, 86, 225, 30);
 
+        jLabel23.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel23.setForeground(new java.awt.Color(153, 153, 153));
         jLabel23.setText("VEHICLE-COLOR");
+        jPanel3.add(jLabel23);
+        jLabel23.setBounds(49, 52, 225, 30);
 
-        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/newImages/update icon.png"))); // NOI18N
-        jButton7.setText("Update");
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
-            }
-        });
-
+        jButton8.setBackground(new java.awt.Color(204, 204, 204));
+        jButton8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton8.setForeground(new java.awt.Color(0, 0, 0));
         jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/add.png"))); // NOI18N
         jButton8.setText("Add");
+        jButton8.setToolTipText("Button action to add");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton8ActionPerformed(evt);
             }
         });
+        jPanel3.add(jButton8);
+        jButton8.setBounds(490, 510, 100, 47);
 
+        jButton9.setBackground(new java.awt.Color(204, 204, 204));
+        jButton9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton9.setForeground(new java.awt.Color(0, 0, 0));
         jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/exit.png"))); // NOI18N
         jButton9.setText("Delete");
+        jButton9.setToolTipText("Button action to delete");
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton9ActionPerformed(evt);
             }
         });
+        jPanel3.add(jButton9);
+        jButton9.setBounds(380, 510, 104, 47);
 
+        jButton11.setBackground(new java.awt.Color(204, 204, 204));
+        jButton11.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton11.setForeground(new java.awt.Color(0, 0, 0));
         jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/edit.png"))); // NOI18N
         jButton11.setText("Clear");
+        jButton11.setToolTipText("Button action to clear");
         jButton11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton11ActionPerformed(evt);
             }
         });
+        jPanel3.add(jButton11);
+        jButton11.setBounds(600, 510, 94, 47);
 
+        jButton12.setBackground(new java.awt.Color(204, 204, 204));
+        jButton12.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton12.setForeground(new java.awt.Color(0, 0, 0));
         jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/newImages/Search.png"))); // NOI18N
         jButton12.setText("Search");
+        jButton12.setToolTipText("Button action to view");
         jButton12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton12ActionPerformed(evt);
             }
         });
+        jPanel3.add(jButton12);
+        jButton12.setBounds(250, 510, 122, 47);
 
+        jLabel37.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel37.setForeground(new java.awt.Color(255, 255, 204));
+        jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/testingpackage/DOT.gif"))); // NOI18N
         jLabel37.setText("Numbers only!");
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton12)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton11)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton9)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton8)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton7))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(49, 49, 49)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(VCOLOR)
-                            .addComponent(VYearModel)
-                            .addComponent(VCondition)
-                            .addComponent(VCapacity)
-                            .addComponent(jLabel19, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel20, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel22, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 157, Short.MAX_VALUE)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(PVIDFC, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(VName, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(VPrice, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(VSize, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(46, 46, 46))
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel37)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel37, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel23)
-                    .addComponent(jLabel8))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(VCOLOR, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(PVIDFC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(32, 32, 32)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel10)
-                    .addComponent(jLabel22))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(VName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(VCapacity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(45, 45, 45)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel11)
-                    .addComponent(jLabel20))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(VPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(VCondition, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(41, 41, 41)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel13)
-                    .addComponent(jLabel19))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(VSize, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(VYearModel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 122, Short.MAX_VALUE)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(40, 40, 40))
-        );
-
+        jPanel3.add(jLabel37);
+        jLabel37.setBounds(580, 450, 120, 30);
         jLabel37.setVisible(false);
+
+        jLabel40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/testingpackage/logo.gif"))); // NOI18N
+        jLabel40.setToolTipText("Logo");
+        jPanel3.add(jLabel40);
+        jLabel40.setBounds(650, 0, 70, 80);
+
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/testingpackage/blackBG.jpg"))); // NOI18N
+        jPanel3.add(jLabel17);
+        jLabel17.setBounds(0, 0, 740, 730);
 
         jTabbedPane1.addTab("MANAGE-VEHICLES", jPanel3);
 
         jLabel24.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel24.setForeground(new java.awt.Color(153, 153, 153));
         jLabel24.setText("Vehicle displayer");
 
+        VLiveViewCBTN.setBackground(new java.awt.Color(204, 204, 204));
+        VLiveViewCBTN.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        VLiveViewCBTN.setForeground(new java.awt.Color(0, 0, 0));
         VLiveViewCBTN.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/folder.png"))); // NOI18N
         VLiveViewCBTN.setText("Live-view");
         VLiveViewCBTN.addActionListener(new java.awt.event.ActionListener() {
@@ -858,7 +890,10 @@ public class Employees extends javax.swing.JFrame {
             }
         });
 
-        jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/edit.png"))); // NOI18N
+        jButton13.setBackground(new java.awt.Color(204, 204, 204));
+        jButton13.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton13.setForeground(new java.awt.Color(0, 0, 0));
+        jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/newImages/erase-128.png"))); // NOI18N
         jButton13.setText("Clear");
         jButton13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -866,10 +901,45 @@ public class Employees extends javax.swing.JFrame {
             }
         });
 
-        ECVTestArea.setEditable(false);
-        ECVTestArea.setColumns(20);
-        ECVTestArea.setRows(5);
-        jScrollPane1.setViewportView(ECVTestArea);
+        jButton20.setBackground(new java.awt.Color(204, 204, 204));
+        jButton20.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton20.setForeground(new java.awt.Color(0, 0, 0));
+        jButton20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/newImages/logout.png"))); // NOI18N
+        jButton20.setText("Exit");
+        jButton20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton20ActionPerformed(evt);
+            }
+        });
+
+        VehiclesPanel.setForeground(new java.awt.Color(0, 0, 0));
+        VehiclesPanel.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "ID", "Name", "Capacity", "Color", "Price", "Condition", "Size", "Year Model "
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane2.setViewportView(VehiclesPanel);
+
+        jLabel41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/testingpackage/logo.gif"))); // NOI18N
+        jLabel41.setToolTipText("Logo");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -878,43 +948,55 @@ public class Employees extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 701, Short.MAX_VALUE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jLabel24)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(jButton20)
+                        .addGap(18, 18, 18)
                         .addComponent(jButton13)
                         .addGap(18, 18, 18)
-                        .addComponent(VLiveViewCBTN))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(jLabel24)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addComponent(VLiveViewCBTN)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 331, Short.MAX_VALUE)
+                .addComponent(jLabel41, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
+            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel4Layout.createSequentialGroup()
+                    .addGap(2, 2, 2)
+                    .addComponent(jScrollPane2)
+                    .addGap(3, 3, 3)))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel24)
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 472, Short.MAX_VALUE)
-                .addGap(81, 81, 81))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(19, 19, 19)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(VLiveViewCBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(VLiveViewCBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
+                    .addComponent(jButton20, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel24)
+                .addContainerGap(609, Short.MAX_VALUE))
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addComponent(jLabel41, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                    .addContainerGap(107, Short.MAX_VALUE)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 555, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(48, 48, 48)))
         );
 
         jTabbedPane1.addTab("VIEW-VEHICLES", jPanel4);
 
+        jLabel42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/testingpackage/logo.gif"))); // NOI18N
+        jLabel42.setToolTipText("Logo");
+
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(153, 153, 153));
         jLabel1.setText("Customers displayer");
 
-        ECVTextAreaSQLE.setEditable(false);
-        ECVTextAreaSQLE.setColumns(20);
-        ECVTextAreaSQLE.setRows(5);
-        jScrollPane2.setViewportView(ECVTextAreaSQLE);
-
+        CLiveViewCBTN.setBackground(new java.awt.Color(204, 204, 204));
+        CLiveViewCBTN.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        CLiveViewCBTN.setForeground(new java.awt.Color(0, 0, 0));
         CLiveViewCBTN.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/folder.png"))); // NOI18N
         CLiveViewCBTN.setText("Live-view");
         CLiveViewCBTN.addActionListener(new java.awt.event.ActionListener() {
@@ -923,13 +1005,53 @@ public class Employees extends javax.swing.JFrame {
             }
         });
 
-        CLiveViewCBTN1212.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/edit.png"))); // NOI18N
+        CLiveViewCBTN1212.setBackground(new java.awt.Color(204, 204, 204));
+        CLiveViewCBTN1212.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        CLiveViewCBTN1212.setForeground(new java.awt.Color(0, 0, 0));
+        CLiveViewCBTN1212.setIcon(new javax.swing.ImageIcon(getClass().getResource("/newImages/erase-128.png"))); // NOI18N
         CLiveViewCBTN1212.setText("Clear");
         CLiveViewCBTN1212.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CLiveViewCBTN1212ActionPerformed(evt);
             }
         });
+
+        jButton22.setBackground(new java.awt.Color(204, 204, 204));
+        jButton22.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton22.setForeground(new java.awt.Color(0, 0, 0));
+        jButton22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/newImages/logout.png"))); // NOI18N
+        jButton22.setText("Exit");
+        jButton22.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton22ActionPerformed(evt);
+            }
+        });
+
+        CustomerPanel.setForeground(new java.awt.Color(0, 0, 0));
+        CustomerPanel.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "User ID", "Password", "Date Of Birth", "Phone Number ", "Address", "Eri-Code", "Vehicle ID", "User Name "
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane3.setViewportView(CustomerPanel);
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -938,103 +1060,50 @@ public class Employees extends javax.swing.JFrame {
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 701, Short.MAX_VALUE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jLabel1)
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addComponent(jButton22)
+                        .addGap(18, 18, 18)
                         .addComponent(CLiveViewCBTN1212)
                         .addGap(18, 18, 18)
-                        .addComponent(CLiveViewCBTN))
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addComponent(CLiveViewCBTN)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 331, Short.MAX_VALUE)
+                .addComponent(jLabel42, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
+            .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel5Layout.createSequentialGroup()
+                    .addGap(2, 2, 2)
+                    .addComponent(jScrollPane3)
+                    .addGap(3, 3, 3)))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 497, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 11, Short.MAX_VALUE)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(CLiveViewCBTN1212, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(CLiveViewCBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel42, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(CLiveViewCBTN1212, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(CLiveViewCBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton22, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(604, Short.MAX_VALUE))
+            .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+                    .addContainerGap(120, Short.MAX_VALUE)
+                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 555, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(35, 35, 35)))
         );
 
         jTabbedPane1.addTab("VIEW-CUSTOMERS", jPanel5);
 
-        ESendBTN.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/job.png"))); // NOI18N
-        ESendBTN.setText("Send");
-        ESendBTN.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ESendBTNActionPerformed(evt);
-            }
-        });
+        jPanel7.setLayout(null);
 
-        EHELPTextArea.setColumns(20);
-        EHELPTextArea.setLineWrap(true);
-        EHELPTextArea.setRows(5);
-        EHELPTextArea.setWrapStyleWord(true);
-        jScrollPane3.setViewportView(EHELPTextArea);
-
-        jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Fixed3.gif"))); // NOI18N
-
-        EExitBTN.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/exit.png"))); // NOI18N
-        EExitBTN.setText("Exit");
-        EExitBTN.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                EExitBTNActionPerformed(evt);
-            }
-        });
-
-        jLabel26.setText("If you are having difficulties in the APP, our team will contact you to to put you back on the track!");
-
-        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
-        jPanel6.setLayout(jPanel6Layout);
-        jPanel6Layout.setHorizontalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(ESendBTN)
-                .addGap(18, 18, 18)
-                .addComponent(EExitBTN)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addComponent(jLabel25)
-                .addGap(0, 13, Short.MAX_VALUE))
-            .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel6Layout.createSequentialGroup()
-                    .addGap(1, 1, 1)
-                    .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jScrollPane3)
-                        .addGroup(jPanel6Layout.createSequentialGroup()
-                            .addComponent(jLabel26)
-                            .addGap(0, 192, Short.MAX_VALUE)))
-                    .addContainerGap()))
-        );
-        jPanel6Layout.setVerticalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGap(19, 19, 19)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(EExitBTN)
-                    .addComponent(ESendBTN))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 271, Short.MAX_VALUE)
-                .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(73, 73, 73))
-            .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel6Layout.createSequentialGroup()
-                    .addGap(77, 77, 77)
-                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(18, 18, 18)
-                    .addComponent(jLabel26)
-                    .addContainerGap(280, Short.MAX_VALUE)))
-        );
-
-        jTabbedPane1.addTab("HELP", jPanel6);
-
+        invoiceWorkerNameF.setBackground(new java.awt.Color(204, 204, 204));
+        invoiceWorkerNameF.setForeground(new java.awt.Color(0, 0, 0));
+        invoiceWorkerNameF.setToolTipText("Invoice data here.");
         invoiceWorkerNameF.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 invoiceWorkerNameFKeyPressed(evt);
@@ -1043,7 +1112,12 @@ public class Employees extends javax.swing.JFrame {
                 invoiceWorkerNameFKeyTyped(evt);
             }
         });
+        jPanel7.add(invoiceWorkerNameF);
+        invoiceWorkerNameF.setBounds(40, 90, 263, 30);
 
+        cardnumberInvoiceF.setBackground(new java.awt.Color(204, 204, 204));
+        cardnumberInvoiceF.setForeground(new java.awt.Color(0, 0, 0));
+        cardnumberInvoiceF.setToolTipText("Invoice data here.");
         cardnumberInvoiceF.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 cardnumberInvoiceFKeyPressed(evt);
@@ -1052,11 +1126,24 @@ public class Employees extends javax.swing.JFrame {
                 cardnumberInvoiceFKeyTyped(evt);
             }
         });
+        jPanel7.add(cardnumberInvoiceF);
+        cardnumberInvoiceF.setBounds(400, 90, 268, 30);
 
+        jLabel27.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel27.setForeground(new java.awt.Color(153, 153, 153));
         jLabel27.setText("card number");
+        jPanel7.add(jLabel27);
+        jLabel27.setBounds(400, 60, 80, 30);
 
+        jLabel28.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel28.setForeground(new java.awt.Color(153, 153, 153));
         jLabel28.setText("WorkerID");
+        jPanel7.add(jLabel28);
+        jLabel28.setBounds(40, 60, 60, 30);
 
+        UserIDInvoiceF.setBackground(new java.awt.Color(204, 204, 204));
+        UserIDInvoiceF.setForeground(new java.awt.Color(0, 0, 0));
+        UserIDInvoiceF.setToolTipText("Invoice data here.");
         UserIDInvoiceF.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 UserIDInvoiceFKeyPressed(evt);
@@ -1065,11 +1152,24 @@ public class Employees extends javax.swing.JFrame {
                 UserIDInvoiceFKeyTyped(evt);
             }
         });
+        jPanel7.add(UserIDInvoiceF);
+        UserIDInvoiceF.setBounds(400, 200, 268, 30);
 
+        jLabel29.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel29.setForeground(new java.awt.Color(153, 153, 153));
         jLabel29.setText("UserID");
+        jPanel7.add(jLabel29);
+        jLabel29.setBounds(400, 170, 43, 30);
 
+        jLabel30.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel30.setForeground(new java.awt.Color(153, 153, 153));
         jLabel30.setText("VehicleID");
+        jPanel7.add(jLabel30);
+        jLabel30.setBounds(400, 270, 71, 30);
 
+        VIDInvoiceF.setBackground(new java.awt.Color(204, 204, 204));
+        VIDInvoiceF.setForeground(new java.awt.Color(0, 0, 0));
+        VIDInvoiceF.setToolTipText("Invoice data here.");
         VIDInvoiceF.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 VIDInvoiceFKeyPressed(evt);
@@ -1078,7 +1178,12 @@ public class Employees extends javax.swing.JFrame {
                 VIDInvoiceFKeyTyped(evt);
             }
         });
+        jPanel7.add(VIDInvoiceF);
+        VIDInvoiceF.setBounds(400, 300, 268, 30);
 
+        WorkerNameInvoiceF.setBackground(new java.awt.Color(204, 204, 204));
+        WorkerNameInvoiceF.setForeground(new java.awt.Color(0, 0, 0));
+        WorkerNameInvoiceF.setToolTipText("Invoice data here.");
         WorkerNameInvoiceF.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 WorkerNameInvoiceFKeyPressed(evt);
@@ -1087,11 +1192,24 @@ public class Employees extends javax.swing.JFrame {
                 WorkerNameInvoiceFKeyTyped(evt);
             }
         });
+        jPanel7.add(WorkerNameInvoiceF);
+        WorkerNameInvoiceF.setBounds(40, 200, 263, 30);
 
+        jLabel31.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel31.setForeground(new java.awt.Color(153, 153, 153));
         jLabel31.setText("Worker name");
+        jPanel7.add(jLabel31);
+        jLabel31.setBounds(40, 170, 93, 30);
 
+        jLabel32.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel32.setForeground(new java.awt.Color(153, 153, 153));
         jLabel32.setText("InvoiceID");
+        jPanel7.add(jLabel32);
+        jLabel32.setBounds(40, 270, 71, 30);
 
+        InvoiceIDF.setBackground(new java.awt.Color(204, 204, 204));
+        InvoiceIDF.setForeground(new java.awt.Color(0, 0, 0));
+        InvoiceIDF.setToolTipText("Invoice data here.");
         InvoiceIDF.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 InvoiceIDFKeyPressed(evt);
@@ -1100,7 +1218,12 @@ public class Employees extends javax.swing.JFrame {
                 InvoiceIDFKeyTyped(evt);
             }
         });
+        jPanel7.add(InvoiceIDF);
+        InvoiceIDF.setBounds(40, 300, 263, 30);
 
+        year.setBackground(new java.awt.Color(204, 204, 204));
+        year.setForeground(new java.awt.Color(0, 0, 0));
+        year.setToolTipText("Invoice data here.");
         year.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 yearKeyPressed(evt);
@@ -1109,7 +1232,12 @@ public class Employees extends javax.swing.JFrame {
                 yearKeyTyped(evt);
             }
         });
+        jPanel7.add(year);
+        year.setBounds(400, 390, 100, 30);
 
+        month.setBackground(new java.awt.Color(204, 204, 204));
+        month.setForeground(new java.awt.Color(0, 0, 0));
+        month.setToolTipText("Invoice data here.");
         month.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 monthKeyPressed(evt);
@@ -1118,7 +1246,12 @@ public class Employees extends javax.swing.JFrame {
                 monthKeyTyped(evt);
             }
         });
+        jPanel7.add(month);
+        month.setBounds(510, 390, 80, 30);
 
+        day.setBackground(new java.awt.Color(204, 204, 204));
+        day.setForeground(new java.awt.Color(0, 0, 0));
+        day.setToolTipText("Invoice data here.");
         day.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 dayKeyPressed(evt);
@@ -1127,163 +1260,93 @@ public class Employees extends javax.swing.JFrame {
                 dayKeyTyped(evt);
             }
         });
+        jPanel7.add(day);
+        day.setBounds(600, 390, 71, 30);
 
+        jLabel33.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel33.setForeground(new java.awt.Color(153, 153, 153));
         jLabel33.setText("Invoice date ");
+        jPanel7.add(jLabel33);
+        jLabel33.setBounds(400, 360, 80, 30);
 
-        createInvoice.setIcon(new javax.swing.ImageIcon(getClass().getResource("/newImages/Allowance.png"))); // NOI18N
-        createInvoice.setText("Add");
-        createInvoice.setEnabled(false);
-        createInvoice.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                createInvoiceActionPerformed(evt);
-            }
-        });
-
-        jButton15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/exit.png"))); // NOI18N
-        jButton15.setText("Delete");
-        jButton15.setEnabled(false);
-        jButton15.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton15ActionPerformed(evt);
-            }
-        });
-
-        jButton16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/newImages/update icon.png"))); // NOI18N
-        jButton16.setText("update");
-        jButton16.setEnabled(false);
-        jButton16.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton16ActionPerformed(evt);
-            }
-        });
-
+        jButton17.setBackground(new java.awt.Color(204, 204, 204));
+        jButton17.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton17.setForeground(new java.awt.Color(0, 0, 0));
         jButton17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/newImages/Search.png"))); // NOI18N
         jButton17.setText("Search");
+        jButton17.setToolTipText("Button action to view");
         jButton17.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton17ActionPerformed(evt);
             }
         });
+        jPanel7.add(jButton17);
+        jButton17.setBounds(430, 490, 130, 50);
 
-        jButton18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/edit.png"))); // NOI18N
+        jButton18.setBackground(new java.awt.Color(204, 204, 204));
+        jButton18.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton18.setForeground(new java.awt.Color(0, 0, 0));
+        jButton18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/newImages/erase-128.png"))); // NOI18N
         jButton18.setText("Clear");
+        jButton18.setToolTipText("Button action to clear");
         jButton18.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton18ActionPerformed(evt);
             }
         });
+        jPanel7.add(jButton18);
+        jButton18.setBounds(320, 490, 100, 50);
 
+        jButton7.setBackground(new java.awt.Color(204, 204, 204));
+        jButton7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton7.setForeground(new java.awt.Color(0, 0, 0));
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/newImages/Allowance.png"))); // NOI18N
+        jButton7.setText("Create");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+        jPanel7.add(jButton7);
+        jButton7.setBounds(570, 490, 130, 50);
+
+        jLabel35.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel35.setForeground(new java.awt.Color(255, 255, 204));
+        jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/testingpackage/DOT.gif"))); // NOI18N
         jLabel35.setText("Numbers only!");
-
-        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
-        jPanel7.setLayout(jPanel7Layout);
-        jPanel7Layout.setHorizontalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(invoiceWorkerNameF, javax.swing.GroupLayout.DEFAULT_SIZE, 263, Short.MAX_VALUE)
-                            .addComponent(jLabel28)
-                            .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel32, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(InvoiceIDF)
-                            .addComponent(WorkerNameInvoiceF))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(cardnumberInvoiceF, javax.swing.GroupLayout.DEFAULT_SIZE, 268, Short.MAX_VALUE)
-                            .addComponent(jLabel30, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel27)
-                            .addComponent(UserIDInvoiceF)
-                            .addComponent(VIDInvoiceF)))
-                    .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jButton18)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton17)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton16)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton15)
-                        .addGap(18, 18, 18)
-                        .addComponent(createInvoice))
-                    .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addGap(434, 434, 434)
-                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel33)
-                            .addGroup(jPanel7Layout.createSequentialGroup()
-                                .addComponent(year, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(month, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(day, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 2, Short.MAX_VALUE)))
-                .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel35)
-                .addGap(317, 317, 317))
-        );
-        jPanel7Layout.setVerticalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel7Layout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addComponent(jLabel35, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel27)
-                    .addComponent(jLabel28))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(invoiceWorkerNameF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cardnumberInvoiceF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel29)
-                    .addComponent(jLabel31))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(UserIDInvoiceF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(WorkerNameInvoiceF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel30)
-                    .addComponent(jLabel32))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(VIDInvoiceF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(InvoiceIDF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(101, 101, 101)
-                .addComponent(jLabel33)
-                .addGap(18, 18, 18)
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(year, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(month, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(day, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(57, 57, 57)
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(createInvoice, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton15, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton16, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton17, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton18, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(86, Short.MAX_VALUE))
-        );
-
+        jPanel7.add(jLabel35);
+        jLabel35.setBounds(190, 500, 120, 30);
         jLabel35.setVisible(false);
+
+        jLabel43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/testingpackage/logo.gif"))); // NOI18N
+        jLabel43.setToolTipText("Logo");
+        jPanel7.add(jLabel43);
+        jLabel43.setBounds(650, 0, 70, 80);
+
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/testingpackage/blackBG.jpg"))); // NOI18N
+        jPanel7.add(jLabel18);
+        jLabel18.setBounds(-10, 0, 740, 720);
 
         jTabbedPane1.addTab("MANAGE-INVOICES", jPanel7);
 
-        INVOICESTextArea.setEditable(false);
-        INVOICESTextArea.setColumns(20);
-        INVOICESTextArea.setRows(5);
-        jScrollPane4.setViewportView(INVOICESTextArea);
+        jButton23.setBackground(new java.awt.Color(204, 204, 204));
+        jButton23.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton23.setForeground(new java.awt.Color(0, 0, 0));
+        jButton23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/newImages/logout.png"))); // NOI18N
+        jButton23.setText("Exit");
+        jButton23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton23ActionPerformed(evt);
+            }
+        });
 
         jLabel34.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel34.setForeground(new java.awt.Color(153, 153, 153));
         jLabel34.setText("Invoives displayer");
 
+        jButton14.setBackground(new java.awt.Color(204, 204, 204));
+        jButton14.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton14.setForeground(new java.awt.Color(0, 0, 0));
         jButton14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/folder.png"))); // NOI18N
         jButton14.setText("Live-view");
         jButton14.addActionListener(new java.awt.event.ActionListener() {
@@ -1292,13 +1355,45 @@ public class Employees extends javax.swing.JFrame {
             }
         });
 
-        jButton19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/edit.png"))); // NOI18N
+        jButton19.setBackground(new java.awt.Color(204, 204, 204));
+        jButton19.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton19.setForeground(new java.awt.Color(0, 0, 0));
+        jButton19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/newImages/erase-128.png"))); // NOI18N
         jButton19.setText("Clear");
         jButton19.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton19ActionPerformed(evt);
             }
         });
+
+        InvoicesPanel.setForeground(new java.awt.Color(0, 0, 0));
+        InvoicesPanel.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Worker ID", "Worker Name ", "Invoice ID", "Inoice Date ", "Vehicle ID", "User ID", "User Card Number "
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane4.setViewportView(InvoicesPanel);
+
+        jLabel44.setIcon(new javax.swing.ImageIcon(getClass().getResource("/testingpackage/logo.gif"))); // NOI18N
+        jLabel44.setToolTipText("Logo");
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
@@ -1307,32 +1402,246 @@ public class Employees extends javax.swing.JFrame {
             .addGroup(jPanel8Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 701, Short.MAX_VALUE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jLabel34)
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addComponent(jButton23)
+                        .addGap(18, 18, 18)
                         .addComponent(jButton19)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton14))
-                    .addGroup(jPanel8Layout.createSequentialGroup()
-                        .addComponent(jLabel34)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addComponent(jButton14)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 331, Short.MAX_VALUE)
+                .addComponent(jLabel44, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
+            .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel8Layout.createSequentialGroup()
+                    .addGap(2, 2, 2)
+                    .addComponent(jScrollPane4)
+                    .addGap(3, 3, 3)))
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel8Layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(jLabel34)
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 484, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton14)
-                    .addComponent(jButton19))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap()
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addComponent(jLabel44, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addGap(0, 6, Short.MAX_VALUE)
+                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jButton14)
+                            .addComponent(jButton19, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton23, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel34)))
+                .addContainerGap(616, Short.MAX_VALUE))
+            .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
+                    .addContainerGap(100, Short.MAX_VALUE)
+                    .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 555, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(55, 55, 55)))
         );
 
         jTabbedPane1.addTab("VIEW-INVOICES", jPanel8);
+
+        VehiclesPanel1.setForeground(new java.awt.Color(0, 0, 0));
+        VehiclesPanel1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Card EXP date", "Card CCV Number", "Card Number", "ID"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane5.setViewportView(VehiclesPanel1);
+
+        VLiveViewCBTN1.setBackground(new java.awt.Color(204, 204, 204));
+        VLiveViewCBTN1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        VLiveViewCBTN1.setForeground(new java.awt.Color(0, 0, 0));
+        VLiveViewCBTN1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/folder.png"))); // NOI18N
+        VLiveViewCBTN1.setText("Live-view");
+        VLiveViewCBTN1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                VLiveViewCBTN1ActionPerformed(evt);
+            }
+        });
+
+        jButton15.setBackground(new java.awt.Color(204, 204, 204));
+        jButton15.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton15.setForeground(new java.awt.Color(0, 0, 0));
+        jButton15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/newImages/erase-128.png"))); // NOI18N
+        jButton15.setText("Clear");
+        jButton15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton15ActionPerformed(evt);
+            }
+        });
+
+        jButton21.setBackground(new java.awt.Color(204, 204, 204));
+        jButton21.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton21.setForeground(new java.awt.Color(0, 0, 0));
+        jButton21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/newImages/logout.png"))); // NOI18N
+        jButton21.setText("Exit");
+        jButton21.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton21ActionPerformed(evt);
+            }
+        });
+
+        jLabel25.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel25.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel25.setText("Vehicle displayer");
+
+        jLabel45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/testingpackage/logo.gif"))); // NOI18N
+        jLabel45.setToolTipText("Logo");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel25)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jButton21)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton15)
+                        .addGap(18, 18, 18)
+                        .addComponent(VLiveViewCBTN1)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 331, Short.MAX_VALUE)
+                .addComponent(jLabel45, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGap(2, 2, 2)
+                    .addComponent(jScrollPane5)
+                    .addGap(3, 3, 3)))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(15, 15, 15)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(VLiveViewCBTN1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton15, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton21, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel25))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel45, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(613, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                    .addContainerGap(97, Short.MAX_VALUE)
+                    .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 554, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(59, 59, 59)))
+        );
+
+        jTabbedPane1.addTab("VIEW BANK DETAILS ", jPanel1);
+
+        jPanel6.setLayout(null);
+
+        TotalVehicles.setEditable(false);
+        TotalVehicles.setBackground(new java.awt.Color(204, 204, 204));
+        TotalVehicles.setForeground(new java.awt.Color(0, 0, 0));
+        TotalVehicles.setToolTipText("Statistics field for Employee reports ");
+        jPanel6.add(TotalVehicles);
+        TotalVehicles.setBounds(139, 450, 578, 40);
+
+        AverageVehiclesColor.setEditable(false);
+        AverageVehiclesColor.setBackground(new java.awt.Color(204, 204, 204));
+        AverageVehiclesColor.setForeground(new java.awt.Color(0, 0, 0));
+        AverageVehiclesColor.setToolTipText("The color is in hexidecimals system #XXXXXX");
+        jPanel6.add(AverageVehiclesColor);
+        AverageVehiclesColor.setBounds(139, 344, 578, 40);
+
+        ViewStat.setBackground(new java.awt.Color(204, 204, 204));
+        ViewStat.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        ViewStat.setForeground(new java.awt.Color(0, 0, 0));
+        ViewStat.setText("View statistics");
+        ViewStat.setToolTipText("Action BTN to getReports();");
+        ViewStat.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ViewStatActionPerformed(evt);
+            }
+        });
+        jPanel6.add(ViewStat);
+        ViewStat.setBounds(571, 579, 128, 41);
+
+        jLabel47.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel47.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel47.setText("Most common color");
+        jPanel6.add(jLabel47);
+        jLabel47.setBounds(22, 332, 111, 52);
+
+        jLabel48.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel48.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel48.setText("Total Vehicles");
+        jPanel6.add(jLabel48);
+        jLabel48.setBounds(56, 444, 77, 46);
+
+        AverageVehiclesPrice.setEditable(false);
+        AverageVehiclesPrice.setBackground(new java.awt.Color(204, 204, 204));
+        AverageVehiclesPrice.setForeground(new java.awt.Color(0, 0, 0));
+        AverageVehiclesPrice.setToolTipText("Statistics field for Employee reports ");
+        jPanel6.add(AverageVehiclesPrice);
+        AverageVehiclesPrice.setBounds(139, 137, 578, 40);
+
+        SumVehiclesPrices.setEditable(false);
+        SumVehiclesPrices.setBackground(new java.awt.Color(204, 204, 204));
+        SumVehiclesPrices.setForeground(new java.awt.Color(0, 0, 0));
+        SumVehiclesPrices.setToolTipText("Statistics field for Employee reports ");
+        jPanel6.add(SumVehiclesPrices);
+        SumVehiclesPrices.setBounds(139, 243, 578, 40);
+
+        jLabel49.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel49.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel49.setText("Sum Vehicles Prices");
+        jPanel6.add(jLabel49);
+        jLabel49.setBounds(23, 237, 110, 46);
+
+        jLabel50.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel50.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel50.setText("Average Vehicles Price");
+        jPanel6.add(jLabel50);
+        jLabel50.setBounds(6, 125, 127, 52);
+
+        jLabel46.setIcon(new javax.swing.ImageIcon(getClass().getResource("/testingpackage/logo.gif"))); // NOI18N
+        jLabel46.setToolTipText("Logo");
+        jPanel6.add(jLabel46);
+        jLabel46.setBounds(647, 8, 70, 80);
+
+        jLabel52.setIcon(new javax.swing.ImageIcon(getClass().getResource("/testingpackage/gif.gif"))); // NOI18N
+        jLabel52.setToolTipText("The data is always up-to-date");
+        jPanel6.add(jLabel52);
+        jLabel52.setBounds(20, 200, 700, 640);
+
+        jLabel51.setIcon(new javax.swing.ImageIcon(getClass().getResource("/testingpackage/blackBG.jpg"))); // NOI18N
+        jPanel6.add(jLabel51);
+        jLabel51.setBounds(0, 0, 730, 720);
+
+        jTabbedPane1.addTab("REPORTS", jPanel6);
+
+        jMenuBar1.setToolTipText("Menu to view data ");
 
         date.setText("DATE");
         jMenuBar1.add(date);
@@ -1340,1136 +1649,1169 @@ public class Employees extends javax.swing.JFrame {
         time.setText("TIME");
         jMenuBar1.add(time);
 
+        LightMode.setText("Light-mode");
+        LightMode.setToolTipText("Clcik me to switch the mode");
+        LightMode.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                LightModeMouseClicked(evt);
+            }
+        });
+        jMenuBar1.add(LightMode);
+
         setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 725, Short.MAX_VALUE)
+            .addGap(0, 723, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(jTabbedPane1)
-                    .addContainerGap()))
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.Alignment.TRAILING))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 675, Short.MAX_VALUE)
+            .addGap(0, 777, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addContainerGap()
-                    .addComponent(jTabbedPane1)
-                    .addContainerGap()))
+                    .addComponent(jTabbedPane1)))
         );
 
         pack();
     }// </editor-fold>                        
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    private boolean isLightMode = true;
+    
+    private void LightModeMouseClicked(java.awt.event.MouseEvent evt) {                                       
+
+        jLabel52.setVisible(!isLightMode);
+        jLabel51.setVisible(!isLightMode);
+        jLabel16.setVisible(!isLightMode);
+        jLabel18.setVisible(!isLightMode);
+        jLabel17.setVisible(!isLightMode);
+   
+        // note: will have to create an object to be able to toggle other labels in other frames
+
+        LightMode.setText(isLightMode ? "Dark-mode" : "Light-mode");
+        isLightMode = !isLightMode;
         
+    }                                      
+
+    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {                                          
+
+        Employees.jButton14.setText("Live-view");
+        SQLE.cleartableInvoices();
+
+    }                                         
+
+    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {                                          
+
+        Employees.jButton14.setText("Refresh?");
+        SQLE.viewpanelInvoices() ;
+
+    }                                         
+
+    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {                                          
+
+        SQLE.clearInvoiceFields();
+
+    }                                         
+
+    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {                                          
+
+        SQLE.searchInvoice();
+
+    }                                         
+
+    private void dayKeyTyped(java.awt.event.KeyEvent evt) {                             
+
+        char c = evt.getKeyChar();
+
+        if (!Character.isDigit(c)) {
+
+            jLabel35.setVisible(true);
+            evt.consume();
+
+        }
+
+        else {
+
+            jLabel35.setVisible(false);
+
+        }
+
+    }                            
+
+    private void dayKeyPressed(java.awt.event.KeyEvent evt) {                               
+
+        int lengthPIN = day.getText().length();
+
+        if (lengthPIN == 2 ) {
+
+            day.setText("");
+
+            JOptionPane.showMessageDialog(null,"You cannot enter more than 2 digits");
+
+        }
+
+    }                              
+
+    private void monthKeyTyped(java.awt.event.KeyEvent evt) {                               
+
+        char c = evt.getKeyChar();
+
+        if (!Character.isDigit(c)) {
+
+            jLabel35.setVisible(true);
+            evt.consume();
+
+        }
+
+        else {
+
+            jLabel35.setVisible(false);
+
+        }
+
+    }                              
+
+    private void monthKeyPressed(java.awt.event.KeyEvent evt) {                                 
+
+        int lengthPIN = month.getText().length();
+
+        if (lengthPIN == 2 ) {
+
+            month.setText("");
+
+            JOptionPane.showMessageDialog(null,"You cannot enter more than 2 digits");
+
+        }
+
+    }                                
+
+    private void yearKeyTyped(java.awt.event.KeyEvent evt) {                              
+
+        char c = evt.getKeyChar();
+
+        if (!Character.isDigit(c)) {
+
+            jLabel35.setVisible(true);
+            evt.consume();
+
+        }
+
+        else {
+
+            jLabel35.setVisible(false);
+
+        }
+
+    }                             
+
+    private void yearKeyPressed(java.awt.event.KeyEvent evt) {                                
+
+        int lengthPIN = year.getText().length();
+
+        if (lengthPIN == 4 ) {
+
+            year.setText("");
+
+            JOptionPane.showMessageDialog(null,"You cannot enter more than 4 digits");
+
+        }
+
+    }                               
+
+    private void InvoiceIDFKeyTyped(java.awt.event.KeyEvent evt) {                                    
+
+        char c = evt.getKeyChar();
+
+        if (!Character.isDigit(c)) {
+
+            jLabel35.setVisible(true);
+            evt.consume();
+
+        }
+
+        else {
+
+            jLabel35.setVisible(false);
+
+        }
+
+    }                                   
+
+    private void InvoiceIDFKeyPressed(java.awt.event.KeyEvent evt) {                                      
+
+        int lengthPIN = InvoiceIDF.getText().length();
+
+        if (lengthPIN == 4 ) {
+
+            InvoiceIDF.setText("");
+
+            JOptionPane.showMessageDialog(null,"You cannot enter more than 4 digits");
+
+        }
+
+    }                                     
+
+    private void WorkerNameInvoiceFKeyTyped(java.awt.event.KeyEvent evt) {                                            
+
+        char c = evt.getKeyChar();
+
+        if (Character.isDigit(c)) {
+
+            evt.consume();
+
+        }
+
+    }                                           
+
+    private void WorkerNameInvoiceFKeyPressed(java.awt.event.KeyEvent evt) {                                              
+
+        int lengthPIN = WorkerNameInvoiceF.getText().length();
+
+        if (lengthPIN == 10 ) {
+
+            WorkerNameInvoiceF.setText("");
+
+            JOptionPane.showMessageDialog(null,"You cannot enter more than 10 char");
+
+        }
+
+    }                                             
+
+    private void VIDInvoiceFKeyTyped(java.awt.event.KeyEvent evt) {                                     
+
+        char c = evt.getKeyChar();
+
+        if (!Character.isDigit(c)) {
+
+            jLabel35.setVisible(true);
+            evt.consume();
+
+        }
+
+        else {
+
+            jLabel35.setVisible(false);
+
+        }
+
+    }                                    
+
+    private void VIDInvoiceFKeyPressed(java.awt.event.KeyEvent evt) {                                       
+
+        int lengthPIN = VIDInvoiceF.getText().length();
+
+        if (lengthPIN == 4 ) {
+
+            VIDInvoiceF.setText("");
+
+            JOptionPane.showMessageDialog(null,"You cannot enter more than 4 digits");
+
+        }
+
+    }                                      
+
+    private void UserIDInvoiceFKeyTyped(java.awt.event.KeyEvent evt) {                                        
+
+        char c = evt.getKeyChar();
+
+        if (!Character.isDigit(c)) {
+
+            jLabel35.setVisible(true);
+            evt.consume();
+
+        }
+
+        else {
+
+            jLabel35.setVisible(false);
+
+        }
+
+    }                                       
+
+    private void UserIDInvoiceFKeyPressed(java.awt.event.KeyEvent evt) {                                          
+
+        int lengthPIN = UserIDInvoiceF.getText().length();
+
+        if (lengthPIN == 4 ) {
+
+            UserIDInvoiceF.setText("");
+
+            JOptionPane.showMessageDialog(null,"You cannot enter more than 4 digits");
+
+        }
+
+    }                                         
+
+    private void cardnumberInvoiceFKeyTyped(java.awt.event.KeyEvent evt) {                                            
+
+        char c = evt.getKeyChar();
+
+        if (!Character.isDigit(c)) {
+
+            jLabel35.setVisible(true);
+            evt.consume();
+
+        }
+
+        else {
+
+            jLabel35.setVisible(false);
+
+        }
+
+    }                                           
+
+    private void cardnumberInvoiceFKeyPressed(java.awt.event.KeyEvent evt) {                                              
+
+        int lengthPIN = cardnumberInvoiceF.getText().length();
+
+        if (lengthPIN == 10 ) {
+
+            cardnumberInvoiceF.setText("");
+
+            JOptionPane.showMessageDialog(null,"You cannot enter more than 10 digits");
+
+        }
+
+    }                                             
+
+    private void invoiceWorkerNameFKeyTyped(java.awt.event.KeyEvent evt) {                                            
+
+        char c = evt.getKeyChar();
+
+        if (!Character.isDigit(c)) {
+
+            jLabel35.setVisible(true);
+            evt.consume();
+
+        }
+
+        else {
+
+            jLabel35.setVisible(false);
+
+        }
+
+    }                                           
+
+    private void invoiceWorkerNameFKeyPressed(java.awt.event.KeyEvent evt) {                                              
+
+        int lengthPIN = invoiceWorkerNameF.getText().length();
+
+        if (lengthPIN == 4 ) {
+
+            invoiceWorkerNameF.setText("");
+
+            JOptionPane.showMessageDialog(null,"You cannot enter more than 4 digits");
+
+        }
+
+    }                                             
+
+    private void CLiveViewCBTN1212ActionPerformed(java.awt.event.ActionEvent evt) {                                                  
+
+        SQLE.cleartableCustomers();
+        CLiveViewCBTN.setText("Live-view");
+
+    }                                                 
+
+    private void CLiveViewCBTNActionPerformed(java.awt.event.ActionEvent evt) {                                              
+
+        CLiveViewCBTN.setText("Refresh?");
+        SQLE.viewpanelCustomers();
+
+    }                                             
+
+    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {                                          
+
+        SQLE.cleartableVehicles();
+        VLiveViewCBTN.setText("Live-view");
+
+    }                                         
+
+    private void VLiveViewCBTNActionPerformed(java.awt.event.ActionEvent evt) {                                              
+
+        VLiveViewCBTN.setText("Refresh");
+        SQLE.viewpanelVehicles();
+
+    }                                             
+
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {                                          
+
+        SQLE.viewVehicleforEdit();
+        
+    }                                         
+
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {                                          
+
+        SQLE.ClearVFieldsForEmployees();
+
+    }                                         
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+
+        SQLE.deleteVehiclesForEmployees();
+
+    }                                        
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+
+        SQLE.AddNewVehicleForEmployees();
+
+    }                                        
+
+    private void VCOLORKeyPressed(java.awt.event.KeyEvent evt) {                                  
+
+        int lengthPIN = VCOLOR.getText().length();
+
+        if (lengthPIN == 10 ) {
+
+            VCOLOR.setText("");
+
+            JOptionPane.showMessageDialog(null,"You cannot enter more than 10 char");
+
+        }
+
+    }                                 
+
+    private void VCapacityKeyTyped(java.awt.event.KeyEvent evt) {                                   
+
+        char c = evt.getKeyChar();
+
+        if (!Character.isDigit(c)) {
+
+            jLabel37.setVisible(true);
+            evt.consume();
+
+        }
+
+        else {
+
+            jLabel37.setVisible(false);
+
+        }
+    }                                  
+
+    private void VCapacityKeyPressed(java.awt.event.KeyEvent evt) {                                     
+
+        int lengthPIN = VCapacity.getText().length();
+
+        if (lengthPIN == 4 ) {
+
+            VCapacity.setText("");
+
+            JOptionPane.showMessageDialog(null,"You cannot enter more than 4 digits");
+
+        }
+
+    }                                    
+
+    private void VConditionKeyTyped(java.awt.event.KeyEvent evt) {                                    
+
+        char c = evt.getKeyChar();
+
+        if (Character.isDigit(c)) {
+
+            evt.consume();
+
+        }
+
+    }                                   
+
+    private void VConditionKeyPressed(java.awt.event.KeyEvent evt) {                                      
+
+        int lengthPIN = VCondition.getText().length();
+
+        if (lengthPIN == 10 ) {
+
+            VCondition.setText("");
+
+            JOptionPane.showMessageDialog(null,"You cannot enter more than 10 char");
+
+        }
+
+    }                                     
+
+    private void VYearModelKeyTyped(java.awt.event.KeyEvent evt) {                                    
+
+        char c = evt.getKeyChar();
+
+        if (!Character.isDigit(c)) {
+
+            jLabel37.setVisible(true);
+            evt.consume();
+
+        }
+
+        else {
+
+            jLabel37.setVisible(false);
+
+        }
+
+    }                                   
+
+    private void VYearModelKeyPressed(java.awt.event.KeyEvent evt) {                                      
+
+        int lengthPIN = VYearModel.getText().length();
+
+        if (lengthPIN == 4 ) {
+
+            VYearModel.setText("");
+
+            JOptionPane.showMessageDialog(null,"You cannot enter more than 4 digits");
+
+        }
+
+    }                                     
+
+    private void VSizeKeyTyped(java.awt.event.KeyEvent evt) {                               
+
+        char c = evt.getKeyChar();
+
+        if (Character.isDigit(c)) {
+
+            evt.consume();
+
+        }
+
+    }                              
+
+    private void VSizeKeyPressed(java.awt.event.KeyEvent evt) {                                 
+
+        int lengthPIN = VSize.getText().length();
+
+        if (lengthPIN == 10 ) {
+
+            VSize.setText("");
+
+            JOptionPane.showMessageDialog(null,"You cannot enter more than 10 char");
+
+        }
+
+    }                                
+
+    private void VPriceKeyTyped(java.awt.event.KeyEvent evt) {                                
+
+        char c = evt.getKeyChar();
+
+        if (!Character.isDigit(c)) {
+
+            jLabel37.setVisible(true);
+            evt.consume();
+
+        }
+
+        else {
+
+            jLabel37.setVisible(false);
+
+        }
+
+    }                               
+
+    private void VPriceKeyPressed(java.awt.event.KeyEvent evt) {                                  
+
+        int lengthPIN = VPrice.getText().length();
+
+        if (lengthPIN == 8 ) {
+
+            VPrice.setText("");
+
+            JOptionPane.showMessageDialog(null,"You cannot enter more than 8 digits");
+
+        }
+
+    }                                 
+
+    private void VNameKeyTyped(java.awt.event.KeyEvent evt) {                               
+
+        char c = evt.getKeyChar();
+
+        if (Character.isDigit(c)) {
+
+            evt.consume();
+
+        }
+
+    }                              
+
+    private void VNameKeyPressed(java.awt.event.KeyEvent evt) {                                 
+
+        int lengthPIN = VName.getText().length();
+
+        if (lengthPIN == 10 ) {
+
+            VName.setText("");
+
+            JOptionPane.showMessageDialog(null,"You cannot enter more than 10 char");
+
+        }
+
+    }                                
+
+    private void PVIDFCKeyTyped(java.awt.event.KeyEvent evt) {                                
+
+        char c = evt.getKeyChar();
+
+        if (!Character.isDigit(c)) {
+
+            jLabel37.setVisible(true);
+            evt.consume();
+
+        }
+
+        else {
+
+            jLabel37.setVisible(false);
+
+        }
+
+    }                               
+
+    private void PVIDFCKeyPressed(java.awt.event.KeyEvent evt) {                                  
+
+        int lengthPIN = PVIDFC.getText().length();
+
+        if (lengthPIN == 4 ) {
+
+            PVIDFC.setText("");
+
+            JOptionPane.showMessageDialog(null,"You cannot enter more than 4 digits");
+
+        }
+
+    }                                 
+
+    private void ECVIDAWCFKeyTyped(java.awt.event.KeyEvent evt) {                                   
+
+        char c = evt.getKeyChar();
+
+        if (!Character.isDigit(c)) {
+
+            jLabel36.setVisible(true);
+            evt.consume();
+
+        }
+
+        else {
+
+            jLabel36.setVisible(false);
+
+        }
+
+    }                                  
+
+    private void ECVIDAWCFKeyPressed(java.awt.event.KeyEvent evt) {                                     
+
+        int lengthPIN = ECVIDAWCF.getText().length();
+
+        if (lengthPIN == 4 ) {
+
+            ECVIDAWCF.setText("");
+
+            JOptionPane.showMessageDialog(null,"You cannot enter more than 4 digits");
+
+        }
+
+    }                                    
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+
+        SQLE.addUser();
+
+    }                                        
+
+    private void ECCardNOFKeyTyped(java.awt.event.KeyEvent evt) {                                   
+
+        char c = evt.getKeyChar();
+
+        if (!Character.isDigit(c)) {
+
+            jLabel36.setVisible(true);
+            evt.consume();
+
+        }
+
+        else {
+
+            jLabel36.setVisible(false);
+
+        }
+
+    }                                  
+
+    private void ECCardNOFKeyPressed(java.awt.event.KeyEvent evt) {                                     
+
+        int lengthPIN = ECCardNOF.getText().length();
+
+        if (lengthPIN == 14 ) {
+
+            ECCardNOF.setText("");
+
+            JOptionPane.showMessageDialog(null,"You cannot enter more than 14 digits");
+
+        }
+
+    }                                    
+
+    private void ECCCVNOFKeyTyped(java.awt.event.KeyEvent evt) {                                  
+
+        char c = evt.getKeyChar();
+
+        if (!Character.isDigit(c)) {
+
+            jLabel36.setVisible(true);
+            evt.consume();
+
+        }
+
+        else {
+
+            jLabel36.setVisible(false);
+
+        }
+
+    }                                 
+
+    private void ECCCVNOFKeyPressed(java.awt.event.KeyEvent evt) {                                    
+
+        int lengthPIN = ECCCVNOF.getText().length();
+
+        if (lengthPIN == 3 ) {
+
+            ECCCVNOF.setText("");
+
+            JOptionPane.showMessageDialog(null,"You cannot enter more than 3 digits");
+
+        }
+
+    }                                   
+
+    private void EXPDayECFKeyTyped(java.awt.event.KeyEvent evt) {                                   
+
+        char c = evt.getKeyChar();
+
+        if (!Character.isDigit(c)) {
+
+            jLabel36.setVisible(true);
+            evt.consume();
+
+        }
+
+        else {
+
+            jLabel36.setVisible(false);
+
+        }
+
+    }                                  
+
+    private void EXPDayECFKeyPressed(java.awt.event.KeyEvent evt) {                                     
+
+        int lengthPIN = EXPDayECF.getText().length();
+
+        if (lengthPIN == 2 ) {
+
+            EXPDayECF.setText("");
+
+            JOptionPane.showMessageDialog(null,"You cannot enter more than 2 digits");
+
+        }
+
+    }                                    
+
+    private void EXPMonthECFKeyTyped(java.awt.event.KeyEvent evt) {                                     
+
+        char c = evt.getKeyChar();
+
+        if (!Character.isDigit(c)) {
+
+            jLabel36.setVisible(true);
+            evt.consume();
+
+        }
+
+        else {
+
+            jLabel36.setVisible(false);
+
+        }
+
+    }                                    
+
+    private void EXPMonthECFKeyPressed(java.awt.event.KeyEvent evt) {                                       
+
+        int lengthPIN = EXPMonthECF.getText().length();
+
+        if (lengthPIN == 2 ) {
+
+            EXPMonthECF.setText("");
+
+            JOptionPane.showMessageDialog(null,"You cannot enter more than 2 digits");
+
+        }
+
+    }                                      
+
+    private void EXPYearECFKeyTyped(java.awt.event.KeyEvent evt) {                                    
+
+        char c = evt.getKeyChar();
+
+        if (!Character.isDigit(c)) {
+
+            jLabel36.setVisible(true);
+            evt.consume();
+
+        }
+
+        else {
+
+            jLabel36.setVisible(false);
+
+        }
+
+    }                                   
+
+    private void EXPYearECFKeyPressed(java.awt.event.KeyEvent evt) {                                      
+
+        int lengthPIN = EXPYearECF.getText().length();
+
+        if (lengthPIN == 4 ) {
+
+            EXPYearECF.setText("");
+
+            JOptionPane.showMessageDialog(null,"You cannot enter more than 4 digits");
+
+        }
+
+    }                                     
+
+    private void ECNameFKeyTyped(java.awt.event.KeyEvent evt) {                                 
+
+        char c = evt.getKeyChar();
+
+        if (Character.isDigit(c)) {
+
+            evt.consume();
+
+        }
+
+    }                                
+
+    private void ECNameFKeyPressed(java.awt.event.KeyEvent evt) {                                   
+
+        int lengthPIN = ECNameF.getText().length();
+
+        if (lengthPIN == 20 ) {
+
+            ECNameF.setText("");
+
+            JOptionPane.showMessageDialog(null,"You cannot enter more than 20 char");
+
+        }
+
+    }                                  
+
+    private void ECDayDOBKeyTyped(java.awt.event.KeyEvent evt) {                                  
+
+        char c = evt.getKeyChar();
+
+        if (!Character.isDigit(c)) {
+
+            jLabel36.setVisible(true);
+            evt.consume();
+
+        }
+
+        else {
+
+            jLabel36.setVisible(false);
+
+        }
+
+    }                                 
+
+    private void ECDayDOBKeyPressed(java.awt.event.KeyEvent evt) {                                    
+
+        int lengthPIN = ECDayDOB.getText().length();
+
+        if (lengthPIN == 2 ) {
+
+            ECDayDOB.setText("");
+
+            JOptionPane.showMessageDialog(null,"You cannot enter more than 2 digits");
+
+        }
+
+    }                                   
+
+    private void ECMonthDOBKeyTyped(java.awt.event.KeyEvent evt) {                                    
+
+        char c = evt.getKeyChar();
+
+        if (!Character.isDigit(c)) {
+
+            jLabel36.setVisible(true);
+            evt.consume();
+
+        }
+
+        else {
+
+            jLabel36.setVisible(false);
+
+        }
+
+    }                                   
+
+    private void ECMonthDOBKeyPressed(java.awt.event.KeyEvent evt) {                                      
+
+        int lengthPIN = ECMonthDOB.getText().length();
+
+        if (lengthPIN == 2 ) {
+
+            ECMonthDOB.setText("");
+
+            JOptionPane.showMessageDialog(null,"You cannot enter more than 2 digits");
+
+        }
+
+    }                                     
+
+    private void ECYearDOBKeyTyped(java.awt.event.KeyEvent evt) {                                   
+
+        char c = evt.getKeyChar();
+
+        if (!Character.isDigit(c)) {
+
+            jLabel36.setVisible(true);
+            evt.consume();
+
+        }
+
+        else {
+
+            jLabel36.setVisible(false);
+
+        }
+
+    }                                  
+
+    private void ECYearDOBKeyPressed(java.awt.event.KeyEvent evt) {                                     
+
+        int lengthPIN = ECYearDOB.getText().length();
+
+        if (lengthPIN == 4 ) {
+
+            ECYearDOB.setText("");
+
+            JOptionPane.showMessageDialog(null,"You cannot enter more than 4 digits");
+
+        }
+
+    }                                    
+
+    private void ECERICodeFKeyPressed(java.awt.event.KeyEvent evt) {                                      
+
+        int lengthPIN = ECERICodeF.getText().length();
+
+        if (lengthPIN == 10 ) {
+
+            ECERICodeF.setText("");
+
+            JOptionPane.showMessageDialog(null,"You cannot enter more than 10 char");
+
+        }
+
+    }                                     
+
+    private void ECPhoneNOFKeyTyped(java.awt.event.KeyEvent evt) {                                    
+
+        char c = evt.getKeyChar();
+
+        if (!Character.isDigit(c)) {
+
+            jLabel36.setVisible(true);
+            evt.consume();
+
+        }
+
+        else {
+
+            jLabel36.setVisible(false);
+
+        }
+
+    }                                   
+
+    private void ECPhoneNOFKeyPressed(java.awt.event.KeyEvent evt) {                                      
+
+        int lengthPIN = ECPhoneNOF.getText().length();
+
+        if (lengthPIN == 11 ) {
+
+            ECPhoneNOF.setText("");
+
+            JOptionPane.showMessageDialog(null,"You cannot enter more than 11 digits");
+
+        }
+
+    }                                     
+
+    private void ECAddressFKeyPressed(java.awt.event.KeyEvent evt) {                                      
+
+        int lengthPIN = ECAddressF.getText().length();
+
+        if (lengthPIN == 20 ) {
+
+            ECAddressF.setText("");
+
+            JOptionPane.showMessageDialog(null,"You cannot enter more than 20 char");
+
+        }
+
+    }                                     
+
+    private void ECIDFKeyTyped(java.awt.event.KeyEvent evt) {                               
+
+        char c = evt.getKeyChar();
+
+        if (!Character.isDigit(c)) {
+
+            jLabel36.setVisible(true);
+            evt.consume();
+
+        }
+
+        else {
+
+            jLabel36.setVisible(false);
+
+        }
+
+    }                              
+
+    private void ECIDFKeyPressed(java.awt.event.KeyEvent evt) {                                 
+
+        int lengthPIN = ECIDF.getText().length();
+
+        if (lengthPIN == 4 ) {
+
+            ECIDF.setText("");
+
+            JOptionPane.showMessageDialog(null,"You cannot enter more than 4 digits");
+
+        }
+
+    }                                
+
+    private void EPassWordFKeyPressed(java.awt.event.KeyEvent evt) {                                      
+
+        int lengthPIN = EPassWordF.getText().length();
+
+        if (lengthPIN == 10 ) {
+
+            EPassWordF.setText("");
+
+            JOptionPane.showMessageDialog(null,"You cannot enter more than 10 digits");
+
+        }
+
+    }                                     
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+
+        SQLE.ClearCustomerFields();
+
+    }                                        
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+
+        SQLE.viewCustomerDetailsforEmployees();
+
+    }                                        
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+
+        SQLE.deleteUserforEmployees();
+
+    }                                        
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+
+        SQLE.updateUsersforEmployees();
+
+    }                                        
+
+    private void EUToggleBTNPassWordActionPerformed(java.awt.event.ActionEvent evt) {                                                    
+
+        SQLE.ToggleBTNForPassWord();
+
+    }                                                   
+
+    private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        
+        System.exit(0);
+        
+    }                                         
+
+    private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        
+        System.exit(0);
+        
+    }                                         
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+
         JOptionPane.showMessageDialog(null, "You have logged out successfully!");
         System.exit(0);
         
     }                                        
 
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-
-        VehicleSafety.main(null);
-        
-    }                                         
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        
-        SQLE.updateUsersforEmployees();
-        
-    }                                        
-
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        
-        SQLE.viewCustomerDetailsforEmployees();
-        
-    }                                        
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        
-        SQLE.deleteUserforEmployees();
-        
-    }                                        
-
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        
-        SQLE.ClearCustomerFields();
-        
-    }                                        
-
-    private void EUToggleBTNPassWordActionPerformed(java.awt.event.ActionEvent evt) {                                                    
-         
-        SQLE.ToggleBTNForPassWord();
-        
-    }                                                   
-
-    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        
-        SQLE.viewVehicleforEdit();
-    }                                         
-
-    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        
-        SQLE.ClearVFieldsForEmployees();
-        
-    }                                         
-
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        
-        SQLE.deleteVehiclesForEmployees();
-        
-    }                                        
-
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        
-        SQLE.AddNewVehicleForEmployees();
-        
-    }                                        
-
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        
-        SQLE.updateVehiclesForEmployees ();
-        
-    }                                        
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        
-        SQLE.addUser();
-        
-    }                                        
-
-    private void CLiveViewCBTNActionPerformed(java.awt.event.ActionEvent evt) {                                              
-        
-        Employees.CLiveViewCBTN.setText("Refresh");
-        SQLE.viewCustomers ();
-        
-    }                                             
-
-    private void CLiveViewCBTN1212ActionPerformed(java.awt.event.ActionEvent evt) {                                                  
-        
-        Employees.ECVTextAreaSQLE.setText(null);
-        Employees.CLiveViewCBTN.setText("Live-View");
-        
-    }                                                 
-
-    private void VLiveViewCBTNActionPerformed(java.awt.event.ActionEvent evt) {                                              
-
-        Employees.VLiveViewCBTN.setText("Refresh");
-        SQLE.viewVehicles ();
-        
-    }                                             
-
-    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-
-        Employees.ECVTestArea.setText(null);
-        Employees.VLiveViewCBTN.setText("Live-View");
-        
-    }                                         
-
-    private void ESendBTNActionPerformed(java.awt.event.ActionEvent evt) {                                         
-       
-        SQLE.HelpBTNForEmployees();
-        
-    }                                        
-
-    private void EExitBTNActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {                                          
 
         System.exit(0);
-        
-    }                                        
 
-    private void createInvoiceActionPerformed(java.awt.event.ActionEvent evt) {                                              
-        
-        SQLE.addInvoices();
-        
-    }                                             
-
-    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-
-        INVOICESTextArea.setText(null);
-        SQLE.displayInvoices();
-        
     }                                         
+
+    private void VLiveViewCBTN1ActionPerformed(java.awt.event.ActionEvent evt) {                                               
+        
+        VLiveViewCBTN1.setText("Refresh?");
+        SQLE.viewpanelCreditCard();
+        
+    }                                              
 
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         
-        SQLE.deleteInvoice();
-                
-    }                                         
-
-    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        
-        SQLE.updateInvoice();
-                
-    }                                         
-
-    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        
-        SQLE.searchInvoice();
+        SQLE.cleartableCreditCard ();
+        VLiveViewCBTN1.setText("Live-view");
         
     }                                         
 
-    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {                                          
+    private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         
-        INVOICESTextArea.setText(null);
+        System.exit(0);
         
     }                                         
 
-    private void ECYearDOBKeyPressed(java.awt.event.KeyEvent evt) {                                     
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         
-        int lengthPIN = ECYearDOB.getText().length();
+        SQLE.addInvoices();
         
-        if (lengthPIN == 4 ) {
-            
-            ECYearDOB.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 4 digits");
-            
-        }
-        
-    }                                    
-
-    private void ECMonthDOBKeyPressed(java.awt.event.KeyEvent evt) {                                      
-        
-        int lengthPIN = ECMonthDOB.getText().length();
-        
-        if (lengthPIN == 2 ) {
-            
-            ECMonthDOB.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 2 digits");
-            
-        }
-        
-    }                                     
-
-    private void ECDayDOBKeyPressed(java.awt.event.KeyEvent evt) {                                    
-        
-        int lengthPIN = ECDayDOB.getText().length();
-        
-        if (lengthPIN == 2 ) {
-            
-            ECDayDOB.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 2 digits");
-            
-        }
-        
-    }                                   
-
-    private void EXPYearECFKeyPressed(java.awt.event.KeyEvent evt) {                                      
-        
-        int lengthPIN = EXPYearECF.getText().length();
-        
-        if (lengthPIN == 4 ) {
-            
-            EXPYearECF.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 4 digits");
-            
-        }
-        
-    }                                     
-
-    private void EXPMonthECFKeyPressed(java.awt.event.KeyEvent evt) {                                       
-        
-        int lengthPIN = EXPMonthECF.getText().length();
-        
-        if (lengthPIN == 2 ) {
-            
-            EXPMonthECF.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 2 digits");
-            
-        }
-        
-    }                                      
-
-    private void EXPDayECFKeyPressed(java.awt.event.KeyEvent evt) {                                     
-        
-        int lengthPIN = EXPDayECF.getText().length();
-        
-        if (lengthPIN == 2 ) {
-            
-            EXPDayECF.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 2 digits");
-            
-        }
-        
-    }                                    
-
-    private void ECCCVNOFKeyPressed(java.awt.event.KeyEvent evt) {                                    
-        
-        int lengthPIN = ECCCVNOF.getText().length();
-        
-        if (lengthPIN == 3 ) {
-            
-            ECCCVNOF.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 3 digits");
-            
-        }
-        
-    }                                   
-
-    private void ECCardNOFKeyPressed(java.awt.event.KeyEvent evt) {                                     
-        
-        int lengthPIN = ECCardNOF.getText().length();
-        
-        if (lengthPIN == 14 ) {
-            
-            ECCardNOF.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 14 digits");
-            
-        }
-        
-    }                                    
-
-    private void ECVIDAWCFKeyPressed(java.awt.event.KeyEvent evt) {                                     
-        
-        int lengthPIN = ECVIDAWCF.getText().length();
-        
-        if (lengthPIN == 4 ) {
-            
-            ECVIDAWCF.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 4 digits");
-            
-        }
-        
-    }                                    
-
-    private void EPassWordFKeyPressed(java.awt.event.KeyEvent evt) {                                      
-        
-        int lengthPIN = EPassWordF.getText().length();
-        
-        if (lengthPIN == 10 ) {
-            
-            EPassWordF.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 10 digits");
-            
-        }
-        
-    }                                     
-
-    private void ECIDFKeyPressed(java.awt.event.KeyEvent evt) {                                 
-        
-        int lengthPIN = ECIDF.getText().length();
-        
-        if (lengthPIN == 4 ) {
-            
-            ECIDF.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 4 digits");
-            
-        }
-        
-    }                                
-
-    private void ECAddressFKeyPressed(java.awt.event.KeyEvent evt) {                                      
-        
-        int lengthPIN = ECAddressF.getText().length();
-        
-        if (lengthPIN == 20 ) {
-            
-            ECAddressF.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 20 char");
-            
-        }
-        
-    }                                     
-
-    private void ECERICodeFKeyPressed(java.awt.event.KeyEvent evt) {                                      
-        
-        int lengthPIN = ECERICodeF.getText().length();
-        
-        if (lengthPIN == 10 ) {
-            
-            ECERICodeF.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 10 char");
-            
-        }
-        
-    }                                     
-
-    private void ECNameFKeyPressed(java.awt.event.KeyEvent evt) {                                   
-        
-        int lengthPIN = ECNameF.getText().length();
-        
-        if (lengthPIN == 20 ) {
-            
-            ECNameF.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 20 char");
-            
-        }
-        
-    }                                  
-
-    private void VCOLORKeyPressed(java.awt.event.KeyEvent evt) {                                  
-        
-        int lengthPIN = VCOLOR.getText().length();
-        
-        if (lengthPIN == 20 ) {
-            
-            VCOLOR.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 20 char");
-            
-        }
-        
-    }                                 
-
-    private void VCapacityKeyPressed(java.awt.event.KeyEvent evt) {                                     
-        
-        int lengthPIN = VCapacity.getText().length();
-        
-        if (lengthPIN == 4 ) {
-            
-            VCapacity.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 4 digits");
-            
-        }
-        
-    }                                    
-
-    private void VConditionKeyPressed(java.awt.event.KeyEvent evt) {                                      
-        
-        int lengthPIN = VCondition.getText().length();
-        
-        if (lengthPIN == 20 ) {
-            
-            VCondition.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 20 char");
-            
-        }
-        
-    }                                     
-
-    private void VYearModelKeyPressed(java.awt.event.KeyEvent evt) {                                      
-        
-        int lengthPIN = VYearModel.getText().length();
-        
-        if (lengthPIN == 4 ) {
-            
-            VYearModel.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 4 digits");
-            
-        }
-        
-    }                                     
-
-    private void PVIDFCKeyPressed(java.awt.event.KeyEvent evt) {                                  
-        
-        int lengthPIN = PVIDFC.getText().length();
-        
-        if (lengthPIN == 4 ) {
-            
-            PVIDFC.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 4 digits");
-            
-        }
-        
-    }                                 
-
-    private void VNameKeyPressed(java.awt.event.KeyEvent evt) {                                 
-        
-        int lengthPIN = VName.getText().length();
-        
-        if (lengthPIN == 14 ) {
-            
-            VName.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 14 char");
-            
-        }
-        
-    }                                
-
-    private void VPriceKeyPressed(java.awt.event.KeyEvent evt) {                                  
-        
-        int lengthPIN = VPrice.getText().length();
-        
-        if (lengthPIN == 8 ) {
-            
-            VPrice.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 8 digits");
-            
-        }
-        
-    }                                 
-
-    private void VSizeKeyPressed(java.awt.event.KeyEvent evt) {                                 
-        
-        int lengthPIN = VSize.getText().length();
-        
-        if (lengthPIN == 10 ) {
-            
-            VSize.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 10 char");
-            
-        }
-        
-    }                                
-
-    private void invoiceWorkerNameFKeyPressed(java.awt.event.KeyEvent evt) {                                              
-        
-        int lengthPIN = invoiceWorkerNameF.getText().length();
-        
-        if (lengthPIN == 4 ) {
-            
-            invoiceWorkerNameF.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 4 digits");
-            
-        }
-        
-    }                                             
-
-    private void WorkerNameInvoiceFKeyPressed(java.awt.event.KeyEvent evt) {                                              
-        
-        int lengthPIN = WorkerNameInvoiceF.getText().length();
-        
-        if (lengthPIN == 14 ) {
-            
-            WorkerNameInvoiceF.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 14 char");
-            
-        }
-        
-    }                                             
-
-    private void InvoiceIDFKeyPressed(java.awt.event.KeyEvent evt) {                                      
-        
-        int lengthPIN = InvoiceIDF.getText().length();
-        
-        if (lengthPIN == 4 ) {
-            
-            InvoiceIDF.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 4 digits");
-            
-        }
-        
-    }                                     
-
-    private void cardnumberInvoiceFKeyPressed(java.awt.event.KeyEvent evt) {                                              
-        
-        int lengthPIN = cardnumberInvoiceF.getText().length();
-        
-        if (lengthPIN == 14 ) {
-            
-            cardnumberInvoiceF.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 14 digits");
-            
-        }
-        
-    }                                             
-
-    private void UserIDInvoiceFKeyPressed(java.awt.event.KeyEvent evt) {                                          
-        
-        int lengthPIN = UserIDInvoiceF.getText().length();
-        
-        if (lengthPIN == 4 ) {
-            
-            UserIDInvoiceF.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 4 digits");
-            
-        }
-        
-    }                                         
-
-    private void VIDInvoiceFKeyPressed(java.awt.event.KeyEvent evt) {                                       
-        
-        int lengthPIN = VIDInvoiceF.getText().length();
-        
-        if (lengthPIN == 4 ) {
-            
-            VIDInvoiceF.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 4 digits");
-            
-        }
-        
-    }                                      
-
-    private void yearKeyPressed(java.awt.event.KeyEvent evt) {                                
-        
-        int lengthPIN = year.getText().length();
-        
-        if (lengthPIN == 4 ) {
-            
-            year.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 4 digits");
-            
-        }
-        
-    }                               
-
-    private void monthKeyPressed(java.awt.event.KeyEvent evt) {                                 
-        
-        int lengthPIN = month.getText().length();
-        
-        if (lengthPIN == 2 ) {
-            
-            month.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 2 digits");
-            
-        }
-        
-    }                                
-
-    private void dayKeyPressed(java.awt.event.KeyEvent evt) {                               
-        
-        int lengthPIN = day.getText().length();
-        
-        if (lengthPIN == 2 ) {
-            
-            day.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 2 digits");
-            
-        }
-        
-    }                              
-
-    private void ECIDFKeyTyped(java.awt.event.KeyEvent evt) {                               
-        
-        char c = evt.getKeyChar();
-        
-            if (!Character.isDigit(c)) {
-
-                jLabel36.setVisible(true);
-                evt.consume();
-
-            }
-            
-            else {
-                
-                jLabel36.setVisible(false);
-                
-            }
-            
-    }                              
-
-    private void ECPhoneNOFKeyTyped(java.awt.event.KeyEvent evt) {                                    
-        
-        char c = evt.getKeyChar();
-        
-            if (!Character.isDigit(c)) {
-
-                jLabel36.setVisible(true);
-                evt.consume();
-
-            }
-            
-            else {
-                
-                jLabel36.setVisible(false);
-                
-            }
-            
-    }                                   
-
-    private void ECPhoneNOFKeyPressed(java.awt.event.KeyEvent evt) {                                      
-        
-        int lengthPIN = ECPhoneNOF.getText().length();
-        
-        if (lengthPIN == 11 ) {
-            
-            ECPhoneNOF.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 11 digits");
-            
-        }
-        
-    }                                     
-
-    private void ECYearDOBKeyTyped(java.awt.event.KeyEvent evt) {                                   
-        
-        char c = evt.getKeyChar();
-        
-            if (!Character.isDigit(c)) {
-
-                jLabel36.setVisible(true);
-                evt.consume();
-
-            }
-            
-            else {
-                
-                jLabel36.setVisible(false);
-                
-            }
-            
-    }                                  
-
-    private void ECMonthDOBKeyTyped(java.awt.event.KeyEvent evt) {                                    
-        
-        char c = evt.getKeyChar();
-        
-            if (!Character.isDigit(c)) {
-
-                jLabel36.setVisible(true);
-                evt.consume();
-
-            }
-            
-            else {
-                
-                jLabel36.setVisible(false);
-                
-            }
-            
-    }                                   
-
-    private void ECDayDOBKeyTyped(java.awt.event.KeyEvent evt) {                                  
-        
-        char c = evt.getKeyChar();
-        
-            if (!Character.isDigit(c)) {
-
-                jLabel36.setVisible(true);
-                evt.consume();
-
-            }
-            
-            else {
-                
-                jLabel36.setVisible(false);
-                
-            }
-            
-    }                                 
-
-    private void EXPYearECFKeyTyped(java.awt.event.KeyEvent evt) {                                    
-        
-        char c = evt.getKeyChar();
-        
-            if (!Character.isDigit(c)) {
-
-                jLabel36.setVisible(true);
-                evt.consume();
-
-            }
-            
-            else {
-                
-                jLabel36.setVisible(false);
-                
-            }
-            
-    }                                   
-
-    private void EXPMonthECFKeyTyped(java.awt.event.KeyEvent evt) {                                     
-        
-        char c = evt.getKeyChar();
-        
-            if (!Character.isDigit(c)) {
-
-                jLabel36.setVisible(true);
-                evt.consume();
-
-            }
-            
-            else {
-                
-                jLabel36.setVisible(false);
-                
-            }
-            
-    }                                    
-
-    private void EXPDayECFKeyTyped(java.awt.event.KeyEvent evt) {                                   
-        
-        char c = evt.getKeyChar();
-        
-            if (!Character.isDigit(c)) {
-
-                jLabel36.setVisible(true);
-                evt.consume();
-
-            }
-            
-            else {
-                
-                jLabel36.setVisible(false);
-                
-            }
-            
-    }                                  
-
-    private void ECVIDAWCFKeyTyped(java.awt.event.KeyEvent evt) {                                   
-        
-        char c = evt.getKeyChar();
-        
-            if (!Character.isDigit(c)) {
-
-                jLabel36.setVisible(true);
-                evt.consume();
-
-            }
-            
-            else {
-                
-                jLabel36.setVisible(false);
-                
-            }
-            
-    }                                  
-
-    private void ECCardNOFKeyTyped(java.awt.event.KeyEvent evt) {                                   
-        
-        char c = evt.getKeyChar();
-        
-            if (!Character.isDigit(c)) {
-
-                jLabel36.setVisible(true);
-                evt.consume();
-
-            }
-            
-            else {
-                
-                jLabel36.setVisible(false);
-                
-            }
-            
-    }                                  
-
-    private void ECCCVNOFKeyTyped(java.awt.event.KeyEvent evt) {                                  
-        
-        char c = evt.getKeyChar();
-        
-            if (!Character.isDigit(c)) {
-
-                jLabel36.setVisible(true);
-                evt.consume();
-
-            }
-            
-            else {
-                
-                jLabel36.setVisible(false);
-                
-            }
-            
-    }                                 
-
-    private void ECNameFKeyTyped(java.awt.event.KeyEvent evt) {                                 
-        
-        char c = evt.getKeyChar();
-        
-            if (Character.isDigit(c)) {
-
-                evt.consume();
-
-            }
-            
-    }                                
-
-    private void VCapacityKeyTyped(java.awt.event.KeyEvent evt) {                                   
-        
-        char c = evt.getKeyChar();
-        
-            if (!Character.isDigit(c)) {
-
-                jLabel37.setVisible(true);
-                evt.consume();
-
-            }
-            
-            else {
-                
-                jLabel37.setVisible(false);
-                
-            }
-    }                                  
-
-    private void VConditionKeyTyped(java.awt.event.KeyEvent evt) {                                    
-        
-        char c = evt.getKeyChar();
-        
-            if (Character.isDigit(c)) {
-
-                evt.consume();
-
-            }
-            
-    }                                   
-
-    private void VYearModelKeyTyped(java.awt.event.KeyEvent evt) {                                    
-        
-        char c = evt.getKeyChar();
-        
-            if (!Character.isDigit(c)) {
+    }                                        
 
-                jLabel37.setVisible(true);
-                evt.consume();
-
-            }
-            
-            else {
-                
-                jLabel37.setVisible(false);
-                
-            }
-            
-    }                                   
-
-    private void PVIDFCKeyTyped(java.awt.event.KeyEvent evt) {                                
-        
-        char c = evt.getKeyChar();
-        
-            if (!Character.isDigit(c)) {
-
-                jLabel37.setVisible(true);
-                evt.consume();
-
-            }
-            
-            else {
-                
-                jLabel37.setVisible(false);
-                
-            }
-            
-    }                               
-
-    private void VNameKeyTyped(java.awt.event.KeyEvent evt) {                               
-        
-        char c = evt.getKeyChar();
-        
-            if (Character.isDigit(c)) {
-
-                evt.consume();
-
-            }
-            
-    }                              
-
-    private void VPriceKeyTyped(java.awt.event.KeyEvent evt) {                                
-        
-        char c = evt.getKeyChar();
-        
-            if (!Character.isDigit(c)) {
-
-                jLabel37.setVisible(true);
-                evt.consume();
-
-            }
-            
-            else {
-                
-                jLabel37.setVisible(false);
-                
-            }
-            
-    }                               
-
-    private void VSizeKeyTyped(java.awt.event.KeyEvent evt) {                               
-        
-        char c = evt.getKeyChar();
-        
-            if (Character.isDigit(c)) {
-
-                evt.consume();
-
-            }
-            
-    }                              
-
-    private void invoiceWorkerNameFKeyTyped(java.awt.event.KeyEvent evt) {                                            
-        
-        char c = evt.getKeyChar();
-        
-            if (!Character.isDigit(c)) {
-
-                jLabel35.setVisible(true);
-                evt.consume();
-
-            }
-            
-            else {
-                
-                jLabel35.setVisible(false);
-                
-            }
-            
-    }                                           
-
-    private void WorkerNameInvoiceFKeyTyped(java.awt.event.KeyEvent evt) {                                            
-        
-        char c = evt.getKeyChar();
-        
-            if (Character.isDigit(c)) {
-
-                evt.consume();
-
-            }
-            
-    }                                           
-
-    private void InvoiceIDFKeyTyped(java.awt.event.KeyEvent evt) {                                    
-        
-        char c = evt.getKeyChar();
+    private void ViewStatActionPerformed(java.awt.event.ActionEvent evt) {                                         
         
-            if (!Character.isDigit(c)) {
-
-                jLabel35.setVisible(true);
-                evt.consume();
-
-            }
-            
-            else {
-                
-                jLabel35.setVisible(false);
-                
-            }
-            
-    }                                   
-
-    private void cardnumberInvoiceFKeyTyped(java.awt.event.KeyEvent evt) {                                            
-        
-        char c = evt.getKeyChar();
-        
-            if (!Character.isDigit(c)) {
-
-                jLabel35.setVisible(true);
-                evt.consume();
-
-            }
-            
-            else {
-                
-                jLabel35.setVisible(false);
-                
-            }
-            
-    }                                           
-
-    private void UserIDInvoiceFKeyTyped(java.awt.event.KeyEvent evt) {                                        
-        
-        char c = evt.getKeyChar();
-        
-            if (!Character.isDigit(c)) {
-
-                jLabel35.setVisible(true);
-                evt.consume();
-
-            }
-            
-            else {
-                
-                jLabel35.setVisible(false);
-                
-            }
-            
-    }                                       
-
-    private void VIDInvoiceFKeyTyped(java.awt.event.KeyEvent evt) {                                     
-        
-        char c = evt.getKeyChar();
-        
-            if (!Character.isDigit(c)) {
-
-                jLabel35.setVisible(true);
-                evt.consume();
-
-            }
-            
-            else {
-                
-                jLabel35.setVisible(false);
-                
-            }
-            
-    }                                    
-
-    private void yearKeyTyped(java.awt.event.KeyEvent evt) {                              
-        
-        char c = evt.getKeyChar();
-        
-            if (!Character.isDigit(c)) {
-
-                jLabel35.setVisible(true);
-                evt.consume();
-
-            }
-            
-            else {
-                
-                jLabel35.setVisible(false);
-                
-            }
-            
-    }                             
-
-    private void monthKeyTyped(java.awt.event.KeyEvent evt) {                               
-        
-        char c = evt.getKeyChar();
-        
-            if (!Character.isDigit(c)) {
-
-                jLabel35.setVisible(true);
-                evt.consume();
-
-            }
-            
-            else {
-                
-                jLabel35.setVisible(false);
-                
-            }
-            
-    }                              
-
-    private void dayKeyTyped(java.awt.event.KeyEvent evt) {                             
-        
-        char c = evt.getKeyChar();
-        
-            if (!Character.isDigit(c)) {
-
-                jLabel35.setVisible(true);
-                evt.consume();
-
-            }
-            
-            else {
-                
-                jLabel35.setVisible(false);
-                
-            }
-            
-    }                            
-
-    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        SQLE.Stat();
+        SQLE.MostCommonColorStat();
         
-        SQLE.clearInvoiceFields();
-                
-    }                                         
+    }                                        
 
     /**
      * @param args the command line arguments
@@ -2507,64 +2849,70 @@ public class Employees extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify                     
+    public static javax.swing.JTextField AverageVehiclesColor;
+    public static javax.swing.JTextField AverageVehiclesPrice;
     public static javax.swing.JButton CLiveViewCBTN;
     public static javax.swing.JButton CLiveViewCBTN1212;
-    public static javax.swing.JTextField ECAddressF;
-    public static javax.swing.JTextField ECCCVNOF;
-    public static javax.swing.JTextField ECCardNOF;
+    public static javax.swing.JTable CustomerPanel;
+    protected static javax.swing.JTextField ECAddressF;
+    protected static javax.swing.JTextField ECCCVNOF;
+    protected static javax.swing.JTextField ECCardNOF;
     public static javax.swing.JTextField ECDayDOB;
-    public static javax.swing.JTextField ECERICodeF;
-    public static javax.swing.JTextField ECIDF;
+    protected static javax.swing.JTextField ECERICodeF;
+    protected static javax.swing.JTextField ECIDF;
     public static javax.swing.JTextField ECMonthDOB;
-    public static javax.swing.JTextField ECNameF;
-    public static javax.swing.JTextField ECPhoneNOF;
-    public static javax.swing.JTextField ECVIDAWCF;
+    protected static javax.swing.JTextField ECNameF;
+    protected static javax.swing.JTextField ECPhoneNOF;
+    protected static javax.swing.JTextField ECVIDAWCF;
     public static javax.swing.JLabel ECVL;
-    public static javax.swing.JTextArea ECVTestArea;
-    public static javax.swing.JTextArea ECVTextAreaSQLE;
     public static javax.swing.JTextField ECYearDOB;
-    private javax.swing.JButton EExitBTN;
-    public static javax.swing.JTextArea EHELPTextArea;
     public static javax.swing.JPasswordField EPassWordF;
-    public static javax.swing.JButton ESendBTN;
-    public static javax.swing.JLabel EUDOBFORMATL;
-    public static javax.swing.JLabel EUEXPFORMATL;
-    public static javax.swing.JLabel EUPassWordL;
-    public static javax.swing.JToggleButton EUToggleBTNPassWord;
-    public static javax.swing.JTextField EXPDayECF;
-    public static javax.swing.JTextField EXPMonthECF;
-    public static javax.swing.JTextField EXPYearECF;
-    public static javax.swing.JTextArea INVOICESTextArea;
-    public static javax.swing.JTextField InvoiceIDF;
-    public static javax.swing.JTextField PVIDFC;
-    public static javax.swing.JTextField UserIDInvoiceF;
-    public static javax.swing.JTextField VCOLOR;
-    public static javax.swing.JTextField VCapacity;
-    public static javax.swing.JTextField VCondition;
-    public static javax.swing.JTextField VIDInvoiceF;
+    protected static javax.swing.JLabel EUDOBFORMATL;
+    protected static javax.swing.JLabel EUEXPFORMATL;
+    protected static javax.swing.JLabel EUPassWordL;
+    protected static javax.swing.JToggleButton EUToggleBTNPassWord;
+    protected static javax.swing.JTextField EXPDayECF;
+    protected static javax.swing.JTextField EXPMonthECF;
+    protected static javax.swing.JTextField EXPYearECF;
+    protected static javax.swing.JTextField InvoiceIDF;
+    public static javax.swing.JTable InvoicesPanel;
+    private javax.swing.JMenu LightMode;
+    protected static javax.swing.JTextField PVIDFC;
+    public static javax.swing.JTextField SumVehiclesPrices;
+    public static javax.swing.JTextField TotalVehicles;
+    protected static javax.swing.JTextField UserIDInvoiceF;
+    protected static javax.swing.JTextField VCOLOR;
+    protected static javax.swing.JTextField VCapacity;
+    protected static javax.swing.JTextField VCondition;
+    protected static javax.swing.JTextField VIDInvoiceF;
     public static javax.swing.JButton VLiveViewCBTN;
-    public static javax.swing.JTextField VName;
-    public static javax.swing.JTextField VPrice;
-    public static javax.swing.JTextField VSize;
-    public static javax.swing.JTextField VYearModel;
-    public static javax.swing.JTextField WorkerNameInvoiceF;
-    public static javax.swing.JTextField cardnumberInvoiceF;
-    public static javax.swing.JButton createInvoice;
+    public static javax.swing.JButton VLiveViewCBTN1;
+    protected static javax.swing.JTextField VName;
+    protected static javax.swing.JTextField VPrice;
+    protected static javax.swing.JTextField VSize;
+    protected static javax.swing.JTextField VYearModel;
+    public static javax.swing.JTable VehiclesPanel;
+    public static javax.swing.JTable VehiclesPanel1;
+    public static javax.swing.JButton ViewStat;
+    protected static javax.swing.JTextField WorkerNameInvoiceF;
+    protected static javax.swing.JTextField cardnumberInvoiceF;
     private javax.swing.JMenu date;
-    public static javax.swing.JTextField day;
-    public static javax.swing.JTextField invoiceWorkerNameF;
+    protected static javax.swing.JTextField day;
+    protected static javax.swing.JTextField invoiceWorkerNameF;
     private javax.swing.JButton jButton1;
-    public static javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
     public static javax.swing.JButton jButton13;
     public static javax.swing.JButton jButton14;
     public static javax.swing.JButton jButton15;
-    public static javax.swing.JButton jButton16;
-    public static javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton18;
+    protected static javax.swing.JButton jButton17;
+    protected static javax.swing.JButton jButton18;
     public static javax.swing.JButton jButton19;
     public static javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton20;
+    private javax.swing.JButton jButton21;
+    private javax.swing.JButton jButton22;
+    private javax.swing.JButton jButton23;
     public static javax.swing.JButton jButton3;
     public static javax.swing.JButton jButton4;
     public static javax.swing.JButton jButton5;
@@ -2581,7 +2929,7 @@ public class Employees extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
+    public static javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
@@ -2603,28 +2951,44 @@ public class Employees extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
+    protected static javax.swing.JPanel jPanel2;
+    public static javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
-    private javax.swing.JPanel jPanel7;
+    protected static javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
-    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
-    private javax.swing.JTabbedPane jTabbedPane1;
-    public static javax.swing.JTextField month;
+    private javax.swing.JScrollPane jScrollPane5;
+    protected static javax.swing.JTabbedPane jTabbedPane1;
+    protected static javax.swing.JTextField month;
     private javax.swing.JMenu time;
-    public static javax.swing.JTextField year;
+    protected static javax.swing.JTextField year;
     // End of variables declaration                   
 }
