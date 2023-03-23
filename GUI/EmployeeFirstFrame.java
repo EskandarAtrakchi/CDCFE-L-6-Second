@@ -8,8 +8,6 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 import javax.swing.JOptionPane;
 import javax.swing.Timer;
-import static sql.CustomerFirstFrame.UserFFIDF;
-import static sql.CustomerFirstFrame.UPassWordFFF;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -79,20 +77,24 @@ public class EmployeeFirstFrame extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         EmployeeF1 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
+        jLabel47 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         date = new javax.swing.JMenu();
         time = new javax.swing.JMenu();
+        jMenu1 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Log-in");
 
         jPanel1.setLayout(null);
 
         jButton3.setBackground(new java.awt.Color(0, 153, 204));
         jButton3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/edit.png"))); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/newImages/erase-128.png"))); // NOI18N
         jButton3.setText("Clear");
+        jButton3.setToolTipText("Action BTN to clear");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -106,6 +108,7 @@ public class EmployeeFirstFrame extends javax.swing.JFrame {
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/exit.png"))); // NOI18N
         jButton2.setText("Cancel");
+        jButton2.setToolTipText("Action BTN to cancel");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -119,14 +122,19 @@ public class EmployeeFirstFrame extends javax.swing.JFrame {
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/addemployee.png"))); // NOI18N
         jButton1.setText("Login");
+        jButton1.setToolTipText("Action BTN to login");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
         jPanel1.add(jButton1);
-        jButton1.setBounds(250, 100, 96, 39);
+        jButton1.setBounds(250, 100, 110, 39);
 
+        EmployeeF1.setBackground(new java.awt.Color(204, 204, 204));
+        EmployeeF1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        EmployeeF1.setForeground(new java.awt.Color(0, 0, 0));
+        EmployeeF1.setToolTipText("your ID data here.");
         EmployeeF1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 EmployeeF1MouseClicked(evt);
@@ -154,16 +162,31 @@ public class EmployeeFirstFrame extends javax.swing.JFrame {
         jPanel1.add(jLabel1);
         jLabel1.setBounds(60, 50, 101, 16);
 
+        jLabel47.setIcon(new javax.swing.ImageIcon(getClass().getResource("/testingpackage/logo.gif"))); // NOI18N
+        jLabel47.setToolTipText("Logo");
+        jPanel1.add(jLabel47);
+        jLabel47.setBounds(780, 10, 70, 80);
+
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/newImages/bk2.jpg"))); // NOI18N
         jLabel3.setText("Employees login");
         jPanel1.add(jLabel3);
         jLabel3.setBounds(0, 0, 870, 530);
+
+        jMenuBar1.setToolTipText("Menu to view data ");
 
         date.setText("DATE");
         jMenuBar1.add(date);
 
         time.setText("TIME");
         jMenuBar1.add(time);
+
+        jMenu1.setText("Can't login?");
+        jMenu1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jMenu1MouseClicked(evt);
+            }
+        });
+        jMenuBar1.add(jMenu1);
 
         setJMenuBar(jMenuBar1);
 
@@ -192,8 +215,19 @@ public class EmployeeFirstFrame extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
 
-        this.dispose();
-        SQL.loginVerificationforEmployees();
+        if ( EmployeeF1.getText().isEmpty() == true) {
+            
+            JOptionPane.showMessageDialog(null, "Attention! field cannot be empty!");
+            
+        }
+        
+        else {
+            
+            this.dispose();
+            SQL.loginVerificationforEmployees();
+        
+        }
+        
 
         /*
         String username = "admin";
@@ -245,6 +279,13 @@ public class EmployeeFirstFrame extends javax.swing.JFrame {
        JOptionPane.showMessageDialog(null,"Digits only!");
     }                                       
 
+    private void jMenu1MouseClicked(java.awt.event.MouseEvent evt) {                                    
+
+        this.dispose();
+        NewJFrame.main(null);
+
+    }                                   
+
     /**
      * @param args the command line arguments
      */
@@ -288,6 +329,8 @@ public class EmployeeFirstFrame extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel47;
+    private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JMenu time;
