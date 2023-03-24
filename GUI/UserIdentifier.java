@@ -75,12 +75,14 @@ public class UserIdentifier extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
+        jLabel47 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         date = new javax.swing.JMenu();
         time = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Selection frame ");
 
         jPanel1.setLayout(null);
 
@@ -92,6 +94,7 @@ public class UserIdentifier extends javax.swing.JFrame {
 
         jButton1.setBackground(new java.awt.Color(51, 51, 51));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/testingpackage/text (1).gif"))); // NOI18N
+        jButton1.setToolTipText("If you click here, you will be interacting as customer");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -102,6 +105,7 @@ public class UserIdentifier extends javax.swing.JFrame {
 
         jButton2.setBackground(new java.awt.Color(51, 51, 51));
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/testingpackage/text.gif"))); // NOI18N
+        jButton2.setToolTipText("If you click here, you will be interacting as employee");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -116,9 +120,17 @@ public class UserIdentifier extends javax.swing.JFrame {
         jPanel1.add(jLabel3);
         jLabel3.setBounds(480, 200, 55, 64);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/testingpackage/tech2-1024x630.png"))); // NOI18N
+        jLabel47.setIcon(new javax.swing.ImageIcon(getClass().getResource("/testingpackage/logo.gif"))); // NOI18N
+        jLabel47.setToolTipText("Logo");
+        jPanel1.add(jLabel47);
+        jLabel47.setBounds(920, 0, 70, 80);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/testingpackage/cloud_access_shutterstock_Blackboard.jpg"))); // NOI18N
+        jLabel2.setToolTipText("Choose either customer or employee ");
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(0, 0, 1020, 610);
+        jLabel2.setBounds(0, 0, 1000, 600);
+
+        jMenuBar1.setToolTipText("Menu to view data ");
 
         date.setText("DATE");
         jMenuBar1.add(date);
@@ -133,12 +145,14 @@ public class UserIdentifier extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1019, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1000, Short.MAX_VALUE)
                 .addGap(0, 0, 0))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 607, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 583, Short.MAX_VALUE)
+                .addGap(0, 0, 0))
         );
 
         pack();
@@ -228,6 +242,7 @@ public class UserIdentifier extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel47;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JMenu time;
