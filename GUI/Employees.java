@@ -19,7 +19,6 @@ import javax.swing.Timer;
  */
 public class Employees extends javax.swing.JFrame {
 
-    
     /**
      * Creates new form Employees
      */
@@ -27,8 +26,8 @@ public class Employees extends javax.swing.JFrame {
         initComponents();
         Toolkit toolkit = getToolkit();
         Dimension size = toolkit.getScreenSize();
-        setLocation(size.width/2 - getWidth()/2,size.height/2 - getHeight()/2);
-        
+        setLocation(size.width / 2 - getWidth() / 2, size.height / 2 - getHeight() / 2);
+
         Timer timer;
         timer = new Timer(1000, new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -39,27 +38,27 @@ public class Employees extends javax.swing.JFrame {
 
         date();
     }
-    
+
     public void date() {
-        
+
         Calendar cal = new GregorianCalendar();
         int month = cal.get(Calendar.MONTH);
         int year = cal.get(Calendar.YEAR);
         int day = cal.get(Calendar.DAY_OF_MONTH);
-        
+
         date.setText(year + "/" + (month + 1) + "/" + day);
-        
+
     }
-    
+
     public void time() {
-        
+
         Calendar cal = new GregorianCalendar();
         int second = cal.get(Calendar.SECOND);
         int minute = cal.get(Calendar.MINUTE);
         int hour = cal.get(Calendar.HOUR);
-        
+
         time.setText(hour + ":" + minute + ":" + second);
-        
+
     }
 
     /**
@@ -685,7 +684,7 @@ public class Employees extends javax.swing.JFrame {
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel11.setText("VEHICLE-PRICE");
+        jLabel11.setText("VEHICLE-PRICE $");
         jPanel3.add(jLabel11);
         jLabel11.setBounds(438, 241, 236, 30);
 
@@ -779,7 +778,7 @@ public class Employees extends javax.swing.JFrame {
 
         jLabel22.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel22.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel22.setText("VEHICLE-CAPACITY");
+        jLabel22.setText("VEHICLE-CAPACITY L");
         jPanel3.add(jLabel22);
         jLabel22.setBounds(49, 140, 225, 30);
 
@@ -1681,7 +1680,7 @@ public class Employees extends javax.swing.JFrame {
     }// </editor-fold>                        
 
     private boolean isLightMode = true;
-    
+
     private void LightModeMouseClicked(java.awt.event.MouseEvent evt) {                                       
 
         jLabel52.setVisible(!isLightMode);
@@ -1689,12 +1688,11 @@ public class Employees extends javax.swing.JFrame {
         jLabel16.setVisible(!isLightMode);
         jLabel18.setVisible(!isLightMode);
         jLabel17.setVisible(!isLightMode);
-   
-        // note: will have to create an object to be able to toggle other labels in other frames
 
+        // note: will have to create an object to be able to toggle other labels in other frames
         LightMode.setText(isLightMode ? "Dark-mode" : "Light-mode");
         isLightMode = !isLightMode;
-        
+
     }                                      
 
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {                                          
@@ -1707,7 +1705,7 @@ public class Employees extends javax.swing.JFrame {
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {                                          
 
         Employees.jButton14.setText("Refresh?");
-        SQLE.viewpanelInvoices() ;
+        SQLE.viewpanelInvoices();
 
     }                                         
 
@@ -1732,9 +1730,7 @@ public class Employees extends javax.swing.JFrame {
             jLabel35.setVisible(true);
             evt.consume();
 
-        }
-
-        else {
+        } else {
 
             jLabel35.setVisible(false);
 
@@ -1746,11 +1742,11 @@ public class Employees extends javax.swing.JFrame {
 
         int lengthPIN = day.getText().length();
 
-        if (lengthPIN == 2 ) {
+        if (lengthPIN == 2) {
 
             day.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 2 digits");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 2 digits");
 
         }
 
@@ -1765,9 +1761,7 @@ public class Employees extends javax.swing.JFrame {
             jLabel35.setVisible(true);
             evt.consume();
 
-        }
-
-        else {
+        } else {
 
             jLabel35.setVisible(false);
 
@@ -1779,11 +1773,11 @@ public class Employees extends javax.swing.JFrame {
 
         int lengthPIN = month.getText().length();
 
-        if (lengthPIN == 2 ) {
+        if (lengthPIN == 2) {
 
             month.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 2 digits");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 2 digits");
 
         }
 
@@ -1798,9 +1792,7 @@ public class Employees extends javax.swing.JFrame {
             jLabel35.setVisible(true);
             evt.consume();
 
-        }
-
-        else {
+        } else {
 
             jLabel35.setVisible(false);
 
@@ -1812,11 +1804,11 @@ public class Employees extends javax.swing.JFrame {
 
         int lengthPIN = year.getText().length();
 
-        if (lengthPIN == 4 ) {
+        if (lengthPIN == 4) {
 
             year.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 4 digits");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 4 digits");
 
         }
 
@@ -1831,9 +1823,7 @@ public class Employees extends javax.swing.JFrame {
             jLabel35.setVisible(true);
             evt.consume();
 
-        }
-
-        else {
+        } else {
 
             jLabel35.setVisible(false);
 
@@ -1845,11 +1835,11 @@ public class Employees extends javax.swing.JFrame {
 
         int lengthPIN = InvoiceIDF.getText().length();
 
-        if (lengthPIN == 4 ) {
+        if (lengthPIN == 4) {
 
             InvoiceIDF.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 4 digits");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 4 digits");
 
         }
 
@@ -1871,11 +1861,11 @@ public class Employees extends javax.swing.JFrame {
 
         int lengthPIN = WorkerNameInvoiceF.getText().length();
 
-        if (lengthPIN == 10 ) {
+        if (lengthPIN == 10) {
 
             WorkerNameInvoiceF.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 10 char");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 10 char");
 
         }
 
@@ -1890,9 +1880,7 @@ public class Employees extends javax.swing.JFrame {
             jLabel35.setVisible(true);
             evt.consume();
 
-        }
-
-        else {
+        } else {
 
             jLabel35.setVisible(false);
 
@@ -1904,11 +1892,11 @@ public class Employees extends javax.swing.JFrame {
 
         int lengthPIN = VIDInvoiceF.getText().length();
 
-        if (lengthPIN == 4 ) {
+        if (lengthPIN == 4) {
 
             VIDInvoiceF.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 4 digits");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 4 digits");
 
         }
 
@@ -1923,9 +1911,7 @@ public class Employees extends javax.swing.JFrame {
             jLabel35.setVisible(true);
             evt.consume();
 
-        }
-
-        else {
+        } else {
 
             jLabel35.setVisible(false);
 
@@ -1937,11 +1923,11 @@ public class Employees extends javax.swing.JFrame {
 
         int lengthPIN = UserIDInvoiceF.getText().length();
 
-        if (lengthPIN == 4 ) {
+        if (lengthPIN == 4) {
 
             UserIDInvoiceF.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 4 digits");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 4 digits");
 
         }
 
@@ -1956,9 +1942,7 @@ public class Employees extends javax.swing.JFrame {
             jLabel35.setVisible(true);
             evt.consume();
 
-        }
-
-        else {
+        } else {
 
             jLabel35.setVisible(false);
 
@@ -1970,11 +1954,11 @@ public class Employees extends javax.swing.JFrame {
 
         int lengthPIN = cardnumberInvoiceF.getText().length();
 
-        if (lengthPIN == 10 ) {
+        if (lengthPIN == 10) {
 
             cardnumberInvoiceF.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 10 digits");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 10 digits");
 
         }
 
@@ -1989,9 +1973,7 @@ public class Employees extends javax.swing.JFrame {
             jLabel35.setVisible(true);
             evt.consume();
 
-        }
-
-        else {
+        } else {
 
             jLabel35.setVisible(false);
 
@@ -2003,11 +1985,11 @@ public class Employees extends javax.swing.JFrame {
 
         int lengthPIN = invoiceWorkerNameF.getText().length();
 
-        if (lengthPIN == 4 ) {
+        if (lengthPIN == 4) {
 
             invoiceWorkerNameF.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 4 digits");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 4 digits");
 
         }
 
@@ -2044,7 +2026,7 @@ public class Employees extends javax.swing.JFrame {
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {                                          
 
         SQLE.viewVehicleforEdit();
-        
+
     }                                         
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {                                          
@@ -2069,11 +2051,11 @@ public class Employees extends javax.swing.JFrame {
 
         int lengthPIN = VCOLOR.getText().length();
 
-        if (lengthPIN == 10 ) {
+        if (lengthPIN == 10) {
 
             VCOLOR.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 10 char");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 10 char");
 
         }
 
@@ -2088,9 +2070,7 @@ public class Employees extends javax.swing.JFrame {
             jLabel37.setVisible(true);
             evt.consume();
 
-        }
-
-        else {
+        } else {
 
             jLabel37.setVisible(false);
 
@@ -2101,11 +2081,11 @@ public class Employees extends javax.swing.JFrame {
 
         int lengthPIN = VCapacity.getText().length();
 
-        if (lengthPIN == 4 ) {
+        if (lengthPIN == 4) {
 
             VCapacity.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 4 digits");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 4 digits");
 
         }
 
@@ -2127,11 +2107,11 @@ public class Employees extends javax.swing.JFrame {
 
         int lengthPIN = VCondition.getText().length();
 
-        if (lengthPIN == 10 ) {
+        if (lengthPIN == 10) {
 
             VCondition.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 10 char");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 10 char");
 
         }
 
@@ -2146,9 +2126,7 @@ public class Employees extends javax.swing.JFrame {
             jLabel37.setVisible(true);
             evt.consume();
 
-        }
-
-        else {
+        } else {
 
             jLabel37.setVisible(false);
 
@@ -2160,11 +2138,11 @@ public class Employees extends javax.swing.JFrame {
 
         int lengthPIN = VYearModel.getText().length();
 
-        if (lengthPIN == 4 ) {
+        if (lengthPIN == 4) {
 
             VYearModel.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 4 digits");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 4 digits");
 
         }
 
@@ -2186,11 +2164,11 @@ public class Employees extends javax.swing.JFrame {
 
         int lengthPIN = VSize.getText().length();
 
-        if (lengthPIN == 10 ) {
+        if (lengthPIN == 10) {
 
             VSize.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 10 char");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 10 char");
 
         }
 
@@ -2205,9 +2183,7 @@ public class Employees extends javax.swing.JFrame {
             jLabel37.setVisible(true);
             evt.consume();
 
-        }
-
-        else {
+        } else {
 
             jLabel37.setVisible(false);
 
@@ -2219,11 +2195,11 @@ public class Employees extends javax.swing.JFrame {
 
         int lengthPIN = VPrice.getText().length();
 
-        if (lengthPIN == 8 ) {
+        if (lengthPIN == 8) {
 
             VPrice.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 8 digits");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 8 digits");
 
         }
 
@@ -2245,11 +2221,11 @@ public class Employees extends javax.swing.JFrame {
 
         int lengthPIN = VName.getText().length();
 
-        if (lengthPIN == 10 ) {
+        if (lengthPIN == 10) {
 
             VName.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 10 char");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 10 char");
 
         }
 
@@ -2264,9 +2240,7 @@ public class Employees extends javax.swing.JFrame {
             jLabel37.setVisible(true);
             evt.consume();
 
-        }
-
-        else {
+        } else {
 
             jLabel37.setVisible(false);
 
@@ -2278,11 +2252,11 @@ public class Employees extends javax.swing.JFrame {
 
         int lengthPIN = PVIDFC.getText().length();
 
-        if (lengthPIN == 4 ) {
+        if (lengthPIN == 4) {
 
             PVIDFC.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 4 digits");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 4 digits");
 
         }
 
@@ -2297,9 +2271,7 @@ public class Employees extends javax.swing.JFrame {
             jLabel36.setVisible(true);
             evt.consume();
 
-        }
-
-        else {
+        } else {
 
             jLabel36.setVisible(false);
 
@@ -2311,11 +2283,11 @@ public class Employees extends javax.swing.JFrame {
 
         int lengthPIN = ECVIDAWCF.getText().length();
 
-        if (lengthPIN == 4 ) {
+        if (lengthPIN == 4) {
 
             ECVIDAWCF.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 4 digits");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 4 digits");
 
         }
 
@@ -2336,9 +2308,7 @@ public class Employees extends javax.swing.JFrame {
             jLabel36.setVisible(true);
             evt.consume();
 
-        }
-
-        else {
+        } else {
 
             jLabel36.setVisible(false);
 
@@ -2350,11 +2320,11 @@ public class Employees extends javax.swing.JFrame {
 
         int lengthPIN = ECCardNOF.getText().length();
 
-        if (lengthPIN == 14 ) {
+        if (lengthPIN == 14) {
 
             ECCardNOF.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 14 digits");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 14 digits");
 
         }
 
@@ -2369,9 +2339,7 @@ public class Employees extends javax.swing.JFrame {
             jLabel36.setVisible(true);
             evt.consume();
 
-        }
-
-        else {
+        } else {
 
             jLabel36.setVisible(false);
 
@@ -2383,11 +2351,11 @@ public class Employees extends javax.swing.JFrame {
 
         int lengthPIN = ECCCVNOF.getText().length();
 
-        if (lengthPIN == 3 ) {
+        if (lengthPIN == 3) {
 
             ECCCVNOF.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 3 digits");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 3 digits");
 
         }
 
@@ -2402,9 +2370,7 @@ public class Employees extends javax.swing.JFrame {
             jLabel36.setVisible(true);
             evt.consume();
 
-        }
-
-        else {
+        } else {
 
             jLabel36.setVisible(false);
 
@@ -2416,11 +2382,11 @@ public class Employees extends javax.swing.JFrame {
 
         int lengthPIN = EXPDayECF.getText().length();
 
-        if (lengthPIN == 2 ) {
+        if (lengthPIN == 2) {
 
             EXPDayECF.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 2 digits");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 2 digits");
 
         }
 
@@ -2435,9 +2401,7 @@ public class Employees extends javax.swing.JFrame {
             jLabel36.setVisible(true);
             evt.consume();
 
-        }
-
-        else {
+        } else {
 
             jLabel36.setVisible(false);
 
@@ -2449,11 +2413,11 @@ public class Employees extends javax.swing.JFrame {
 
         int lengthPIN = EXPMonthECF.getText().length();
 
-        if (lengthPIN == 2 ) {
+        if (lengthPIN == 2) {
 
             EXPMonthECF.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 2 digits");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 2 digits");
 
         }
 
@@ -2468,9 +2432,7 @@ public class Employees extends javax.swing.JFrame {
             jLabel36.setVisible(true);
             evt.consume();
 
-        }
-
-        else {
+        } else {
 
             jLabel36.setVisible(false);
 
@@ -2482,11 +2444,11 @@ public class Employees extends javax.swing.JFrame {
 
         int lengthPIN = EXPYearECF.getText().length();
 
-        if (lengthPIN == 4 ) {
+        if (lengthPIN == 4) {
 
             EXPYearECF.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 4 digits");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 4 digits");
 
         }
 
@@ -2508,11 +2470,11 @@ public class Employees extends javax.swing.JFrame {
 
         int lengthPIN = ECNameF.getText().length();
 
-        if (lengthPIN == 20 ) {
+        if (lengthPIN == 20) {
 
             ECNameF.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 20 char");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 20 char");
 
         }
 
@@ -2527,9 +2489,7 @@ public class Employees extends javax.swing.JFrame {
             jLabel36.setVisible(true);
             evt.consume();
 
-        }
-
-        else {
+        } else {
 
             jLabel36.setVisible(false);
 
@@ -2541,11 +2501,11 @@ public class Employees extends javax.swing.JFrame {
 
         int lengthPIN = ECDayDOB.getText().length();
 
-        if (lengthPIN == 2 ) {
+        if (lengthPIN == 2) {
 
             ECDayDOB.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 2 digits");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 2 digits");
 
         }
 
@@ -2560,9 +2520,7 @@ public class Employees extends javax.swing.JFrame {
             jLabel36.setVisible(true);
             evt.consume();
 
-        }
-
-        else {
+        } else {
 
             jLabel36.setVisible(false);
 
@@ -2574,11 +2532,11 @@ public class Employees extends javax.swing.JFrame {
 
         int lengthPIN = ECMonthDOB.getText().length();
 
-        if (lengthPIN == 2 ) {
+        if (lengthPIN == 2) {
 
             ECMonthDOB.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 2 digits");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 2 digits");
 
         }
 
@@ -2593,9 +2551,7 @@ public class Employees extends javax.swing.JFrame {
             jLabel36.setVisible(true);
             evt.consume();
 
-        }
-
-        else {
+        } else {
 
             jLabel36.setVisible(false);
 
@@ -2607,11 +2563,11 @@ public class Employees extends javax.swing.JFrame {
 
         int lengthPIN = ECYearDOB.getText().length();
 
-        if (lengthPIN == 4 ) {
+        if (lengthPIN == 4) {
 
             ECYearDOB.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 4 digits");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 4 digits");
 
         }
 
@@ -2621,11 +2577,11 @@ public class Employees extends javax.swing.JFrame {
 
         int lengthPIN = ECERICodeF.getText().length();
 
-        if (lengthPIN == 10 ) {
+        if (lengthPIN == 10) {
 
             ECERICodeF.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 10 char");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 10 char");
 
         }
 
@@ -2640,9 +2596,7 @@ public class Employees extends javax.swing.JFrame {
             jLabel36.setVisible(true);
             evt.consume();
 
-        }
-
-        else {
+        } else {
 
             jLabel36.setVisible(false);
 
@@ -2654,11 +2608,11 @@ public class Employees extends javax.swing.JFrame {
 
         int lengthPIN = ECPhoneNOF.getText().length();
 
-        if (lengthPIN == 11 ) {
+        if (lengthPIN == 11) {
 
             ECPhoneNOF.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 11 digits");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 11 digits");
 
         }
 
@@ -2668,11 +2622,11 @@ public class Employees extends javax.swing.JFrame {
 
         int lengthPIN = ECAddressF.getText().length();
 
-        if (lengthPIN == 20 ) {
+        if (lengthPIN == 20) {
 
             ECAddressF.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 20 char");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 20 char");
 
         }
 
@@ -2687,9 +2641,7 @@ public class Employees extends javax.swing.JFrame {
             jLabel36.setVisible(true);
             evt.consume();
 
-        }
-
-        else {
+        } else {
 
             jLabel36.setVisible(false);
 
@@ -2701,11 +2653,11 @@ public class Employees extends javax.swing.JFrame {
 
         int lengthPIN = ECIDF.getText().length();
 
-        if (lengthPIN == 4 ) {
+        if (lengthPIN == 4) {
 
             ECIDF.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 4 digits");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 4 digits");
 
         }
 
@@ -2715,11 +2667,11 @@ public class Employees extends javax.swing.JFrame {
 
         int lengthPIN = EPassWordF.getText().length();
 
-        if (lengthPIN == 10 ) {
+        if (lengthPIN == 10) {
 
             EPassWordF.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 10 digits");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 10 digits");
 
         }
 
@@ -2756,22 +2708,22 @@ public class Employees extends javax.swing.JFrame {
     }                                                   
 
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        
+
         System.exit(0);
-        
+
     }                                         
 
     private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        
+
         System.exit(0);
-        
+
     }                                         
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
 
         JOptionPane.showMessageDialog(null, "You have logged out successfully!");
         System.exit(0);
-        
+
     }                                        
 
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {                                          
@@ -2781,36 +2733,36 @@ public class Employees extends javax.swing.JFrame {
     }                                         
 
     private void VLiveViewCBTN1ActionPerformed(java.awt.event.ActionEvent evt) {                                               
-        
+
         VLiveViewCBTN1.setText("Refresh?");
         SQLE.viewpanelCreditCard();
-        
+
     }                                              
 
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        
-        SQLE.cleartableCreditCard ();
+
+        SQLE.cleartableCreditCard();
         VLiveViewCBTN1.setText("Live-view");
-        
+
     }                                         
 
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        
+
         System.exit(0);
-        
+
     }                                         
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        
+
         SQLE.addInvoices();
-        
+
     }                                        
 
     private void ViewStatActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        
+
         SQLE.Stat();
         SQLE.MostCommonColorStat();
-        
+
     }                                        
 
     /**
