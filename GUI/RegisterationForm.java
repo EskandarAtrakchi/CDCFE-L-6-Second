@@ -26,8 +26,8 @@ public class RegisterationForm extends javax.swing.JFrame {
         initComponents();
         Toolkit toolkit = getToolkit();
         Dimension size = toolkit.getScreenSize();
-        setLocation(size.width/2 - getWidth()/2,size.height/2 - getHeight()/2);
-        
+        setLocation(size.width / 2 - getWidth() / 2, size.height / 2 - getHeight() / 2);
+
         Timer timer;
         timer = new Timer(1000, new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -39,29 +39,28 @@ public class RegisterationForm extends javax.swing.JFrame {
         date();
     }
 
-    
     public void date() {
-        
+
         Calendar cal = new GregorianCalendar();
         int month = cal.get(Calendar.MONTH);
         int year = cal.get(Calendar.YEAR);
         int day = cal.get(Calendar.DAY_OF_MONTH);
-        
+
         date.setText(year + "/" + (month + 1) + "/" + day);
-        
+
     }
-    
+
     public void time() {
-        
+
         Calendar cal = new GregorianCalendar();
         int second = cal.get(Calendar.SECOND);
         int minute = cal.get(Calendar.MINUTE);
         int hour = cal.get(Calendar.HOUR);
-        
+
         time.setText(hour + ":" + minute + ":" + second);
-        
+
     }
-    
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -582,11 +581,11 @@ public class RegisterationForm extends javax.swing.JFrame {
 
         int lengthPIN = EPassWordF.getText().length();
 
-        if (lengthPIN == 10 ) {
+        if (lengthPIN == 10) {
 
             EPassWordF.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 10 digits");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 10 digits");
 
         }
     }                                     
@@ -595,11 +594,11 @@ public class RegisterationForm extends javax.swing.JFrame {
 
         int lengthPIN = ECIDF.getText().length();
 
-        if (lengthPIN == 4 ) {
+        if (lengthPIN == 4) {
 
             ECIDF.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 4 digits");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 4 digits");
 
         }
     }                                
@@ -613,9 +612,7 @@ public class RegisterationForm extends javax.swing.JFrame {
             jLabel36.setVisible(true);
             evt.consume();
 
-        }
-
-        else {
+        } else {
 
             jLabel36.setVisible(false);
 
@@ -626,11 +623,11 @@ public class RegisterationForm extends javax.swing.JFrame {
 
         int lengthPIN = ECAddressF.getText().length();
 
-        if (lengthPIN == 10 ) {
+        if (lengthPIN == 10) {
 
             ECAddressF.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 10 char");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 10 char");
 
         }
     }                                     
@@ -639,11 +636,11 @@ public class RegisterationForm extends javax.swing.JFrame {
 
         int lengthPIN = ECPhoneNOF.getText().length();
 
-        if (lengthPIN == 10 ) {
+        if (lengthPIN == 10) {
 
             ECPhoneNOF.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 10 digits");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 10 digits");
 
         }
     }                                     
@@ -657,9 +654,7 @@ public class RegisterationForm extends javax.swing.JFrame {
             jLabel36.setVisible(true);
             evt.consume();
 
-        }
-
-        else {
+        } else {
 
             jLabel36.setVisible(false);
 
@@ -670,11 +665,11 @@ public class RegisterationForm extends javax.swing.JFrame {
 
         int lengthPIN = ECERICodeF.getText().length();
 
-        if (lengthPIN == 10 ) {
+        if (lengthPIN == 10) {
 
             ECERICodeF.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 10 char");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 10 char");
 
         }
     }                                     
@@ -683,11 +678,11 @@ public class RegisterationForm extends javax.swing.JFrame {
 
         int lengthPIN = ECYearDOB.getText().length();
 
-        if (lengthPIN == 4 ) {
+        if (lengthPIN == 4) {
 
             ECYearDOB.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 4 digits");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 4 digits");
 
         }
     }                                    
@@ -701,9 +696,7 @@ public class RegisterationForm extends javax.swing.JFrame {
             jLabel36.setVisible(true);
             evt.consume();
 
-        }
-
-        else {
+        } else {
 
             jLabel36.setVisible(false);
 
@@ -714,11 +707,11 @@ public class RegisterationForm extends javax.swing.JFrame {
 
         int lengthPIN = ECMonthDOB.getText().length();
 
-        if (lengthPIN == 2 ) {
+        if (lengthPIN == 2) {
 
             ECMonthDOB.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 2 digits");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 2 digits");
 
         }
     }                                     
@@ -732,9 +725,7 @@ public class RegisterationForm extends javax.swing.JFrame {
             jLabel36.setVisible(true);
             evt.consume();
 
-        }
-
-        else {
+        } else {
 
             jLabel36.setVisible(false);
 
@@ -745,11 +736,11 @@ public class RegisterationForm extends javax.swing.JFrame {
 
         int lengthPIN = ECDayDOB.getText().length();
 
-        if (lengthPIN == 2 ) {
+        if (lengthPIN == 2) {
 
             ECDayDOB.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 2 digits");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 2 digits");
 
         }
     }                                   
@@ -763,9 +754,7 @@ public class RegisterationForm extends javax.swing.JFrame {
             jLabel36.setVisible(true);
             evt.consume();
 
-        }
-
-        else {
+        } else {
 
             jLabel36.setVisible(false);
 
@@ -776,11 +765,11 @@ public class RegisterationForm extends javax.swing.JFrame {
 
         int lengthPIN = ECNameF.getText().length();
 
-        if (lengthPIN == 10 ) {
+        if (lengthPIN == 10) {
 
             ECNameF.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 10 char");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 10 char");
 
         }
     }                                  
@@ -800,11 +789,11 @@ public class RegisterationForm extends javax.swing.JFrame {
 
         int lengthPIN = EXPYearECF.getText().length();
 
-        if (lengthPIN == 4 ) {
+        if (lengthPIN == 4) {
 
             EXPYearECF.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 4 digits");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 4 digits");
 
         }
     }                                     
@@ -818,9 +807,7 @@ public class RegisterationForm extends javax.swing.JFrame {
             jLabel36.setVisible(true);
             evt.consume();
 
-        }
-
-        else {
+        } else {
 
             jLabel36.setVisible(false);
 
@@ -831,11 +818,11 @@ public class RegisterationForm extends javax.swing.JFrame {
 
         int lengthPIN = EXPMonthECF.getText().length();
 
-        if (lengthPIN == 2 ) {
+        if (lengthPIN == 2) {
 
             EXPMonthECF.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 2 digits");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 2 digits");
 
         }
     }                                      
@@ -849,9 +836,7 @@ public class RegisterationForm extends javax.swing.JFrame {
             jLabel36.setVisible(true);
             evt.consume();
 
-        }
-
-        else {
+        } else {
 
             jLabel36.setVisible(false);
 
@@ -862,11 +847,11 @@ public class RegisterationForm extends javax.swing.JFrame {
 
         int lengthPIN = EXPDayECF.getText().length();
 
-        if (lengthPIN == 2 ) {
+        if (lengthPIN == 2) {
 
             EXPDayECF.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 2 digits");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 2 digits");
 
         }
     }                                    
@@ -880,9 +865,7 @@ public class RegisterationForm extends javax.swing.JFrame {
             jLabel36.setVisible(true);
             evt.consume();
 
-        }
-
-        else {
+        } else {
 
             jLabel36.setVisible(false);
 
@@ -893,11 +876,11 @@ public class RegisterationForm extends javax.swing.JFrame {
 
         int lengthPIN = ECCCVNOF.getText().length();
 
-        if (lengthPIN == 3 ) {
+        if (lengthPIN == 3) {
 
             ECCCVNOF.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 3 digits");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 3 digits");
 
         }
     }                                   
@@ -911,9 +894,7 @@ public class RegisterationForm extends javax.swing.JFrame {
             jLabel36.setVisible(true);
             evt.consume();
 
-        }
-
-        else {
+        } else {
 
             jLabel36.setVisible(false);
 
@@ -924,11 +905,11 @@ public class RegisterationForm extends javax.swing.JFrame {
 
         int lengthPIN = ECCardNOF.getText().length();
 
-        if (lengthPIN == 10 ) {
+        if (lengthPIN == 10) {
 
             ECCardNOF.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 10 digits");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 10 digits");
 
         }
     }                                    
@@ -942,9 +923,7 @@ public class RegisterationForm extends javax.swing.JFrame {
             jLabel36.setVisible(true);
             evt.consume();
 
-        }
-
-        else {
+        } else {
 
             jLabel36.setVisible(false);
 
@@ -953,19 +932,19 @@ public class RegisterationForm extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
 
-        SQL.addUnregisterationFormUser() ;
-        
+        SQL.addUnregisterationFormUser();
+
     }                                        
 
     private void ECVIDAWCFKeyPressed(java.awt.event.KeyEvent evt) {                                     
 
         int lengthPIN = ECVIDAWCF.getText().length();
 
-        if (lengthPIN == 4 ) {
+        if (lengthPIN == 4) {
 
             ECVIDAWCF.setText("");
 
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 4 digits");
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 4 digits");
 
         }
     }                                    
@@ -979,9 +958,7 @@ public class RegisterationForm extends javax.swing.JFrame {
             jLabel36.setVisible(true);
             evt.consume();
 
-        }
-
-        else {
+        } else {
 
             jLabel36.setVisible(false);
 
@@ -991,32 +968,32 @@ public class RegisterationForm extends javax.swing.JFrame {
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {                                          
 
         System.exit(0);
-        
+
     }                                         
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {                                          
 
         SQL.cleartableForUnregistered();
         VLiveViewCBTN.setText("Live-view");
-        
+
     }                                         
 
     private void VLiveViewCBTNActionPerformed(java.awt.event.ActionEvent evt) {                                              
 
         RegisterationForm.VLiveViewCBTN.setText("Refresh?");
         SQL.viewpanelVehiclesForUnregistered();
-        
+
     }                                             
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        
+
         this.dispose();
         CustomerFirstFrame.main(null);
-        
+
     }                                        
 
     Boolean isLightMode = false;
-    
+
     private void LightModeMouseClicked(java.awt.event.MouseEvent evt) {                                       
 
         jLabel16.setVisible(!isLightMode);
@@ -1024,9 +1001,7 @@ public class RegisterationForm extends javax.swing.JFrame {
         //jLabel23.setVisible(!isLightMode);
 
         //CustomerPurchaseConfirmation.jLabel11.setVisible(!isLightMode);
-
         // note: will have to create an object to be able to toggle other labels in other frames
-
         LightMode.setText(isLightMode ? "Dark-mode" : "Light-mode");
         isLightMode = !isLightMode;
 
