@@ -13,7 +13,6 @@ import javax.swing.Timer;
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-
 /**
  *
  * @author escan
@@ -27,8 +26,8 @@ public class EmployeeFirstFrame extends javax.swing.JFrame {
         initComponents();
         Toolkit toolkit = getToolkit();
         Dimension size = toolkit.getScreenSize();
-        setLocation(size.width/2 - getWidth()/2,size.height/2 - getHeight()/2);
-        
+        setLocation(size.width / 2 - getWidth() / 2, size.height / 2 - getHeight() / 2);
+
         Timer timer;
         timer = new Timer(1000, new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -39,27 +38,27 @@ public class EmployeeFirstFrame extends javax.swing.JFrame {
 
         date();
     }
-    
+
     public void date() {
-        
+
         Calendar cal = new GregorianCalendar();
         int month = cal.get(Calendar.MONTH);
         int year = cal.get(Calendar.YEAR);
         int day = cal.get(Calendar.DAY_OF_MONTH);
-        
+
         date.setText(year + "/" + (month + 1) + "/" + day);
-        
+
     }
-    
+
     public void time() {
-        
+
         Calendar cal = new GregorianCalendar();
         int second = cal.get(Calendar.SECOND);
         int minute = cal.get(Calendar.MINUTE);
         int hour = cal.get(Calendar.HOUR);
-        
+
         time.setText(hour + ":" + minute + ":" + second);
-        
+
     }
 
     /**
@@ -215,19 +214,17 @@ public class EmployeeFirstFrame extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
 
-        if ( EmployeeF1.getText().isEmpty() == true) {
-            
+        if (EmployeeF1.getText().isEmpty() == true) {
+
             JOptionPane.showMessageDialog(null, "Attention! field cannot be empty!");
-            
-        }
-        
-        else {
-            
+
+        } else {
+
             this.dispose();
             SQL.loginVerificationforEmployees();
-        
+
         }
-        
+
 
         /*
         String username = "admin";
@@ -239,7 +236,7 @@ public class EmployeeFirstFrame extends javax.swing.JFrame {
         } else {
             System.out.println("Invalid username or password.");
         }
-        */
+         */
     }                                        
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {                                         
@@ -247,14 +244,14 @@ public class EmployeeFirstFrame extends javax.swing.JFrame {
     }                                        
 
     private void EmployeeF1KeyTyped(java.awt.event.KeyEvent evt) {                                    
-        
+
         char c = evt.getKeyChar();
-        
-            if (!Character.isDigit(c)) {
 
-                evt.consume();
+        if (!Character.isDigit(c)) {
 
-            }
+            evt.consume();
+
+        }
 
     }                                   
 
@@ -263,20 +260,20 @@ public class EmployeeFirstFrame extends javax.swing.JFrame {
     }                                          
 
     private void EmployeeF1KeyPressed(java.awt.event.KeyEvent evt) {                                      
-        
+
         int lengthPIN = EmployeeF1.getText().length();
-        
-        if (lengthPIN == 4 ) {
-            
+
+        if (lengthPIN == 4) {
+
             EmployeeF1.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 4 digits");
-            
+
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 4 digits");
+
         }
     }                                     
 
     private void EmployeeF1MouseClicked(java.awt.event.MouseEvent evt) {                                        
-       JOptionPane.showMessageDialog(null,"Digits only!");
+        JOptionPane.showMessageDialog(null, "Digits only!");
     }                                       
 
     private void jMenu1MouseClicked(java.awt.event.MouseEvent evt) {                                    
