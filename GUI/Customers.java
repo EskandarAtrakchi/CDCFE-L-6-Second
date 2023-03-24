@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package sql;
+
 import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
@@ -11,6 +12,7 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 import javax.swing.JOptionPane;
 import javax.swing.Timer;
+
 /**
  *
  * @author escan
@@ -24,8 +26,8 @@ public class Customers extends javax.swing.JFrame {
         initComponents();
         Toolkit toolkit = getToolkit();
         Dimension size = toolkit.getScreenSize();
-        setLocation(size.width/2 - getWidth()/2,size.height/2 - getHeight()/2);
-        
+        setLocation(size.width / 2 - getWidth() / 2, size.height / 2 - getHeight() / 2);
+
         Timer timer;
         timer = new Timer(1000, new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -38,27 +40,27 @@ public class Customers extends javax.swing.JFrame {
     }
 
     public void date() {
-        
+
         Calendar cal = new GregorianCalendar();
         int month = cal.get(Calendar.MONTH);
         int year = cal.get(Calendar.YEAR);
         int day = cal.get(Calendar.DAY_OF_MONTH);
-        
+
         date.setText(year + "/" + (month + 1) + "/" + day);
-        
+
     }
-    
+
     public void time() {
-        
+
         Calendar cal = new GregorianCalendar();
         int second = cal.get(Calendar.SECOND);
         int minute = cal.get(Calendar.MINUTE);
         int hour = cal.get(Calendar.HOUR);
-        
+
         time.setText(hour + ":" + minute + ":" + second);
-        
+
     }
-    
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -867,28 +869,28 @@ public class Customers extends javax.swing.JFrame {
     }// </editor-fold>                        
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        
+
         JOptionPane.showMessageDialog(null, "You have logged out successfully!");
         System.exit(0);
-        
+
     }                                        
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        
-        SQL.update ();
-        
+
+        SQL.update();
+
     }                                        
 
     private void UIDFMouseClicked(java.awt.event.MouseEvent evt) {                                  
-       
+
         Customers.UIDF.setText(CustomerFirstFrame.UserFFIDF.getText());
-        
+
     }                                 
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-       
+
         SQL.viewforCustomers();
-        
+
     }                                        
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {                                         
@@ -896,38 +898,38 @@ public class Customers extends javax.swing.JFrame {
         VSID.setText(null);
         jButton7.setEnabled(false);
         jTextArea3.setText(null);
-        
+
     }                                        
 
     private void jTextArea3MouseClicked(java.awt.event.MouseEvent evt) {                                        
-        
+
         jTextArea3.setEditable(false);
-        
+
     }                                       
 
     private void UViewBTNInMActionPerformed(java.awt.event.ActionEvent evt) {                                            
 
         SQL.viewCustomerDetails();
-        
+
     }                                           
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-       
+
         SQL.ClearCustomerFields();
-        
+
     }                                         
 
     private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                               
 
         SQL.ToggleBTNForPassWord();
-        
+
     }                                              
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        
+
         JOptionPane.showMessageDialog(null, "You have logged out successfully!");
         System.exit(0);
-        
+
     }                                        
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {                                         
@@ -935,501 +937,479 @@ public class Customers extends javax.swing.JFrame {
         jButton7.setEnabled(false);
         VSID.setEditable(false);
         CustomerPurchaseConfirmation.main(null);
-        
+
     }                                        
 
     private void UDOBLYearActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        
+
         JOptionPane.showMessageDialog(null, "Please, type numbers only!");
-        
+
     }                                         
 
     private void UMonthDOBFActionPerformed(java.awt.event.ActionEvent evt) {                                           
-        
+
         JOptionPane.showMessageDialog(null, "Please, type numbers only!");
-        
+
     }                                          
 
     private void UDayDOBFActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        
+
         JOptionPane.showMessageDialog(null, "Please, type numbers only!");
-        
+
     }                                        
 
     private void YearEXPDateActionPerformed(java.awt.event.ActionEvent evt) {                                            
-        
+
         JOptionPane.showMessageDialog(null, "Please, type numbers only!");
-        
+
     }                                           
 
     private void MonthUserEXPDateFActionPerformed(java.awt.event.ActionEvent evt) {                                                  
-       
+
         JOptionPane.showMessageDialog(null, "Please, type numbers only!");
-        
+
     }                                                 
 
     private void DayEXPDateUserFActionPerformed(java.awt.event.ActionEvent evt) {                                                
-       
+
         JOptionPane.showMessageDialog(null, "Please, type numbers only!");
-        
+
     }                                               
 
     private void UDOBLYearKeyPressed(java.awt.event.KeyEvent evt) {                                     
-        
+
         int lengthPIN = UDOBLYear.getText().length();
-        
-        if (lengthPIN == 4 ) {
-            
+
+        if (lengthPIN == 4) {
+
             UDOBLYear.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 4 digits");
-            
+
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 4 digits");
+
         }
     }                                    
 
     private void UMonthDOBFKeyPressed(java.awt.event.KeyEvent evt) {                                      
-        
+
         int lengthPIN = UMonthDOBF.getText().length();
-        
-        if (lengthPIN == 2 ) {
-            
+
+        if (lengthPIN == 2) {
+
             UMonthDOBF.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 2 digits");
-            
+
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 2 digits");
+
         }
-        
+
     }                                     
 
     private void UDayDOBFKeyPressed(java.awt.event.KeyEvent evt) {                                    
-        
+
         int lengthPIN = UDayDOBF.getText().length();
-        
-        if (lengthPIN == 2 ) {
-            
+
+        if (lengthPIN == 2) {
+
             UDayDOBF.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 2 digits");
-            
+
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 2 digits");
+
         }
-        
+
     }                                   
 
     private void YearEXPDateKeyPressed(java.awt.event.KeyEvent evt) {                                       
-        
+
         int lengthPIN = YearEXPDate.getText().length();
-        
-        if (lengthPIN == 4 ) {
-            
+
+        if (lengthPIN == 4) {
+
             YearEXPDate.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 4 digits");
-            
+
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 4 digits");
+
         }
-        
+
     }                                      
 
     private void MonthUserEXPDateFKeyPressed(java.awt.event.KeyEvent evt) {                                             
-        
+
         int lengthPIN = MonthUserEXPDateF.getText().length();
-        
-        if (lengthPIN == 2 ) {
-            
+
+        if (lengthPIN == 2) {
+
             MonthUserEXPDateF.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 2 digits");
-            
+
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 2 digits");
+
         }
-        
+
     }                                            
 
     private void DayEXPDateUserFKeyPressed(java.awt.event.KeyEvent evt) {                                           
-        
+
         int lengthPIN = DayEXPDateUserF.getText().length();
-        
-        if (lengthPIN == 2 ) {
-            
+
+        if (lengthPIN == 2) {
+
             DayEXPDateUserF.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 2 digits");
-            
+
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 2 digits");
+
         }
-        
+
     }                                          
 
     private void UDOBLYearKeyTyped(java.awt.event.KeyEvent evt) {                                   
-        
+
         char c = evt.getKeyChar();
-        
-            if (!Character.isDigit(c)) {
 
-                jLabel16.setVisible(true);
-                evt.consume();
+        if (!Character.isDigit(c)) {
 
-            }
-            
-            else {
-                
-                jLabel16.setVisible(false);
-                
-            }
-            
+            jLabel16.setVisible(true);
+            evt.consume();
+
+        } else {
+
+            jLabel16.setVisible(false);
+
+        }
+
     }                                  
 
     private void UMonthDOBFKeyTyped(java.awt.event.KeyEvent evt) {                                    
-        
+
         char c = evt.getKeyChar();
-        
-            if (!Character.isDigit(c)) {
 
-                jLabel16.setVisible(true);
-                evt.consume();
+        if (!Character.isDigit(c)) {
 
-            }
-            
-            else {
-                
-                jLabel16.setVisible(false);
-                
-            }
-            
+            jLabel16.setVisible(true);
+            evt.consume();
+
+        } else {
+
+            jLabel16.setVisible(false);
+
+        }
+
     }                                   
 
     private void UDayDOBFKeyTyped(java.awt.event.KeyEvent evt) {                                  
-        
+
         char c = evt.getKeyChar();
-        
-            if (!Character.isDigit(c)) {
 
-                jLabel16.setVisible(true);
-                evt.consume();
+        if (!Character.isDigit(c)) {
 
-            }
-            
-            else {
-                
-                jLabel16.setVisible(false);
-                
-            }
-            
+            jLabel16.setVisible(true);
+            evt.consume();
+
+        } else {
+
+            jLabel16.setVisible(false);
+
+        }
+
     }                                 
 
     private void YearEXPDateKeyTyped(java.awt.event.KeyEvent evt) {                                     
-        
+
         char c = evt.getKeyChar();
-        
-            if (!Character.isDigit(c)) {
 
-                jLabel16.setVisible(true);
-                evt.consume();
+        if (!Character.isDigit(c)) {
 
-            }
-            
-            else {
-                
-                jLabel16.setVisible(false);
-                
-            }
-            
+            jLabel16.setVisible(true);
+            evt.consume();
+
+        } else {
+
+            jLabel16.setVisible(false);
+
+        }
+
     }                                    
 
     private void MonthUserEXPDateFKeyTyped(java.awt.event.KeyEvent evt) {                                           
-        
+
         char c = evt.getKeyChar();
-        
-            if (!Character.isDigit(c)) {
 
-                jLabel16.setVisible(true);
-                evt.consume();
+        if (!Character.isDigit(c)) {
 
-            }
-            
-            else {
-                
-                jLabel16.setVisible(false);
-                
-            }
-            
+            jLabel16.setVisible(true);
+            evt.consume();
+
+        } else {
+
+            jLabel16.setVisible(false);
+
+        }
+
     }                                          
 
     private void DayEXPDateUserFKeyTyped(java.awt.event.KeyEvent evt) {                                         
-        
+
         char c = evt.getKeyChar();
-        
-            if (!Character.isDigit(c)) {
 
-                jLabel16.setVisible(true);
-                evt.consume();
+        if (!Character.isDigit(c)) {
 
-            }
-            
-            else {
-                
-                jLabel16.setVisible(false);
-                
-            }
-            
+            jLabel16.setVisible(true);
+            evt.consume();
+
+        } else {
+
+            jLabel16.setVisible(false);
+
+        }
+
     }                                        
 
     private void VSIDKeyPressed(java.awt.event.KeyEvent evt) {                                
-        
+
         int lengthPIN = VSID.getText().length();
-        
-        if (lengthPIN == 5 ) {
-            
+
+        if (lengthPIN == 5) {
+
             VSID.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 5 digits");
-            
+
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 5 digits");
+
         }
-        
+
     }                               
 
     private void VSIDKeyTyped(java.awt.event.KeyEvent evt) {                              
-        
+
         char c = evt.getKeyChar();
-        
-            if (!Character.isDigit(c)) {
 
-                jLabel11.setVisible(true);
-                evt.consume();
+        if (!Character.isDigit(c)) {
 
-            }
-            
-            else {
-                
-                jLabel11.setVisible(false);
-                
-            }
-            
+            jLabel11.setVisible(true);
+            evt.consume();
+
+        } else {
+
+            jLabel11.setVisible(false);
+
+        }
+
     }                             
 
     private void UPhoneNoFActionPerformed(java.awt.event.ActionEvent evt) {                                          
-      
+
         JOptionPane.showMessageDialog(null, "Please, type numbers only!");
-        
+
     }                                         
 
     private void UPhoneNoFKeyPressed(java.awt.event.KeyEvent evt) {                                     
-        
+
         int lengthPIN = UPhoneNoF.getText().length();
-        
-        if (lengthPIN == 10 ) {
-            
+
+        if (lengthPIN == 10) {
+
             UPhoneNoF.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 10 digits");
-            
+
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 10 digits");
+
         }
-        
+
     }                                    
 
     private void UPhoneNoFKeyTyped(java.awt.event.KeyEvent evt) {                                   
-         
+
         char c = evt.getKeyChar();
-        
-            if (!Character.isDigit(c)) {
 
-                jLabel16.setVisible(true);
-                evt.consume();
+        if (!Character.isDigit(c)) {
 
-            }
-            
-            else {
-                
-                jLabel16.setVisible(false);
-                
-            }
-            
+            jLabel16.setVisible(true);
+            evt.consume();
+
+        } else {
+
+            jLabel16.setVisible(false);
+
+        }
+
     }                                  
 
     private void UPasswordFKeyPressed(java.awt.event.KeyEvent evt) {                                      
-        
+
         int lengthPIN = UPasswordF.getText().length();
-        
-        if (lengthPIN == 14 ) {
-            
+
+        if (lengthPIN == 14) {
+
             UPasswordF.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 14 digits");
-            
+
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 14 digits");
+
         }
-        
+
     }                                     
 
     private void UAddressFKeyPressed(java.awt.event.KeyEvent evt) {                                     
-        
+
         int lengthPIN = UAddressF.getText().length();
-        
-        if (lengthPIN == 10 ) {
-            
+
+        if (lengthPIN == 10) {
+
             UAddressF.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 10 digits");
-            
+
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 10 digits");
+
         }
     }                                    
 
     private void UERICodeFKeyPressed(java.awt.event.KeyEvent evt) {                                     
-        
+
         int lengthPIN = UERICodeF.getText().length();
-        
-        if (lengthPIN == 8 ) {
-            
+
+        if (lengthPIN == 8) {
+
             UERICodeF.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 8 Char");
-            
+
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 8 Char");
+
         }
     }                                    
 
     private void UserNameFKeyPressed(java.awt.event.KeyEvent evt) {                                     
-        
+
         int lengthPIN = UserNameF.getText().length();
-        
-        if (lengthPIN == 10 ) {
-            
+
+        if (lengthPIN == 10) {
+
             UserNameF.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 10 Char");
-            
+
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 10 Char");
+
         }
-        
+
     }                                    
 
     private void UCCVBankCardFKeyPressed(java.awt.event.KeyEvent evt) {                                         
-        
+
         int lengthPIN = UCCVBankCardF.getText().length();
-        
-        if (lengthPIN == 3 ) {
-            
+
+        if (lengthPIN == 3) {
+
             UCCVBankCardF.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 3 digits");
-            
+
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 3 digits");
+
         }
-        
+
     }                                        
 
     private void UCCVBankCardFActionPerformed(java.awt.event.ActionEvent evt) {                                              
-        
+
         JOptionPane.showMessageDialog(null, "Please, type numbers only!");
-        
+
     }                                             
 
     private void UCardNOFActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        
+
         JOptionPane.showMessageDialog(null, "Please, type numbers only!");
-        
+
     }                                        
 
     private void UCardNOFKeyPressed(java.awt.event.KeyEvent evt) {                                    
-        
+
         int lengthPIN = UCardNOF.getText().length();
-        
-        if (lengthPIN == 10 ) {
-            
+
+        if (lengthPIN == 10) {
+
             UCardNOF.setText("");
-           
-            JOptionPane.showMessageDialog(null,"You cannot enter more than 10 digits");
-            
+
+            JOptionPane.showMessageDialog(null, "You cannot enter more than 10 digits");
+
         }
-        
+
     }                                   
 
     private void UCCVBankCardFKeyTyped(java.awt.event.KeyEvent evt) {                                       
-        
+
         char c = evt.getKeyChar();
-        
-            if (!Character.isDigit(c)) {
 
-                jLabel16.setVisible(true);
-                evt.consume();
+        if (!Character.isDigit(c)) {
 
-            }
-            
-            else {
-                
-                jLabel16.setVisible(false);
-                
-            }
-            
+            jLabel16.setVisible(true);
+            evt.consume();
+
+        } else {
+
+            jLabel16.setVisible(false);
+
+        }
+
     }                                      
 
     private void UCardNOFKeyTyped(java.awt.event.KeyEvent evt) {                                  
-        
+
         char c = evt.getKeyChar();
-        
-            if (!Character.isDigit(c)) {
 
-                jLabel16.setVisible(true);
-                evt.consume();
+        if (!Character.isDigit(c)) {
 
-            }
-            
-            else {
-                
-                jLabel16.setVisible(false);
-                
-            }
-            
+            jLabel16.setVisible(true);
+            evt.consume();
+
+        } else {
+
+            jLabel16.setVisible(false);
+
+        }
+
     }                                 
 
     private void UserNameFKeyTyped(java.awt.event.KeyEvent evt) {                                   
-        
+
         char c = evt.getKeyChar();
-        
-            if (Character.isDigit(c)) {
 
-                evt.consume();
+        if (Character.isDigit(c)) {
 
-            }
-            
+            evt.consume();
+
+        }
+
     }                                  
 
     private boolean isLightMode = true;
-    
+
     private void LightModeMouseClicked(java.awt.event.MouseEvent evt) {                                       
 
-        jLabel22.setVisible(!isLightMode);  
+        jLabel22.setVisible(!isLightMode);
         jLabel26.setVisible(!isLightMode);
         //jLabel23.setVisible(!isLightMode);
-        
+
         //CustomerPurchaseConfirmation.jLabel11.setVisible(!isLightMode); 
-        
         // note: will have to create an object to be able to toggle other labels in other frames 
-        
-        LightMode.setText(isLightMode ? "Dark-mode" : "Light-mode"); 
-        isLightMode = !isLightMode; 
-        
+        LightMode.setText(isLightMode ? "Dark-mode" : "Light-mode");
+        isLightMode = !isLightMode;
+
     }                                      
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        
+
         SQL.deleteUser();
         JOptionPane.showMessageDialog(null, "Attention, you have been out of the system.");
         System.exit(0);
-        
+
     }                                         
 
     private void LiveViewCBTN1ActionPerformed(java.awt.event.ActionEvent evt) {                                              
 
         LiveViewCBTN1.setText("Refresh?");
         SQL.viewpanelVehicles();
-        
+
     }                                             
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {                                         
 
         LiveViewCBTN1.setText("Live-view");
         SQL.cleartable();
-        
+
     }                                        
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        
+
         SQL.addCreditCard();
-        
+
     }                                        
 
     /**
