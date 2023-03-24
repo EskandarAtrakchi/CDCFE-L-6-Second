@@ -26,8 +26,8 @@ public class EmployeeDB extends javax.swing.JFrame {
         initComponents();
         Toolkit toolkit = getToolkit();
         Dimension size = toolkit.getScreenSize();
-        setLocation(size.width/2 - getWidth()/2,size.height/2 - getHeight()/2);
-        
+        setLocation(size.width / 2 - getWidth() / 2, size.height / 2 - getHeight() / 2);
+
         Timer timer;
         timer = new Timer(1000, new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -40,28 +40,27 @@ public class EmployeeDB extends javax.swing.JFrame {
     }
 
     public void date() {
-        
+
         Calendar cal = new GregorianCalendar();
         int month = cal.get(Calendar.MONTH);
         int year = cal.get(Calendar.YEAR);
         int day = cal.get(Calendar.DAY_OF_MONTH);
-        
+
         date.setText(year + "/" + (month + 1) + "/" + day);
-        
+
     }
-    
+
     public void time() {
-        
+
         Calendar cal = new GregorianCalendar();
         int second = cal.get(Calendar.SECOND);
         int minute = cal.get(Calendar.MINUTE);
         int hour = cal.get(Calendar.HOUR);
-        
+
         time.setText(hour + ":" + minute + ":" + second);
-        
+
     }
-    
-    
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -211,46 +210,42 @@ public class EmployeeDB extends javax.swing.JFrame {
     }// </editor-fold>                        
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        
+
         this.dispose();
-        
-        int X = JOptionPane.showConfirmDialog(null, "Are you sure you want to create new DB?","DB creation", JOptionPane.YES_NO_OPTION);
-        
+
+        int X = JOptionPane.showConfirmDialog(null, "Are you sure you want to create new DB?", "DB creation", JOptionPane.YES_NO_OPTION);
+
         if (X == 0) {
-            
+
             this.dispose();
-            SQL.startMethod ();
-            
-        }
-        
-        else {
-            
+            SQL.startMethod();
+
+        } else {
+
             EmployeeDB.main(null);
-            
+
         }
-        
+
     }                                        
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        
+
         this.dispose();
-        
-        int X = JOptionPane.showConfirmDialog(null, "Are you sure you want the old DB?","Manual DB creation/DB created before", JOptionPane.YES_NO_OPTION);
-        
+
+        int X = JOptionPane.showConfirmDialog(null, "Are you sure you want the old DB?", "Manual DB creation/DB created before", JOptionPane.YES_NO_OPTION);
+
         if (X == 0) {
-            
+
             this.dispose();
             JOptionPane.showMessageDialog(null, "Since you didn't populate the DB, we will assume that you have the DB.");
             UserIdentifier.main(null);
-            
-        }
-        
-        else {
-            
+
+        } else {
+
             EmployeeDB.main(null);
-            
+
         }
-        
+
     }                                        
 
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {                                            
@@ -258,15 +253,15 @@ public class EmployeeDB extends javax.swing.JFrame {
     }                                           
 
     private void jTextField2MouseClicked(java.awt.event.MouseEvent evt) {                                         
-        
-        JOptionPane.showMessageDialog(null, "We have chosen a location for you already just to reduced the possible errors!"); 
-        
+
+        JOptionPane.showMessageDialog(null, "We have chosen a location for you already just to reduced the possible errors!");
+
     }                                        
 
     private void jTextField1MouseClicked(java.awt.event.MouseEvent evt) {                                         
-        
-        JOptionPane.showMessageDialog(null, "We have chosen a location for you already just to reduced the possible errors!"); 
-        
+
+        JOptionPane.showMessageDialog(null, "We have chosen a location for you already just to reduced the possible errors!");
+
     }                                        
 
     /**
