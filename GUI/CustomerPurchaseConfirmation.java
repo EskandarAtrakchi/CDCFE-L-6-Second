@@ -26,8 +26,8 @@ public class CustomerPurchaseConfirmation extends javax.swing.JFrame {
         initComponents();
         Toolkit toolkit = getToolkit();
         Dimension size = toolkit.getScreenSize();
-        setLocation(size.width/2 - getWidth()/2,size.height/2 - getHeight()/2);
-        
+        setLocation(size.width / 2 - getWidth() / 2, size.height / 2 - getHeight() / 2);
+
         Timer timer;
         timer = new Timer(1000, new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -38,31 +38,29 @@ public class CustomerPurchaseConfirmation extends javax.swing.JFrame {
 
         date();
     }
-    
-    
 
     public void date() {
-        
+
         Calendar cal = new GregorianCalendar();
         int month = cal.get(Calendar.MONTH);
         int year = cal.get(Calendar.YEAR);
         int day = cal.get(Calendar.DAY_OF_MONTH);
-        
+
         date.setText(year + "/" + (month + 1) + "/" + day);
-        
+
     }
-    
+
     public void time() {
-        
+
         Calendar cal = new GregorianCalendar();
         int second = cal.get(Calendar.SECOND);
         int minute = cal.get(Calendar.MINUTE);
         int hour = cal.get(Calendar.HOUR);
-        
+
         time.setText(hour + ":" + minute + ":" + second);
-        
+
     }
-    
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -216,13 +214,13 @@ public class CustomerPurchaseConfirmation extends javax.swing.JFrame {
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel5.setText("VEHICLE-CAPACITY");
+        jLabel5.setText("VEHICLE-CAPACITY L");
         jPanel1.add(jLabel5);
         jLabel5.setBounds(20, 210, 225, 16);
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel6.setText("VEHICLE-PRICE");
+        jLabel6.setText("VEHICLE-PRICE $");
         jPanel1.add(jLabel6);
         jLabel6.setBounds(400, 310, 236, 16);
 
@@ -311,35 +309,33 @@ public class CustomerPurchaseConfirmation extends javax.swing.JFrame {
         Customers.VSID.setText(null);
         Customers.jTextArea3.setText(null);
         this.dispose();
-        
+
     }                                        
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        
+
         ConfirmationBTNp.setEnabled(true);
         PVIDFC.setText(VSID.getText());
         SQL.viewVehicleforPurchse();
-        
+
     }                                        
 
     private void ConfirmationBTNpActionPerformed(java.awt.event.ActionEvent evt) {                                                 
 
         Customers.VSID.setEditable(true);
         this.dispose();
-        SQL.ConfirmToPurchase(); 
-        
+        SQL.ConfirmToPurchase();
+
     }                                                
 
     private boolean isLightMode = true;
-    
+
     private void LightModeMouseClicked(java.awt.event.MouseEvent evt) {                                       
 
         jLabel11.setVisible(!isLightMode);
-        
+
         //CustomerPurchaseConfirmation.jLabel11.setVisible(!isLightMode);
-
         // note: will have to create an object to be able to toggle other labels in other frames
-
         LightMode.setText(isLightMode ? "Dark-mode" : "Light-mode");
         isLightMode = !isLightMode;
 
